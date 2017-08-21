@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+    <!-- Edited By POOL -->
+    <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+    <POOLFILECATALOG>
+    
+      <File ID="CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0">
+        <physical>
+          <pfn filetype="ROOT_All" name="root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1"/>
+        </physical>
+        <logical/>
+      </File>
+    
+    </POOLFILECATALOG>
+    

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="15d300f6-4bf1-4c5e-a708-174fb0655228">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.saparede.10916444.MYSTREAM._000003.root"/>
+    </physical>
+  </File>
+  <File ID="69654fad-f2e3-4c82-b15e-54de27c97567">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.saparede.10916444.EXT0._000003.myEfffile.root"/>
+    </physical>
+  </File>
+</POOLFILECATALOG>

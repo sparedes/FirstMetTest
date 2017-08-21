@@ -1,0 +1,63 @@
+## automatically generated CMT requirements file
+package testMetMaker
+author  paredes
+
+## for athena policies: this has to be the first use statement
+use AtlasPolicy 	AtlasPolicy-*
+
+## for gaudi tools, services and objects
+use GaudiInterface 	GaudiInterface-* 	External
+private
+
+use AthAnalysisBaseComps AthAnalysisBaseComps-* Control
+
+
+use AthenaBaseComps             AthenaBaseComps-*             Control
+use ElectronPhotonSelectorTools ElectronPhotonSelectorTools-* PhysicsAnalysis/ElectronPhotonID
+use GaudiInterface              GaudiInterface-*              External
+use METInterface                METInterface-*                Reconstruction/MET
+use MuonSelectorTools           MuonSelectorTools-*           PhysicsAnalysis/MuonID
+use TauAnalysisTools            TauAnalysisTools-*            PhysicsAnalysis/TauID
+use xAODEgamma                  xAODEgamma-*                  Event/xAOD
+use xAODJet                     xAODJet-*                     Event/xAOD
+use xAODMissingET               xAODMissingET-*               Event/xAOD
+use xAODMuon                    xAODMuon-*                    Event/xAOD
+use xAODTau                     xAODTau-*                     Event/xAOD
+use xAODTracking                xAODTracking-*                Event/xAOD
+use JetCalibTools               JetCalibTools-*               Reconstruction/Jet
+#use TrigT1Interfaces            TrigT1Interfaces-*            Trigger/TrigT1 # for l1MetValue
+use xAODTrigger                 xAODTrigger-*                 Event/xAOD
+use xAODTrigMissingET           xAODTrigMissingET-*           Event/xAOD
+#for TDT
+use TrigDecisionTool            TrigDecisionTool-*            Trigger/TrigAnalysis
+
+#for isolation selection criteria
+use IsolationSelection      IsolationSelection-*      PhysicsAnalysis/AnalysisCommon
+
+#for PtPlotAlgorighm
+
+use xAODBase    xAODBase-*   Event/xAOD
+
+
+
+#uncomment the next line to use ROOT libraries in your package
+use AtlasROOT AtlasROOT-* External
+
+end_private
+
+## put here your package dependencies...
+
+##
+
+branches src src/components doc python share
+
+## default is to make component library. See: https://twiki.cern.ch/twiki/bin/view/Main/LearningAthena#Libraries_in_CMT for alternatives
+
+
+apply_pattern declare_joboptions files="*.py"
+apply_pattern declare_python_modules files="*.py"
+
+
+
+library testMetMaker *.cxx components/*.cxx
+apply_pattern component_library

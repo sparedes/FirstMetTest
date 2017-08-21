@@ -1,0 +1,51 @@
+Files read: 1
+  root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/d9/ec/DAOD_JETM11.10014747._000002.pool.root.1
+File Read error: 0
+Files written: 1
+  user.saparede.10897679.MYSTREAM._000001.root
+File Write Error: 0
+Tag Files Read: 1
+  root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/d9/ec/DAOD_JETM11.10014747._000002.pool.root.1
+Tag Files Error: 0
+Events Read:    1
+Events Written: 0
+Events Skipped: 0
+Runs: 1
+Message Count: 
+ FATAL:   0
+ ERROR:   0
+ WARNING: 2
+ INFO:    156
+Message Log: 
+  FATAL  0
+Keyword tracked messages: 
+Extra Summary Info:
+ CoreDumpSvc : -------------------------------------------------------------------------------------
+Core dump from CoreDumpSvc on c-103-6.aglt2.org at Mon Mar  6 12:14:54 2017
+
+Caught signal 11(Segmentation fault). Details: 
+  errno = 0, code = 1 (address not mapped to object)
+  pid   = 0, uid = 0
+  value = (44935559, 0x2ada987)
+  vmem = 1385.66 MB
+  rss  = 490.73 MB
+  total-ram = 128957 MB
+  free-ram  = 6191.85 MB
+  buffer-ram= 474.707 MB
+  total-swap= 96000 MB
+  free-swap = 95771.9 MB
+  addr  = 0
+
+Event counter: 1
+EventID: [Run,Evt,Lumi,Time,BunchCross,DetMask] = [267639,2316574,131,1434264035:562442460,2686,0x410269fffffffff7,0x0,0x0]
+Last incident: AthenaEventLoopMgr:BeginEvent
+-------------------------------------------------------------------------------------
+| AtlasBaseDir : /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25 |
+| AtlasVersion :                                                             2.4.25 |
+| CMTCONFIG    :                                              x86_64-slc6-gcc49-opt |
+-------------------------------------------------------------------------------------
+ Note: to see line numbers in below stacktrace you might consider running following :
+  atlasAddress2Line --file <logfile>
+-------------------------------------------------------------------------------------
+Exit Status: 64
+{"bad_alloc":0,"events":{"read":1,"skip":0,"write":0},"exit":64,"files":{"read":"root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/d9/ec/DAOD_JETM11.10014747._000002.pool.root.1","read error":"","tag":"root://xrootd.aglt2.org:1094//pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/d9/ec/DAOD_JETM11.10014747._000002.pool.root.1","tag error":"","write":"user.saparede.10897679.MYSTREAM._000001.root","write error":""},"message count":{"ERROR":0,"FATAL":0,"INFO":156,"WARNING":2},"messages":{"FATAL":{}},"runs":1,"user data":{"CoreDumpSvc":"-------------------------------------------------------------------------------------Core dump from CoreDumpSvc on c-103-6.aglt2.org at Mon Mar  6 12:14:54 2017Caught signal 11(Segmentation fault). Details:   errno = 0, code = 1 (address not mapped to object)  pid   = 0, uid = 0  value = (44935559, 0x2ada987)  vmem = 1385.66 MB  rss  = 490.73 MB  total-ram = 128957 MB  free-ram  = 6191.85 MB  buffer-ram= 474.707 MB  total-swap= 96000 MB  free-swap = 95771.9 MB  addr  = 0Event counter: 1EventID: [Run,Evt,Lumi,Time,BunchCross,DetMask] = [267639,2316574,131,1434264035:562442460,2686,0x410269fffffffff7,0x0,0x0]Last incident: AthenaEventLoopMgr:BeginEvent-------------------------------------------------------------------------------------| AtlasBaseDir : /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25 || AtlasVersion :                                                             2.4.25 || CMTCONFIG    :                                              x86_64-slc6-gcc49-opt |------------------------------------------------------------------------------------- Note: to see line numbers in below stacktrace you might consider running following :  atlasAddress2Line --file <logfile>-------------------------------------------------------------------------------------"}}

@@ -1,0 +1,158 @@
+Thu Mar 16 15:06:07 GMT 2017
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO using release [AthAnalysisBase-2.4.25] [x86_64-slc6-gcc49-opt] [AthAnalysisBase-2.4.X/rel_3] -- built on [2017-01-18 06:13]
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+[?1034hPy:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "testMetMaker/share/MyAlgJobo.py"
+Py:ConfigurableDb    INFO Read module info for 621 configurables from 3 genConfDb files
+Py:ConfigurableDb    INFO No duplicates have been found: that's good !
+Py:Athena            INFO including file "AthAnalysisBaseComps/SuppressLogging.py"
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v3r4)
+                                          running on pplxint8.physics.ox.ac.uk on Thu Mar 16 15:06:19 2017
+====================================================================================================================================
+ApplicationMgr       INFO Successfully loaded modules : AthenaServices
+ApplicationMgr       INFO Application Manager Configured successfully
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+StatusCodeSvc        INFO initialize
+ChronoStatSvc        INFO  Number of skipped events for MemStat-1
+AthAlgSeq            INFO Member list: CP::CalibratedMuonsProvider, CP::CalibratedEgammaProvider/ElectronCalib, CP::CalibratedEgammaProvider/PhotonCalib, MyAlg/MyMETAlg
+ToolSvc.MuonCal...   INFO Initialising...
+ElectronCalib        INFO Initialising...
+ToolSvc.AutoCon...   INFO Initialization
+ToolSvc.AutoCon...WARNING no decorrelation model specified, assuming full model
+eg_resolution        INFO Initialize eg_resolution
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 102 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(el_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (el_rawcl_Es1 + el_rawcl_Es2 + el_rawcl_Es3)/cosh(el_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:8
+EgammaMVATool        INFO Using layer correction
+EgammaMVATool        INFO 9 variables for electrons
+MVATreeElectron      INFO creating tree for 9 variables: el_cl_E,el_cl_eta,el_cl_etaCalo,el_cl_phiCalo,el_rawcl_Es0,el_rawcl_Es1,el_rawcl_Es2,el_rawcl_Es3,el_rawcl_calibHitsShowerDepth
+egammaMVACalib       INFO Variable that defines particleType not set. Using default formula: ph_Rconv > 0. && ph_Rconv < 800.
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 204 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(ph_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:12
+EgammaMVATool        INFO configuration does not contain list of variables, try to guess:
+EgammaMVATool        INFO 17 variables for photons
+EgammaMVATool        INFO   ph_Rconv
+EgammaMVATool        INFO   ph_cl_E
+EgammaMVATool        INFO   ph_cl_eta
+EgammaMVATool        INFO   ph_cl_etaCalo
+EgammaMVATool        INFO   ph_cl_phiCalo
+EgammaMVATool        INFO   ph_convtrk1nPixHits
+EgammaMVATool        INFO   ph_convtrk1nSCTHits
+EgammaMVATool        INFO   ph_convtrk2nPixHits
+EgammaMVATool        INFO   ph_convtrk2nSCTHits
+EgammaMVATool        INFO   ph_pt1conv
+EgammaMVATool        INFO   ph_pt2conv
+EgammaMVATool        INFO   ph_ptconv
+EgammaMVATool        INFO   ph_rawcl_Es0
+EgammaMVATool        INFO   ph_rawcl_Es1
+EgammaMVATool        INFO   ph_rawcl_Es2
+EgammaMVATool        INFO   ph_rawcl_Es3
+EgammaMVATool        INFO   ph_rawcl_calibHitsShowerDepth
+MVATreePhoton        INFO creating tree for 17 variables: ph_Rconv,ph_cl_E,ph_cl_eta,ph_cl_etaCalo,ph_cl_phiCalo,ph_convtrk1nPixHits,ph_convtrk1nSCTHits,ph_convtrk2nPixHits,ph_convtrk2nSCTHits,ph_pt1conv,ph_pt2conv,ph_ptconv,ph_rawcl_Es0,ph_rawcl_Es1,ph_rawcl_Es2,ph_rawcl_Es3,ph_rawcl_calibHitsShowerDepth
+egammaLayerReca...   INFO using scale 2012_alt_with_layer2
+egammaLayerReca...   INFO using scale ps_HV1
+egammaLayerReca...   INFO using scale layer2_alt_2012_v5
+egammaLayerReca...   INFO using scale ps_2012
+ToolSvc.AutoCon...   INFO ESModel: es2012c
+ToolSvc.AutoCon...   INFO ResolutionType: SigmaEff90
+ToolSvc.AutoCon...   INFO layer correction = 2
+ToolSvc.AutoCon...   INFO PS correction = 2
+ToolSvc.AutoCon...   INFO S12 correction = 2
+ToolSvc.AutoCon...   INFO layer2 recalibration = 2
+ToolSvc.AutoCon...   INFO intermodule correction = 1
+ToolSvc.AutoCon...   INFO phi uniformity correction = 1
+ToolSvc.AutoCon...   INFO gain correction = 1
+ToolSvc.AutoCon...   INFO smearing = 2
+ToolSvc.AutoCon...   INFO insitu scales = 2
+ToolSvc.AutoCon...   INFO ep combination = 0
+ToolSvc.AutoCon...   INFO use MVA calibration = 2
+ToolSvc.AutoCon...   INFO use temperature correction 2015 = 2
+ToolSvc.AutoCon...   INFO use uA2MeV correction 2015 1/2 week = 2
+PhotonCalib          INFO Initialising...
+MyMETAlg             INFO start initialize 
+THistSvc             INFO registered file [myHistoFile.root]... [ok]
+MyMETAlg             INFO Initializing MyMETAlg...
+MyMETAlg             INFO Retrieving tools...
+ToolSvc.METMaker     INFO Initializing ToolSvc.METMaker...
+ToolSvc.MuonSel...   INFO Initialising...
+ToolSvc.MuonSel...   INFO Maximum eta: 2.7
+ToolSvc.MuonSel...   INFO Muon quality: 1
+ToolSvc.MuonSel...   INFO Initialising tight working point histograms...
+ToolSvc.MuonSel...   INFO Reading muon tight working point histograms from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/MuonSelectorTools/PreRec2016_2016-04-13/muonSelection_tightWPHisto.root
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_qOverPCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_mediumPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_highPt_rhoCuts
+ToolSvc.EleSelTool   INFO operating point : MediumLHElectron
+ToolSvc.PhotonS...   INFO operating point : Tight
+ToolSvc.TauSele...   INFO Initializing TauSelectionTool
+ToolSvc.TauSele...   INFO Initializing TauOverlappingElectronLLHDecorator
+ToolSvc.TauSele...   INFO Loading ele OLR cut file TauAnalysisTools/00-02-35/Selection/eveto_cutvals.root
+ToolSvc.myJESTool    INFO Initializing ToolSvc.myJESTool...
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.myJESTool    INFO Initializing the xAOD Jet Calibration Tool for AntiKt4EMTopojets
+ToolSvc.myJESTool    INFO Reading global JES settings from: JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO resolved in: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationConfigs/JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO Initializing pileup correction.
+ToolSvc.myJESTo...   INFO JetPileupCorrection: Starting scale: JetConstitScaleMomentum
+ToolSvc.myJESTo...   INFO Jet area pile up correction will be applied.
+ToolSvc.myJESTo...   INFO Reading residual jet-area pile-up correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MCBasedOffset_April2015.config
+ToolSvc.myJESTo...   INFO Description: Residual 2015 mu- and N_{PV}-dependent jet pileup corrections
+ToolSvc.myJESTool    INFO Initializing JES correction.
+ToolSvc.myJESTo...   INFO Reading absolute calibration factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_EM_LCW_JES_v1.config
+ToolSvc.myJESTo...   INFO Description: JES derived May 2015 with Jet Areas, for application to MC15
+ToolSvc.myJESTool    INFO Initializing GSC correction.
+ToolSvc.myJESTo...   INFO Initializing the Global Sequential Calibration tool
+ToolSvc.myJESTo...   INFO GSC Tool has been initialized with binning and eta fit factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_GSC_factors_Aug2015.root
+ToolSvc.myJESTool    INFO Initializing Insitu correction.
+ToolSvc.myJESTo...   INFO Reading In-situ correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/InsituCalibration/InsituCalibration_20_7_4EM_4LC_30Sep2016.root
+ToolSvc.myJESTo...   INFO Tool configured to calibrate data
+ToolSvc.myJESTo...   INFO In-situ correction to be applied: 20.7 Eta-Intercalibration and Absolute Insitu
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.TrigDec...   INFO Initializing Trig::TrigDecisionTool (standalone version even for athena)
+ToolSvc.xAODCon...   INFO Initialising...
+ToolSvc.TrigDec...   INFO Initialized TDT
+ToolSvc.eleIsoTool   INFO Initialising...
+ToolSvc.eleIsoTool   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.eleIsoTool   INFO VersionInfo:2015_Sep_29_v2a
+ToolSvc.muonIso...   INFO Initialising...
+ToolSvc.muonIso...   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.muonIso...   INFO VersionInfo:2015_Sep_29_v2a
+ApplicationMgr       INFO Application Manager Initialized successfully
+ApplicationMgr       INFO Application Manager Started successfully
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2154, L1PSK = 1421, HLTPSK = 1040
+ToolSvc.TrigDec...   INFO updating config with SMK: 2154 and L1PSK: 1421 and HLTPSK: 1040
+ToolSvc.TrigDec...   INFO decision not set on first (?) assert. deciding how to unpack
+ToolSvc.TrigDec...   INFO SG contains xAOD decision, use DecisionUnpackerStandalone
+ApplicationMgr       INFO Application Manager Stopped successfully
+MyMETAlg             INFO Finalizing MyMETAlg...
+AthAlgSeq            INFO Finalizing AthAlgSeq...
+ToolSvc              INFO Removing all tools created by ToolSvc
+ToolSvc.TrigDec...   INFO TDT finalized and removed from instance list
+ToolSvc.myJESTool    INFO Finalizing ToolSvc.myJESTool...
+ToolSvc.METMaker     INFO Finalizing ToolSvc.METMaker...
+*****Chrono*****     INFO ****************************************************************************************************
+*****Chrono*****     INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+*****Chrono*****     INFO ****************************************************************************************************
+AthenaSealSvc::...   INFO Time User   : Tot=   17 [ms]                                             #=  1
+ChronoStatSvc        INFO Time User   : Tot= 69.7  [s]                                             #=  1
+*****Chrono*****     INFO ****************************************************************************************************
+ChronoStatSvc.f...   INFO  Service finalized successfully 
+ApplicationMgr       INFO Application Manager Finalized successfully
+ApplicationMgr       INFO Application Manager Terminated successfully
+Py:Athena            INFO leaving with code 0: "successful run"

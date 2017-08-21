@@ -1,0 +1,96 @@
+#CMT---> Info: Execute action compile => cd $TestArea/WorkArea/cmt; cmt bro make ; cd -
+#--------------------------------------------------------------
+# TriggerList TriggerList-00-00-00 : Now trying [make] in /home/burr/Programs/Projects/Athena/GetTriggerList/TriggerList/cmt (126/129)
+#--------------------------------------------------------------
+#CMT---> (Makefile.header) Rebuilding ../x86_64-slc6-gcc49-opt/x86_64-slc6-gcc49-opt.make
+#CMT---> (constituents.make) Rebuilding library links
+#CMT---> (constituents.make) Building checkreq.make
+#CMT---> (constituents.make) Building TriggerList.make
+#CMT---> (constituents.make) Building check_install_python_modules.make
+#CMT---> (constituents.make) Building check_install_joboptions.make
+#CMT---> (constituents.make) Building install_root_include_path.make
+#CMT---> (constituents.make) Building install_includes.make
+#CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document check_install_joboptions
+#CMT---> Info: Document check_install_python_modules
+#CMT---> Info: Document checkreq
+#CMT---> Info: Library TriggerList
+#CMT---> Info: Document install_includes
+#CMT---> (constituents.make) Starting install_root_include_path
+#CMT---> (constituents.make) Starting check_install_python_modules
+#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting check_install_joboptions
+#CMT---> (constituents.make) Starting install_includes
+No standard include file area
+No standard include file area
+#CMT---> (constituents.make) install_root_include_path done
+#CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) Starting TriggerList
+#CMT---> (constituents.make) check_install_python_modules done
+#CMT---> (constituents.make) Building install_python_modules.make
+#CMT---> (constituents.make) check_install_joboptions done
+#CMT---> (constituents.make) Building install_joboptions.make
+#CMT---> compiling ../src/TriggerListAlg.cxx
+#CMT---> Info: Document install_python_modules#CMT---> compiling ../src/components/TriggerList_entries.cxx
+
+#CMT---> compiling ../src/components/TriggerList_load.cxx
+#CMT---> (constituents.make) Starting install_python_modules
+#CMT---> Info: Document install_joboptions
+#CMT---> (constituents.make) Starting install_joboptions
+make[2]: `install_python_modules' is up to date.
+#CMT---> (constituents.make) install_python_modules done
+#CMT---> installing file TriggerListAlgJobOptions.py into /home/burr/Programs/Projects/Athena/GetTriggerList/InstallArea/jobOptions/TriggerList
+installation done
+#CMT---> (constituents.make) install_joboptions done
+CHECKREQ---> checkreq-v150519 warning for TriggerList (TriggerList-00-00-00):
+
+CHECKREQ---> The following packages (referenced as indicated) need private use statements. (severity 3)
+
+CHECKREQ---> ++ TrigConfxAOD (from include TrigConfxAOD) in files:
+CHECKREQ--->    ../src/TriggerListAlg.cxx
+
+CHECKREQ---> checkreq ERROR(s) in TriggerList-00-00-00 (max severity 3)
+make[2]: *** [checkreq] Error 3
+make[1]: *** [checkreq] Error 2
+make[1]: *** Waiting for unfinished jobs....
+../src/TriggerListAlg.cxx:3:41: fatal error: TrigConfxAOD/xAODConfigTool.h: No such file or directory
+ #include "TrigConfxAOD/xAODConfigTool.h"
+                                         ^
+compilation terminated.
+make[2]: *** [../x86_64-slc6-gcc49-opt/TriggerListAlg.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from ../src/components/TriggerList_entries.cxx:4:0:
+../src/components/../TriggerListAlg.h:30:22: error: 'ITrigConfigTool' was not declared in this scope
+   asg::AnaToolHandle<ITrigConfigTool> m_trigConf;
+                      ^
+../src/components/../TriggerListAlg.h:30:22: note: suggested alternative:
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.4/AthAnalysisBase/2.4.4/InstallArea/include/TrigDecisionTool/TrigDecisionTool/TrigDecisionToolStandalone.h:22:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.4/AthAnalysisBase/2.4.4/InstallArea/include/TrigDecisionTool/TrigDecisionTool/TrigDecisionTool.h:13,
+                 from ../src/components/../TriggerListAlg.h:7,
+                 from ../src/components/TriggerList_entries.cxx:4:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.4/AthAnalysisBase/2.4.4/InstallArea/include/TrigConfInterfaces/TrigConfInterfaces/ITrigConfigTool.h:24:10: note:   'TrigConf::ITrigConfigTool'
+    class ITrigConfigTool : public virtual asg::IAsgTool,
+          ^
+In file included from ../src/components/TriggerList_entries.cxx:4:0:
+../src/components/../TriggerListAlg.h:30:37: error: template argument 1 is invalid
+   asg::AnaToolHandle<ITrigConfigTool> m_trigConf;
+                                     ^
+../src/components/../TriggerListAlg.h:31:22: error: 'TrigDecisionTool' was not declared in this scope
+   asg::AnaToolHandle<TrigDecisionTool> m_trigTool;
+                      ^
+../src/components/../TriggerListAlg.h:31:22: note: suggested alternative:
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.4/AthAnalysisBase/2.4.4/InstallArea/include/TrigDecisionTool/TrigDecisionTool/TrigDecisionTool.h:13:0,
+                 from ../src/components/../TriggerListAlg.h:7,
+                 from ../src/components/TriggerList_entries.cxx:4:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.4/AthAnalysisBase/2.4.4/InstallArea/include/TrigDecisionTool/TrigDecisionTool/TrigDecisionToolStandalone.h:50:9: note:   'Trig::TrigDecisionTool'
+   class TrigDecisionTool :
+         ^
+In file included from ../src/components/TriggerList_entries.cxx:4:0:
+../src/components/../TriggerListAlg.h:31:38: error: template argument 1 is invalid
+   asg::AnaToolHandle<TrigDecisionTool> m_trigTool;
+                                      ^
+make[2]: *** [../x86_64-slc6-gcc49-opt/TriggerList_entries.o] Error 1
+make[1]: *** [TriggerList] Error 2
+make: *** [all] Error 2
+#CMT---> Error: execution error: make
+/home/burr/Programs/Projects/Athena/GetTriggerList/TriggerList

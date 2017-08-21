@@ -1,0 +1,112 @@
+Tue Dec  6 14:08:51 GMT 2016
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO using release [AthAnalysisBase-2.4.19] [x86_64-slc6-gcc49-opt] [AthAnalysisBase-2.4.X/rel_2] -- built on [2016-09-19 17:26]
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+[?1034hPy:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "testMetMaker/share/MyAlgJobo.py"
+Py:ConfigurableDb    INFO Read module info for 611 configurables from 3 genConfDb files
+Py:ConfigurableDb    INFO No duplicates have been found: that's good !
+Py:Athena            INFO including file "AthAnalysisBaseComps/SuppressLogging.py"
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v3r4)
+                                          running on pplxint8.physics.ox.ac.uk on Tue Dec  6 14:09:00 2016
+====================================================================================================================================
+ApplicationMgr       INFO Successfully loaded modules : AthenaServices
+ApplicationMgr       INFO Application Manager Configured successfully
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+StatusCodeSvc        INFO initialize
+ChronoStatSvc        INFO  Number of skipped events for MemStat-1
+AthAlgSeq            INFO Member list: CP::CalibratedMuonsProvider, CP::CalibratedEgammaProvider, MyAlg/MyMETAlg
+ToolSvc.MuonCal...   INFO Initialising...
+CP::CalibratedE...   INFO Initialising...
+ToolSvc.AutoCon...   INFO Initialization
+ToolSvc.AutoCon...WARNING no decorrelation model specified, assuming full model
+eg_resolution        INFO Initialize eg_resolution
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 102 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(el_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (el_rawcl_Es1 + el_rawcl_Es2 + el_rawcl_Es3)/cosh(el_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:8
+EgammaMVATool        INFO Using layer correction
+EgammaMVATool        INFO 9 variables for electrons
+MVATreeElectron      INFO creating tree for 9 variables: el_cl_E,el_cl_eta,el_cl_etaCalo,el_cl_phiCalo,el_rawcl_Es0,el_rawcl_Es1,el_rawcl_Es2,el_rawcl_Es3,el_rawcl_calibHitsShowerDepth
+egammaMVACalib       INFO Variable that defines particleType not set. Using default formula: ph_Rconv > 0. && ph_Rconv < 800.
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 204 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(ph_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:12
+EgammaMVATool        INFO configuration does not contain list of variables, try to guess:
+EgammaMVATool        INFO 17 variables for photons
+EgammaMVATool        INFO   ph_Rconv
+EgammaMVATool        INFO   ph_cl_E
+EgammaMVATool        INFO   ph_cl_eta
+EgammaMVATool        INFO   ph_cl_etaCalo
+EgammaMVATool        INFO   ph_cl_phiCalo
+EgammaMVATool        INFO   ph_convtrk1nPixHits
+EgammaMVATool        INFO   ph_convtrk1nSCTHits
+EgammaMVATool        INFO   ph_convtrk2nPixHits
+EgammaMVATool        INFO   ph_convtrk2nSCTHits
+EgammaMVATool        INFO   ph_pt1conv
+EgammaMVATool        INFO   ph_pt2conv
+EgammaMVATool        INFO   ph_ptconv
+EgammaMVATool        INFO   ph_rawcl_Es0
+EgammaMVATool        INFO   ph_rawcl_Es1
+EgammaMVATool        INFO   ph_rawcl_Es2
+EgammaMVATool        INFO   ph_rawcl_Es3
+EgammaMVATool        INFO   ph_rawcl_calibHitsShowerDepth
+MVATreePhoton        INFO creating tree for 17 variables: ph_Rconv,ph_cl_E,ph_cl_eta,ph_cl_etaCalo,ph_cl_phiCalo,ph_convtrk1nPixHits,ph_convtrk1nSCTHits,ph_convtrk2nPixHits,ph_convtrk2nSCTHits,ph_pt1conv,ph_pt2conv,ph_ptconv,ph_rawcl_Es0,ph_rawcl_Es1,ph_rawcl_Es2,ph_rawcl_Es3,ph_rawcl_calibHitsShowerDepth
+egammaLayerReca...   INFO using scale 2012_alt_with_layer2
+egammaLayerReca...   INFO using scale ps_HV1
+egammaLayerReca...   INFO using scale layer2_alt_2012_v5
+egammaLayerReca...   INFO using scale ps_2012
+ToolSvc.AutoCon...   INFO ESModel: es2012c
+ToolSvc.AutoCon...   INFO ResolutionType: SigmaEff90
+ToolSvc.AutoCon...   INFO layer correction = 2
+ToolSvc.AutoCon...   INFO PS correction = 2
+ToolSvc.AutoCon...   INFO S12 correction = 2
+ToolSvc.AutoCon...   INFO layer2 recalibration = 2
+ToolSvc.AutoCon...   INFO intermodule correction = 1
+ToolSvc.AutoCon...   INFO phi uniformity correction = 1
+ToolSvc.AutoCon...   INFO gain correction = 1
+ToolSvc.AutoCon...   INFO smearing = 2
+ToolSvc.AutoCon...   INFO insitu scales = 2
+ToolSvc.AutoCon...   INFO ep combination = 0
+ToolSvc.AutoCon...   INFO use MVA calibration = 2
+ToolSvc.AutoCon...   INFO use temperature correction 2015 = 2
+ToolSvc.AutoCon...   INFO use uA2MeV correction 2015 1/2 week = 2
+MyMETAlg             INFO Initializing MyMETAlg...
+MyMETAlg             INFO Retrieving tools...
+ToolSvc.METMaker     INFO Initializing ToolSvc.METMaker...
+ToolSvc.MuonSel...   INFO Initialising...
+ToolSvc.MuonSel...   INFO Maximum eta: 2.7
+ToolSvc.MuonSel...   INFO Muon quality: 1
+ToolSvc.MuonSel...   INFO Initialising tight working point histograms...
+ToolSvc.MuonSel...   INFO Reading muon tight working point histograms from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/MuonSelectorTools/PreRec2016_2016-04-13/muonSelection_tightWPHisto.root
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_qOverPCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_mediumPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_highPt_rhoCuts
+ToolSvc.EleSelTool   INFO operating point : MediumLHElectron
+ToolSvc.PhotonS...   INFO operating point : Tight
+ToolSvc.TauSele...   INFO Initializing TauSelectionTool
+ToolSvc.TauSele...   INFO Initializing TauOverlappingElectronLLHDecorator
+ToolSvc.TauSele...   INFO Loading ele OLR cut file TauAnalysisTools/00-02-17/Selection/eveto_cutvals.root
+ToolSvc             ERROR Cannot create tool IJetCalibrationTool (No factory found)
+ToolSvc             ERROR Cannot create tool IJetCalibrationTool (No factory found)
+MyMETAlg            FATAL  Exception with tag=PublicTool retrieve is caught 
+MyMETAlg            ERROR PublicTool retrieve	Failed to retrieve PublicTool: IJetCalibrationTool	 StatusCode=FAILURE
+AthAlgSeq           ERROR Unable to initialize Algorithm MyMETAlg
+AthMasterSeq        ERROR Unable to initialize Algorithm AthAlgSeq
+AthenaEventLoopMgr  ERROR Unable to initialize Algorithm: AthMasterSeq
+AthenaEventLoopMgr  ERROR Failed to initialize base class MinimalEventLoopMgr
+ServiceManager      ERROR Unable to initialize Service: AthenaEventLoopMgr
+Py:Athena            INFO leaving with code 33: "failure in initialization"
+ApplicationMgr       INFO Application Manager Terminated successfully

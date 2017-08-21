@@ -1,0 +1,147 @@
+#CMT---> Warning: package not found: TrigT1Interfaces TrigT1Interfaces-* Trigger/TrigT1 (requested by testMetMaker)
+#CMT---> Info: Execute action compile => cd $TestArea/WorkArea/cmt; cmt bro make ; cd -
+#CMT---> Warning: package not found: TrigT1Interfaces TrigT1Interfaces-* Trigger/TrigT1 (requested by testMetMaker)
+#--------------------------------------------------------------
+# testMetMaker testMetMaker-00-00-00 : Now trying [make] in /home/paredes/TestArea/athenaMetTest2/testMetMaker/cmt (182/184)
+#--------------------------------------------------------------
+#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting check_install_python_modules
+#CMT---> (constituents.make) Starting check_install_joboptions
+#CMT---> (constituents.make) Starting testMetMaker
+#CMT---> (constituents.make) Starting install_root_include_path
+#CMT---> (constituents.make) Starting install_includes
+No standard include file area
+No standard include file area
+#CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) install_root_include_path done
+#CMT---> (constituents.make) check_install_python_modules done
+#CMT---> (constituents.make) Starting install_python_modules
+make[2]: `install_python_modules' is up to date.
+#CMT---> (constituents.make) install_python_modules done
+#CMT---> compiling ../src/MyAlg_fix.cxx
+#CMT---> (constituents.make) check_install_joboptions done
+#CMT---> (constituents.make) Starting install_joboptions
+installation done
+installation done
+installation done
+#CMT---> (constituents.make) install_joboptions done
+#CMT---> compiling ../src/MyAlg.cxx
+#CMT---> compiling ../src/components/testMetMaker_entries.cxx
+CHECKREQ---> checkreq-v150519 warning for testMetMaker (testMetMaker-00-00-00):
+CHECKREQ---> Version TrigT1Interfaces-* used in package testMetMaker not found in release. (severity 2)
+
+CHECKREQ---> The following packages are apparently not needed. (severity 2)
+
+CHECKREQ---> -- AthenaKernel
+CHECKREQ---> -- AtlasBoost
+CHECKREQ---> -- TrigConfHLTData
+CHECKREQ---> -- TrigT1Interfaces
+CHECKREQ---> -- xAODCaloEvent
+
+CHECKREQ---> checkreq WARNING(s) in testMetMaker-00-00-00 (max severity 2)
+#CMT---> (constituents.make) checkreq done
+../src/MyAlg_fix.cxx: In constructor 'MyAlg::MyAlg(const string&, ISvcLocator*)':
+../src/MyAlg_fix.cxx:50:5: error: class 'MyAlg' does not have any field named 'm_trigDec'
+     m_trigDec( "Trig::TrigDecisionTool/TrigDecisionTool" ),
+     ^
+../src/MyAlg_fix.cxx:51:5: error: class 'MyAlg' does not have any field named 'm_all'
+     m_all( 0 ), m_allL1( 0 ), m_allHLT( 0 ) 
+     ^
+../src/MyAlg_fix.cxx:51:17: error: class 'MyAlg' does not have any field named 'm_allL1'
+     m_all( 0 ), m_allL1( 0 ), m_allHLT( 0 ) 
+                 ^
+../src/MyAlg_fix.cxx:51:31: error: class 'MyAlg' does not have any field named 'm_allHLT'
+     m_all( 0 ), m_allL1( 0 ), m_allHLT( 0 ) 
+                               ^
+../src/MyAlg_fix.cxx:71:42: error: 'm_trigDec' was not declared in this scope
+     declareProperty( "TrigDecisionTool", m_trigDec, "The tool to access TrigDecision" );
+                                          ^
+../src/MyAlg_fix.cxx:72:37: error: 'm_chain_names' was not declared in this scope
+     declareProperty( "TriggerList", m_chain_names, "List of triggers to analyze");
+                                     ^
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthCheckMacros.h:11:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthAlgorithm.h:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthHistogramAlgorithm.h:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthAnalysisBaseComps/AthAnalysisBaseComps/AthAnalysisAlgorithm.h:22,
+                 from ../src/MyAlg.h:4,
+                 from ../src/MyAlg_fix.cxx:1:
+../src/MyAlg_fix.cxx: In member function 'virtual StatusCode MyAlg::initialize()':
+../src/MyAlg_fix.cxx:80:10: error: 'm_trigDec' was not declared in this scope
+   CHECK( m_trigDec.retrieve() );
+          ^
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaKernel/AthenaKernel/errorcheck.h:367:24: note: in definition of macro 'CHECK_WITH_CONTEXT'
+     StatusCode sc__ = (EXP);                              \
+                        ^
+../src/MyAlg_fix.cxx:80:3: note: in expansion of macro 'CHECK'
+   CHECK( m_trigDec.retrieve() );
+   ^
+../src/MyAlg_fix.cxx:81:3: error: 'm_trigDec' was not declared in this scope
+   m_trigDec->ExperimentalAndExpertMethods()->enable();
+   ^
+../src/MyAlg_fix.cxx:85:3: error: 'm_all' was not declared in this scope
+   m_all   = m_trigDec->getChainGroup( ".*" );
+   ^
+../src/MyAlg_fix.cxx:86:3: error: 'm_allL1' was not declared in this scope
+   m_allL1 = m_trigDec->getChainGroup( "L1_.*" );
+   ^
+../src/MyAlg_fix.cxx:87:3: error: 'm_allHLT' was not declared in this scope
+   m_allHLT = m_trigDec->getChainGroup( "HLT_.*" );
+   ^
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthAnalysisBaseComps/AthAnalysisBaseComps/AthAnalysisAlgorithm.h:23:0,
+                 from ../src/MyAlg.h:4,
+                 from ../src/MyAlg.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h: In instantiation of 'StatusCode ToolHandle<T>::retrieve(T*&) const [with T = Trig::TriggerAnalysisHelper]':
+../src/MyAlg.cxx:440:42:   required from here
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h:138:81: error: incomplete type 'Trig::TriggerAnalysisHelper' used in nested name specifier
+     return m_pToolSvc->retrieve( GaudiHandleBase::typeAndName(), T::interfaceID(),
+                                                                                 ^
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h: In instantiation of 'StatusCode ToolHandle<T>::release(T*) const [with T = Trig::TriggerAnalysisHelper]':
+../src/MyAlg.cxx:440:42:   required from here
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h:145:45: error: no matching function for call to 'IToolSvc::releaseTool(Trig::TriggerAnalysisHelper*&)'
+     return m_pToolSvc->releaseTool( algTool );
+                                             ^
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h:145:45: note: candidate is:
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/Algorithm.h:25:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthAlgorithm.h:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthHistogramAlgorithm.h:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthAnalysisBaseComps/AthAnalysisBaseComps/AthAnalysisAlgorithm.h:22,
+                 from ../src/MyAlg.h:4,
+                 from ../src/MyAlg.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/IToolSvc.h:74:22: note: virtual StatusCode IToolSvc::releaseTool(IAlgTool*)
+   virtual StatusCode releaseTool( IAlgTool* tool ) = 0;
+                      ^
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/IToolSvc.h:74:22: note:   no known conversion for argument 1 from 'Trig::TriggerAnalysisHelper*' to 'IAlgTool*'
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ServiceHandle.h:5:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthAlgorithm.h:15,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthenaBaseComps/AthenaBaseComps/AthHistogramAlgorithm.h:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthAnalysisBaseComps/AthAnalysisBaseComps/AthAnalysisAlgorithm.h:22,
+                 from ../src/MyAlg.h:4,
+                 from ../src/MyAlg.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/GaudiHandle.h: In instantiation of 'StatusCode GaudiHandle<T>::release(T*) const [with T = Trig::TriggerAnalysisHelper]':
+../src/MyAlg.cxx:440:42:   required from here
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/GaudiHandle.h:266:5: error: invalid use of incomplete type 'class Trig::TriggerAnalysisHelper'
+     comp->release();
+     ^
+In file included from ../src/MyAlg.cxx:26:0:
+../src/TDTExample.h:18:10: error: forward declaration of 'class Trig::TriggerAnalysisHelper'
+    class TriggerAnalysisHelper;
+          ^
+make[2]: *** [../x86_64-slc6-gcc49-opt/MyAlg_fix.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/AthAnalysisBase/2.4.19/InstallArea/include/AthAnalysisBaseComps/AthAnalysisBaseComps/AthAnalysisAlgorithm.h:23:0,
+                 from ../src/MyAlg.h:4,
+                 from ../src/MyAlg.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h: In member function 'StatusCode ToolHandle<T>::release(T*) const [with T = Trig::TriggerAnalysisHelper]':
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h:146:3: error: control reaches end of non-void function [-Werror=return-type]
+   }
+   ^
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h: In member function 'StatusCode ToolHandle<T>::retrieve(T*&) const [with T = Trig::TriggerAnalysisHelper]':
+/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.19/GAUDI/v26r2p1-lcg81e/InstallArea/include/GaudiKernel/ToolHandle.h:141:3: error: control reaches end of non-void function [-Werror=return-type]
+   }
+   ^
+cc1plus: some warnings being treated as errors
+make[2]: *** [../x86_64-slc6-gcc49-opt/MyAlg.o] Error 1
+make[1]: *** [testMetMaker] Error 2
+make: *** [all] Error 2
+#CMT---> Error: execution error: make
+/home/paredes/TestArea/athenaMetTest2/testMetMaker/cmt

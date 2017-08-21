@@ -1,0 +1,1073 @@
+Using AthAnalysisBase/2.4.25 [cmt] with platform x86_64-slc6-gcc49-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25
+=== parameters ===
+libraries panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+runDir ./
+jobO  testMetMaker/share/MyAlgJobo.py
+inputFiles ['DAOD_JETM11.10014747._000007.pool.root.1']
+outputFiles {'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}
+byteStream False
+eventColl False
+backNavi False
+debugFlag False
+poolRefs []
+urlLRC 
+fragmentJobO 
+minbiasFiles []
+cavernFiles []
+beamHaloFiles []
+beamGasFiles []
+oldPrefix 
+newPrefix 
+directIn True
+lfcHost 
+inputGUIDs ['CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0']
+minbiasGUIDs []
+cavernGUIDs []
+addPoolFC []
+corCheck False
+sourceURL https://aipanda078.cern.ch:25443
+mcData 
+notSkipMissing False
+givenPFN False
+runTrf False
+envvarFile 
+runAra False
+dbrFile 
+generalInput False
+liveLog 
+dbrRun -1
+useLocalIO False
+codeTrace False
+useFileStager False
+usePFCTurl True
+copyTool 
+eventPickTxt 
+eventPickSt 0
+eventPickNum -1
+skipInputByRetry []
+tagFileList []
+noExpandDBR False
+useCMake False
+===================
+===== PFC from pilot =====
+<?xml version="1.0" ?>
+<!-- Edited By the PanDA Pilot -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1"/>
+    </physical>
+    <logical>
+      <lfn name="DAOD_JETM11.10014747._000007.pool.root.1"/>
+    </logical>
+  </File>
+</POOLFILECATALOG>
+
+===== GUIDs in PFC =====
+{'DAOD_JETM11.10014747._000007.pool.root.1': 'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0'}
+===== GUIDs and TURLs in PFC =====
+{'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1'}
+=== New inputFiles ===
+['root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1']
+GridOut/
+GridOut/user.saparede.test.tON.0603newDS.log/
+GridOut/user.saparede.test.tON.0603newDS.log/tarball_PandaJob_3262862351_ANALY_AGLT2_SL6/
+GridOut/user.saparede.test.tON.0603newDS.log/tarball_PandaJob_3262862351_ANALY_AGLT2_SL6/PoolFileCatalog.xml
+GridOut/user.saparede.test.tON.0603newDS.log/tarball_PandaJob_3262862351_ANALY_AGLT2_SL6/job_setup.sh
+InstallArea/
+InstallArea/x86_64-slc6-gcc49-opt/
+InstallArea/x86_64-slc6-gcc49-opt/lib/
+InstallArea/x86_64-slc6-gcc49-opt/lib/PandaJob_3267651248_1488971007.confdb
+InstallArea/x86_64-slc6-gcc49-opt/lib/libtestMetMaker.so.debug.cmtref
+InstallArea/x86_64-slc6-gcc49-opt/lib/PandaJob_3267651248_1488971007.confdb.lock
+InstallArea/x86_64-slc6-gcc49-opt/lib/PandaJob_3267651248_1488971007.components
+InstallArea/x86_64-slc6-gcc49-opt/lib/libtestMetMaker.so.cmtref
+InstallArea/x86_64-slc6-gcc49-opt/lib/libtestMetMaker.so
+InstallArea/x86_64-slc6-gcc49-opt/lib/libtestMetMaker.so.debug
+InstallArea/x86_64-slc6-gcc49-opt/lib/PandaJob_3267651248_1488971007.components.lock
+InstallArea/python/
+InstallArea/python/testMetMaker/
+InstallArea/python/testMetMaker/testMetMakerConf.py
+InstallArea/python/testMetMaker/__init__.pyc
+InstallArea/python/testMetMaker/__init__.py
+InstallArea/python/testMetMaker/testMetMakerConf.pyc
+InstallArea/jobOptions/
+InstallArea/jobOptions/testMetMaker/
+InstallArea/jobOptions/testMetMaker/MyAlgJobOptions.py
+InstallArea/jobOptions/testMetMaker/MyAlgJobo.py
+InstallArea/jobOptions/testMetMaker/PlottingJobOptions.py.cmtref
+InstallArea/jobOptions/testMetMaker/MyAlgJobo.py.cmtref
+InstallArea/jobOptions/testMetMaker/PlottingJobOptions.py
+InstallArea/jobOptions/testMetMaker/MyAlgJobOptions.py.cmtref
+InstallArea/share/
+InstallArea/share/testMetMaker_clid.db
+InstallArea/share/clid.db
+Makefile
+PoolFileCatalog.xml
+WorkArea/
+WorkArea/cmt/
+WorkArea/cmt/Makefile
+WorkArea/cmt/cleanup.sh
+WorkArea/cmt/setup.sh
+extPoolRefs.C
+testMetMaker/
+testMetMaker/genConf/
+testMetMaker/genConf/testMetMaker/
+testMetMaker/genConf/testMetMaker/testMetMakerConf.py
+testMetMaker/genConf/testMetMaker/testMetMaker.confdb.stamp
+testMetMaker/genConf/testMetMaker/__init__.py
+testMetMaker/genConf/testMetMaker/testMetMaker.confdb
+testMetMaker/PoolFileCatalog.xml
+testMetMaker/cmt/
+testMetMaker/cmt/install.x86_64-slc6-gcc49-opt.history
+testMetMaker/cmt/requirements
+testMetMaker/cmt/compile.log
+testMetMaker/cmt/cleanup.csh
+testMetMaker/cmt/HLTvsOLmet5kev.log
+testMetMaker/cmt/version.cmt
+testMetMaker/cmt/cleanup
+testMetMaker/cmt/Makefile
+testMetMaker/cmt/cleanup.sh
+testMetMaker/cmt/setup.csh
+testMetMaker/cmt/setup.sh
+testMetMaker/src/
+testMetMaker/src/MyAlg.h
+testMetMaker/src/TDTExample.h
+testMetMaker/src/somebkpMyAlg.bkp
+testMetMaker/src/components/
+testMetMaker/src/components/testMetMaker_load.cxx
+testMetMaker/src/components/testMetMaker_entries.cxx
+testMetMaker/src/PtPlottingAlg.h
+testMetMaker/src/PtPlottingAlg.cxx
+testMetMaker/src/MyAlg.cxx
+testMetMaker/doc/
+testMetMaker/x86_64-slc6-gcc49-opt/
+testMetMaker/x86_64-slc6-gcc49-opt/make.in
+testMetMaker/x86_64-slc6-gcc49-opt/install_joboptions.make
+testMetMaker/x86_64-slc6-gcc49-opt/constituents.make
+testMetMaker/x86_64-slc6-gcc49-opt/install_joboptions.in
+testMetMaker/x86_64-slc6-gcc49-opt/new_asgtool.in
+testMetMaker/x86_64-slc6-gcc49-opt/new_analysisapp.in
+testMetMaker/x86_64-slc6-gcc49-opt/checkreq.make
+testMetMaker/x86_64-slc6-gcc49-opt/new_alg.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.components
+testMetMaker/x86_64-slc6-gcc49-opt/install_python_modules.make
+testMetMaker/x86_64-slc6-gcc49-opt/cmt_build_library_links.stamp
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_entries.d
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerConf.in
+testMetMaker/x86_64-slc6-gcc49-opt/new_rootsys.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerComponentsList.in
+testMetMaker/x86_64-slc6-gcc49-opt/check_install_python_modules.make
+testMetMaker/x86_64-slc6-gcc49-opt/find_packages.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_python_init.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerConf.make
+testMetMaker/x86_64-slc6-gcc49-opt/MyAlg.d
+testMetMaker/x86_64-slc6-gcc49-opt/compile.in
+testMetMaker/x86_64-slc6-gcc49-opt/PtPlottingAlg.o
+testMetMaker/x86_64-slc6-gcc49-opt/MyAlg.o
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerConfDbMerge.make
+testMetMaker/x86_64-slc6-gcc49-opt/CompilePython.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_load.d
+testMetMaker/x86_64-slc6-gcc49-opt/post_merge_genconfdb.in
+testMetMaker/x86_64-slc6-gcc49-opt/install_root_include_path.make
+testMetMaker/x86_64-slc6-gcc49-opt/new_skeleton.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.shstamp
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerCLIDDB.in
+testMetMaker/x86_64-slc6-gcc49-opt/check_install_joboptions.in
+testMetMaker/x86_64-slc6-gcc49-opt/install_python_modules.in
+testMetMaker/x86_64-slc6-gcc49-opt/TestPackage.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerComponentsList.make
+testMetMaker/x86_64-slc6-gcc49-opt/qmtest_run.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.stamp
+testMetMaker/x86_64-slc6-gcc49-opt/setup.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_load.o
+testMetMaker/x86_64-slc6-gcc49-opt/check_install_joboptions.make
+testMetMaker/x86_64-slc6-gcc49-opt/install_includes.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_entries.o
+testMetMaker/x86_64-slc6-gcc49-opt/install_includes.in
+testMetMaker/x86_64-slc6-gcc49-opt/all_post_constituents.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerMergeComponentsList.make
+testMetMaker/x86_64-slc6-gcc49-opt/checkout_pkg.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_python_init.in
+testMetMaker/x86_64-slc6-gcc49-opt/cppcheck.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.components.stamp
+testMetMaker/x86_64-slc6-gcc49-opt/new_pkg.in
+testMetMaker/x86_64-slc6-gcc49-opt/make_skeleton.in
+testMetMaker/x86_64-slc6-gcc49-opt/qmtest_summarize.in
+testMetMaker/x86_64-slc6-gcc49-opt/check_install_python_modules.in
+testMetMaker/x86_64-slc6-gcc49-opt/dependencies.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_NICOS_Fix_debuginfo.in
+testMetMaker/x86_64-slc6-gcc49-opt/post_merge_rootmap.in
+testMetMaker/x86_64-slc6-gcc49-opt/compile_pkg.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerConfDbMerge.in
+testMetMaker/x86_64-slc6-gcc49-opt/post_install.in
+testMetMaker/x86_64-slc6-gcc49-opt/checkreq.in
+testMetMaker/x86_64-slc6-gcc49-opt/post_build_tpcnvdb.in
+testMetMaker/x86_64-slc6-gcc49-opt/TestProject.in
+testMetMaker/x86_64-slc6-gcc49-opt/new_analysisalg.in
+testMetMaker/x86_64-slc6-gcc49-opt/install_root_include_path.in
+testMetMaker/x86_64-slc6-gcc49-opt/library_links.in
+testMetMaker/x86_64-slc6-gcc49-opt/libtestMetMaker.so
+testMetMaker/x86_64-slc6-gcc49-opt/x86_64-slc6-gcc49-opt.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerMergeComponentsList.in
+testMetMaker/x86_64-slc6-gcc49-opt/libtestMetMaker.so.debug
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMakerCLIDDB.make
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_optdebug_library.in
+testMetMaker/x86_64-slc6-gcc49-opt/testMetMaker_optdebug_library.make
+testMetMaker/x86_64-slc6-gcc49-opt/doxygen.in
+testMetMaker/x86_64-slc6-gcc49-opt/PtPlottingAlg.d
+testMetMaker/x86_64-slc6-gcc49-opt/new_jobo.in
+testMetMaker/python/
+testMetMaker/eventLoopHeartBeat.txt
+testMetMaker/Makefile
+testMetMaker/PoolFileCatalog.xml.BAK
+testMetMaker/share/
+testMetMaker/share/MyAlgJobOptions.py
+testMetMaker/share/MyAlgJobo.py
+testMetMaker/share/bkpMar2.bkp
+testMetMaker/share/PlottingJobOptions.py
+Athena Ver:None
+build pool catalog
+=== corruption check ===
+
+=== PoolFileCatalog.xml ===
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+    <!-- Edited By POOL -->
+    <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+    <POOLFILECATALOG>
+    
+      <File ID="CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0">
+        <physical>
+          <pfn filetype="ROOT_All" name="root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1"/>
+        </physical>
+        <logical/>
+      </File>
+    
+    </POOLFILECATALOG>
+    
+
+=== pre jobO ===
+      
+try:
+    from EventSelectorAthenaPool.EventSelectorAthenaPoolConf import EventSelectorAthenaPool
+    orig_ESAP__getattribute =  EventSelectorAthenaPool.__getattribute__
+
+    def _dummy(self,attr):
+        if attr == 'InputCollections':
+            return ['root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1']
+        else:
+            return orig_ESAP__getattribute(self,attr)
+
+    EventSelectorAthenaPool.__getattribute__ = _dummy
+    print 'Overwrite InputCollections'
+except:
+    try:
+        EventSelectorAthenaPool.__getattribute__ = orig_ESAP__getattribute
+    except:
+        pass
+      
+try:
+    import AthenaCommon.AthenaCommonFlags
+
+    def _dummyFilesInput(*argv):
+        return ['root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1']
+
+    AthenaCommon.AthenaCommonFlags.FilesInput.__call__ = _dummyFilesInput
+except:
+    pass
+
+try:
+    import AthenaCommon.AthenaCommonFlags
+
+    def _dummyGet_Value(*argv):
+        return ['root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1']
+
+    for tmpAttr in dir (AthenaCommon.AthenaCommonFlags):
+        import re
+        if re.search('^(Pool|BS).*Input$',tmpAttr) != None:
+            try:
+                getattr(AthenaCommon.AthenaCommonFlags,tmpAttr).get_Value = _dummyGet_Value
+            except:
+                pass
+except:
+    pass
+      
+try:
+    from AthenaServices.SummarySvc import *
+    useAthenaSummarySvc()
+except:
+    pass
+
+
+=== post jobO ===
+
+try:
+    EventSelectorAthenaPool.__getattribute__ = orig_ESAP__getattribute
+except:
+    pass
+
+def _Service(str):
+    try:
+        svcMgr = theApp.serviceMgr()
+        return getattr(svcMgr,str)
+    except:
+        return Service(str)
+theApp.EvtMax = -1
+EventSelector = _Service( "EventSelector" )
+EventSelector.InputCollections = ['root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1']
+
+_configs = []
+seqList = []
+pTmpStreamList = []
+try:
+    from AthenaCommon.AlgSequence import AlgSequence
+    tmpKeys = AlgSequence().allConfigurables.keys()
+    # get AlgSequences
+    seqList = [AlgSequence()]
+    try:
+        for key in tmpKeys:
+            # check if it is available via AlgSequence
+            if not hasattr(AlgSequence(),key.split('/')[-1]):
+                continue
+            # get full name
+            tmpConf = getattr(AlgSequence(),key.split('/')[-1])
+            if hasattr(tmpConf,'getFullName'):
+                tmpFullName = tmpConf.getFullName()
+                # append AthSequencer
+                if tmpFullName.startswith('AthSequencer/'):
+                    seqList.append(tmpConf)
+    except:
+        pass
+    # loop over all sequences
+    for tmpAlgSequence in seqList:
+        for key in tmpKeys:
+            if key.find('/') != -1:
+                key = key.split('/')[-1]
+            if hasattr(tmpAlgSequence,key):    
+                _configs.append(key)
+except:
+    pass
+
+def _getConfig(key):
+    if seqList == []:
+        from AthenaCommon.AlgSequence import AlgSequence
+        return getattr(AlgSequence(),key)
+    else:
+        for tmpAlgSequence in seqList:
+            if hasattr(tmpAlgSequence,key):
+                return getattr(tmpAlgSequence,key)
+
+THistSvc = _Service ( "THistSvc" )
+THistSvc.Output = ["MYSTREAM DATAFILE='user.saparede.10916444.MYSTREAM._000003.root' OPT='UPDATE'"]
+
+
+=== execute ===
+export CMTPATH=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir:$CMTPATH;cd /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/75657f26-8fb0-4ce0-9dde-b89ecae17457/cmt;echo -e "use AtlasPolicy AtlasPolicy-*
+use PathResolver PathResolver-* Tools
+" > requirements;cmt config;source ./setup.sh;export TestArea=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir;cd -;env;athena.py pre_ef844800-67c9-4e10-bf51-c62446841365.py  testMetMaker/share/MyAlgJobo.py post_bb1df7c2-9261-4e49-87f9-9148002e0bf2.py
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+Creating setup scripts.
+Creating cleanup scripts.
+/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir
+CORAL_DBLOOKUP_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/XML/AtlasAuthentication
+PythonVERS=2.7.9.p1
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+ATLAS_PYTHON_PILOT=/usr/bin/python
+MANPATH=/usr/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/ROOT/6.04.16/x86_64-slc6-gcc49-opt/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/gccxml/0.9.0_20131026/x86_64-slc6-gcc49-opt/share/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/tcmalloc/2.4/x86_64-slc6-gcc49-opt/share/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/libunwind/5c2cade/x86_64-slc6-gcc49-opt/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/share/man:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/share/man:/opt/lsf-openmpi/1.8.1/man:/usr/share/man/overrides:/usr/share/man/en:/usr/share/man:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/ROOT/6.04.16/src/root/man
+AtlasSetupRuntimeStatus=0
+ASG_TEST_FILE_MC_AFII=/afs/cern.ch/user/a/asgbase/patspace/xAODs/a818/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_a766_a818_r7676/AOD.07919492._000100.pool.root.1
+BCAST_CMD=make
+LSB_EXEC_CLUSTER=slac
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+HOSTNAME=kiso0027
+NO_ALL_GROUPS=1
+ATLAS_LOCAL_ROOT_PACOPT=
+LSB_EFFECTIVE_RSRCREQ=select[(!preempt&&rhel60&&cvmfs&&inet&&(hequ||dole||kiso||deft)) && (type == any)] order[-slots:-maxslots] rusage[mem=1800.00,scratch=12.00:duration=24h:decay=1] span[ptile=1] 
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1
+OSG_GLEXEC_LOCATION=None
+HepMCVERS=2.06.09
+ROOT_INCLUDE_PATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/root-include-path:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/include:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/CORAL/3_1_0/x86_64-slc6-gcc49-opt/include:.:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/Boost/1.59.0_python2.7/x86_64-slc6-gcc49-opt/include/boost-1_59:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/xrootd/4.2.3/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/tcmalloc/2.4/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/libunwind/5c2cade/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/include/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/HepPDT/2.06.01/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/fftw3/3.1.2/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/mysql/5.5.27/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/COOL/3_1_0/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/HepMC/2.06.09/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/external/clhep/2.1.2.3-atl01/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/AIDA/3.2.1/x86_64-slc6-gcc49-opt/src/cpp:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/fastjet/3.2.0/x86_64-slc6-gcc49-opt/include:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/x86_64-slc6-gcc49-opt/include
+LSF_LIM_API_NTRIES=1
+LSF_LOGDIR=/var/spool/lsf
+CORAL_AUTH_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/XML/AtlasAuthentication
+GAUDIPOLICYROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/GaudiPolicy
+LSB_BATCH_JID=211595
+SHELL=/bin/sh
+uuidVERS=dummy
+MAKEFLAGS=-j24 QUICK=1 -l24
+SVNUSR=svn+ssh://svn.cern.ch/reps/atlas-osgatlas01
+ALRB_testPath=,,
+VOMS_USERCONF=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/vomses
+HISTSIZE=1000
+LHAPATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/MCGenerators/lhapdf/6.1.5/x86_64-slc6-gcc49-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current/
+ALRB_SHELL=/bin/sh
+GLOBUS_LOCATION=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr
+LS_EXECCWD=/nfs/slac/g/grid/osg/u/osgatlas01/
+PERL5LIB=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/share/perl5/vendor_perl:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/share/perl5
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+LHAPDF_DATA_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/MCGenerators/lhapdf/6.1.5/x86_64-slc6-gcc49-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/Generators/lhapdfsets/current/
+LS_JOBPID=5075
+ALRB_clientShell=/bin/sh
+LSB_JOBRES_CALLBACK=34537@kiso0027
+LSB_MAX_NUM_PROCESSORS=1
+OLDPWD=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/75657f26-8fb0-4ce0-9dde-b89ecae17457/cmt
+AtlasProject=AthAnalysisBase
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+LSB_JOB_EXECUSER=osgatlas01
+LSF_SERVERDIR=/afs/slac/package/lsf/curr/etc
+QTDIR=/usr/lib64/qt-3.3
+LSB_JOBID=211595
+host_cmtconfig=x86_64-slc6-gcc44-opt
+SITEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25
+ALRB_useGridSW=emi
+X509_CERT_DIR=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBRES_PID=5075
+OSG_WN_TMP=/scratch
+AtlasSetupStatus=0
+GCCXMLVERS=0.9.0_20131026
+AtlasArea=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25
+LSB_JOBNAME=bl_100fb119c4eb
+LC_ALL=C
+ROOT_TTREECACHE_SIZE=1
+BSUB_BLOCK_EXEC_HOST=
+CALIBPATH=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/database/GroupData:/afs/cern.ch/atlas/www/GROUPS/DATABASE/GroupData:http//atlas.web.cern.ch/Atlas/GROUPS/DATABASE/GroupData
+QMtestVERS=2.4.1
+CMTROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/CMT/v1r25p20160527
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+COPY_TOOL=lsm
+LSF_LIBDIR=/afs/slac/package/lsf/curr/lib
+JOBOPTSEARCHPATH=.:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/jobOptions:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/jobOptions
+CMTSITE=STANDALONE
+OSG_SITE_WRITE=None
+USER=osgatlas01
+CMTCONFIG=x86_64-slc6-gcc49-opt
+LD_LIBRARY_PATH=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AtlasSite/gcc-links/x86_64-slc6-gcc49-opt/lib64:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/fftw3/3.1.2/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/valgrind/3.11.0/x86_64-slc6-gcc49-opt/lib/valgrind:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib64:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib64/dcap:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib64/lcgdm:/opt/lsf-openmpi/1.8.1/lib:/afs/slac/package/lsf/curr/lib:/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/external/yampl/1.0/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/lib:/usr/lib64
+GAUDIKERNELROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/GaudiKernel
+SVNPHYS=svn+ssh://svn.cern.ch/reps/atlasphys
+ALRB_RHVER=6
+SBD_KRB5CCNAME_VAL=
+XRD_RUNFORKHANDLER=1
+ASETUP_PPID=5145
+ALRB_SCRATCH=/tmp/osgatlas01/.alrb
+LSB_EEXEC_REAL_UID=
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+VALGRIND_LIB=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/valgrind/3.11.0/x86_64-slc6-gcc49-opt/lib/valgrind
+COOLVERS=3_1_0
+CMTPATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e
+ALRB_printHelpMain=
+OSG_LOCATION=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60
+INSTALLDIR=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/fastjet/3.2.0/x86_64-slc6-gcc49-opt
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+ATLAS_LOCAL_AREA=/nfs/slac/g/grid/osg/app/atlas_app/local
+LSB_CG_MEMLIMIT=0x200000000
+DQ2_LOCAL_SITE_ID=ROAMING
+NEWCMTCONFIG=x86_64-rhel64-gcc493
+CLHEPROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/LCG_Interfaces/CLHEP
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-07-62/AtlasSetup
+OSG_SITE_READ=None
+CONDORCE_COLLECTOR_HOST=osgserv06.slac.stanford.edu:9619
+LS_EXEC_T=START
+CORALVERS=3_1_0
+ATLAS_LOCAL_RCSETUP_VERSION=00-04-16
+FRONTIER_ID=[10916444_3267651254]
+FASTJETPATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/fastjet/3.2.0/x86_64-slc6-gcc49-opt
+CMTPROJECTPATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25:/cvmfs/atlas.cern.ch/repo/sw/tdaq/tdaq
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-07-62
+LSB_SUB_RES_REQ= select[!preempt && rhel60 && cvmfs && inet && (hequ || dole || kiso || deft)] rusage[scratch=12.0:duration=1440:decay=1, mem=1800:decay=0] span[ptile=1]
+LS_SUBCWD=/nfs/slac/g/grid/osg/u/osgatlas01/
+LSF_VERSION=34
+LSB_HOSTS=kiso0027
+FACTORYUSER=autopyfactory
+FRONTIER_LOG_LEVEL=warning
+AtlasSetupVersion=AtlasSetup-00-07-62
+ALRB_availableTools= agis asetup atlantis boost cmake davix eiclient emi fax fftw ganga gcc gccxml git gsl hdf5 lcgenv pacman panda pod pyami python rcsetup root rucio sft swmgr xrootd
+ALRB_RELOCATECVMFS=NO
+LSB_JOBFILENAME=/nfs/farm/lsb_spool2/1488974992.211595
+ROOTCORE_RELEASE_SERIES=24
+APFCID=13414259.1
+PATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/scripts:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/ROOT/6.04.16/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/xrootd/4.2.3/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/gccxml/0.9.0_20131026/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AtlasSite/gcc-links/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/pyanalysis/1.5_python2.7/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/pytools/1.9_python2.7/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/COOL/3_1_0/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/MCGenerators/lhapdf/6.1.5/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/valgrind/3.11.0/x86_64-slc6-gcc49-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/bin:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/sbin:/afs/slac/package/lsf/curr/bin:/usr/lib64/qt-3.3/bin:/opt/lsf-openmpi/1.8.1/bin/:/bin:/usr/bin/:/usr/local:/nfs/slac/g/grid/osg/app/atlas_app/local/lsm:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/CMT/v1r25p20160527/Linux-x86_64
+PANDA_JSID=BNL-gridui20-jhover
+MAIL=/var/spool/mail/osgatlas01
+LSB_JOBINDEX=0
+LAPACK=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/lapack/3.5.0/x86_64-slc6-gcc49-opt
+BLAS=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/blas/20110419/x86_64-slc6-gcc49-opt
+ATLAS_DB_AREA=/cvmfs/atlas.cern.ch/repo/sw/database
+ALRB_OSMAJORVER=6
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+LSB_EXIT_PRE_ABORT=99
+ALRB_OSTYPE=Linux
+OSG_DATA=/nfs/slac/g/grid/osg/data
+LC_COLLATE=C
+LSB_JOBEXIT_STAT=0
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest
+PWD=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir
+OSG_APP=/nfs/slac/g/grid/osg/app
+INPUTRC=/etc/inputrc
+GTAG=http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+VERBOSE=
+CUDA_VISIBLE_DEVICES=
+_LMFILES_=/etc/modulefiles/lsf-openmpi_1.8.1-x86_64
+RUCIO_AUTH_TYPE=x509_proxy
+POOLDB_ROOTDEFS=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/share/AtlasRootHacks.h;
+SVNGROUPS=svn+ssh://svn.cern.ch/reps/atlasgroups
+AtlasVersion=2.4.25
+FACTORYQUEUE=ANALY_SLAC-htcondor
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+LSB_RES_GET_FANOUT_INFO=Y
+LANG=C
+VOMS_PROXY_INFO_DONT_VERIFY_AC=true
+ROOTCORE_TEST_FILE=/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1
+DATAPATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/x86_64-slc6-gcc49-opt/share:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/share:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/x86_64-slc6-gcc49-opt/share:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/x86_64-slc6-gcc49-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/x86_64-slc6-gcc49-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/x86_64-slc6-gcc49-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/PartPropSvc/share
+ATLAS_LOCAL_ASETUP_VERSION=V00-07-62
+ALRB_requestedVersions=rcsetup:00-04-16  asetup:V00-07-62  
+ALRB_tmpScratch=/tmp/osgatlas01/.alrb
+ALRB_allowSL6onSL5=NO
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LSB_CHKFILENAME=/nfs/farm/lsb_spool2/1488974992.211595
+XMLPATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/XML:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/XML
+LOADEDMODULES=lsf-openmpi_1.8.1-x86_64
+LSB_DJOB_HOSTFILE=/nfs/farm/lsb_spool2/1488974992.211595.hostfile
+KDEDIRS=/usr
+X509_VOMS_DIR=/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/vomsdir
+PandaID=3267651254
+LSB_DJOB_ENV_SCRIPT=
+SVNGRP=svn+ssh://svn.cern.ch/reps/atlasgrp
+LSF_JOB_TIMESTAMP_VALUE=1488975169
+ATLAS_POOLCOND_PATH=/cvmfs/atlas.cern.ch/repo/conditions
+DQ2_ENDUSER_SETUP=True
+OSG_GRID=/afs/slac/package/vdt/osg-wn-client-3
+GAUDI_DOXY_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/GaudiRelease/doc
+AIDAVERS=3.2.1
+CMTSTRUCTURINGSTYLE=without_version_directory
+LSB_AFFINITY_HOSTFILE=/nfs/farm/lsb_spool2/1488974992.211595.hostAffinityFile
+SVNOFF=svn+ssh://svn.cern.ch/reps/atlasoff
+ALRB_availableToolsPost= advanced diagnostics helpme printmenu showversions
+ALRB_gridType=none
+LSB_EXEC_HOSTTYPE=LINUX
+LSB_DJOB_NUMPROC=1
+LSF_BINDIR=/afs/slac/package/lsf/curr/bin
+SSL_CERT_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/etc/grid-security-emi/certificates
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/ROOT/6.04.16/x86_64-slc6-gcc49-opt
+CMTBIN=Linux-x86_64
+KRB5CCNAME=
+OSG_HOSTNAME=osgserv06.slac.stanford.edu
+ATLAS_TAGS_MAP=none
+DBRELEASE_OVERRIDE=current
+APFFID=BNL-gridui20-jhover
+XercesCVERS=3.1.1p1
+CMTEXTRATAGS=ATLAS,ManaCore,AthAnalysisBase
+HOME=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977
+SHLVL=5
+GFORTRAN_UNBUFFERED_ALL=y
+ROOTVERS=6.04.16
+SVNPERF=svn+ssh://svn.cern.ch/reps/atlasperf
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-16
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+ALRB_cvmfs_sft_repo=/cvmfs/sft.cern.ch/lcg
+OSG_STORAGE_ELEMENT=False
+AtlasBuildBranch=2.4.25
+JOB_TERMINATE_INTERVAL=10
+X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy
+DO_EXT_ATHENA_TAB_COMPLETION=0
+GSLVERS=1.10
+rcSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-16
+LSB_ACCT_FILE=/tmp/211595.tmpdir/.1488974992.211595.acct
+PilotHomeDir=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977
+ATLAS_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25
+LSB_SUB_HOST=osgserv06
+GAUDIPLUGINSERVICEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/GaudiPluginService
+PARTPROPSVCROOT=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/PartPropSvc
+CMTHEADVERSION=<package>-r<revision>
+LSB_SUB_USER=osgatlas01
+RUCIO_ACCOUNT=pilot
+OSG_DEFAULT_SE=None
+__LSF_JOB_TMPDIR__=/tmp/211595.tmpdir
+LSFUSER=osgatlas01
+LSB_OUTPUTFILE=/dev/null
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+LSB_QUEUE=atl-analq
+LOGNAME=osgatlas01
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+LSB_OUTDIR=/nfs/slac/g/grid/osg/u/osgatlas01
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/python:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/x86_64-slc6-gcc49-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/CORAL/3_1_0/x86_64-slc6-gcc49-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/CORAL/3_1_0/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/ROOT/6.04.16/x86_64-slc6-gcc49-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/pyanalysis/1.5_python2.7/x86_64-slc6-gcc49-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/pytools/1.9_python2.7/x86_64-slc6-gcc49-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/COOL/3_1_0/x86_64-slc6-gcc49-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/sw/lcg/releases/LCG_81e/MCGenerators/lhapdf/6.1.5/x86_64-slc6-gcc49-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/externals/kerberos/lib.slc6-x86_64-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/externals/kerberos/lib.slc6-i686-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest/lib/python2.6/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2/lib:/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib64/python2.6/site-packages:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6
+LSB_MCPU_HOSTS=kiso0027 1 
+LCGCMTVERS=81e
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+ATLAS_EXTERNAL=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/external
+CLASSPATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/CMT/v1r25p20160527/java
+COOL_DISABLE_CORALCONNECTIONPOOLCLEANUP=YES
+ATLAS_CONDDB=osgserv02.slac.stanford.edu
+MODULESHOME=/usr/share/Modules
+TestArea=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir
+ROOTMAPSEARCHPATH=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/rootmap:/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/workDir/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/GAUDI/v26r2p1-lcg81e/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/LCGCMT/LCGCMT_81e/InstallArea/rootmap
+COMPILER_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AtlasSite/gcc-links/x86_64-slc6-gcc49-opt/lib/gcc/x86_64-unknown-linux-gnu/4.9.3
+XRD_ENABLEFORKHANDLERS=1
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+ROOTCORE_NCPUS=1
+PANDA_RESOURCE=ANALY_SLAC
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LSF_CGROUP_TOPDIR_KEY=slac
+PANDA_SITE_NAME=ANALY_SLAC
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+RUCIO_APPID=panda-client-0.5.78-jedi-athena
+LSB_XFER_OP=
+ASG_TEST_FILE_DATA=/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7562/data15_13TeV.00284154.physics_Main.merge.AOD.r7562_p2521/AOD.07687819._000382.pool.root.1
+ASG_TEST_FILE_MC=/afs/cern.ch/user/a/asgbase/patspace/xAODs/r7725/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.merge.AOD.e3698_s2608_s2183_r7725_r7676/AOD.07915862._000100.pool.root.1
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+LSB_CHUNK_MEMBER=5
+CVMFSBASE=/cvmfs
+LSB_EEXEC_REAL_GID=
+SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
+AtlasBaseDir=/cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25
+PanDA_TaskID=10916444
+FRONTIER_SERVER=(serverurl=http://frontier-atlas.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas1.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas2.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://frontier-atlas3.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccfrontier01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccfrontier05.in2p3.fr:23128/ccin2p3-AtlasFrontier)(proxyurl=http://atlsquid.slac.stanford.edu:3128)(proxyurl=http://gk07.atlas-swt2.org:3128)
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+CMSSW_VERSION=[10916444_3267651254]
+LSF_ENVDIR=/afs/slac/package/lsf/curr/conf
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.6.1/DQ2Clients/opt/dq2
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+LSB_DJOB_RANKFILE=/nfs/farm/lsb_spool2/1488974992.211595.hostfile
+G_BROKEN_FILENAMES=1
+BoostVERS=1.59.0
+SVNINST=svn+ssh://svn.cern.ch/reps/atlasinst
+ALRB_availableToolsPre= lsetup
+_=/bin/env
+Wed Mar  8 04:13:26 PST 2017
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO using release [AthAnalysisBase-2.4.25] [x86_64-slc6-gcc49-opt] [AthAnalysisBase-2.4.X/rel_3] -- built on [2017-01-18 06:13]
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "pre_ef844800-67c9-4e10-bf51-c62446841365.py"
+Overwrite InputCollections
+Py:ConfigurableDb    INFO Read module info for 621 configurables from 3 genConfDb files
+Py:ConfigurableDb    INFO No duplicates have been found: that's good !
+Py:Athena            INFO including file "testMetMaker/share/MyAlgJobo.py"
+Py:Athena            INFO including file "AthAnalysisBaseComps/SuppressLogging.py"
+Py:Athena            INFO including file "post_bb1df7c2-9261-4e49-87f9-9148002e0bf2.py"
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v3r4)
+                                          running on kiso0027 on Wed Mar  8 04:13:33 2017
+====================================================================================================================================
+ApplicationMgr       INFO Successfully loaded modules : AthenaServices
+ApplicationMgr       INFO Application Manager Configured successfully
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+StatusCodeSvc        INFO initialize
+AthDictLoaderSvc     INFO in initialize...
+AthDictLoaderSvc     INFO acquired Dso-registry
+ClassIDSvc           INFO Initializing ClassIDSvc - package version CLIDComps-00-06-18-03
+ClassIDSvc           INFO  getRegistryEntries: read 2147 CLIDRegistry entries for module ALL
+ChronoStatSvc        INFO  Number of skipped events for MemStat-1
+CoreDumpSvc          INFO install f-a-t-a-l handler... (flag = -1)
+CoreDumpSvc          INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 8(Floating point exception) 
+AthMasterSeq         INFO Member list: AthSequencer/AthAlgSeq, AthSequencer/AthOutSeq, AthSequencer/AthRegSeq
+AthAlgSeq            INFO Member list: CP::CalibratedMuonsProvider, CP::CalibratedEgammaProvider/ElectronCalib, CP::CalibratedEgammaProvider/PhotonCalib, MyAlg/MyMETAlg
+ToolSvc.MuonCal...   INFO Initialising...
+ElectronCalib        INFO Initialising...
+ToolSvc.AutoCon...   INFO Initialization
+ToolSvc.AutoCon...WARNING no decorrelation model specified, assuming full model
+eg_resolution        INFO Initialize eg_resolution
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 102 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(el_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (el_rawcl_Es1 + el_rawcl_Es2 + el_rawcl_Es3)/cosh(el_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:8
+EgammaMVATool        INFO Using layer correction
+EgammaMVATool        INFO 9 variables for electrons
+MVATreeElectron      INFO creating tree for 9 variables: el_cl_E,el_cl_eta,el_cl_etaCalo,el_cl_phiCalo,el_rawcl_Es0,el_rawcl_Es1,el_rawcl_Es2,el_rawcl_Es3,el_rawcl_calibHitsShowerDepth
+egammaMVACalib       INFO Variable that defines particleType not set. Using default formula: ph_Rconv > 0. && ph_Rconv < 800.
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 204 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(ph_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:12
+EgammaMVATool        INFO configuration does not contain list of variables, try to guess:
+EgammaMVATool        INFO 17 variables for photons
+EgammaMVATool        INFO   ph_Rconv
+EgammaMVATool        INFO   ph_cl_E
+EgammaMVATool        INFO   ph_cl_eta
+EgammaMVATool        INFO   ph_cl_etaCalo
+EgammaMVATool        INFO   ph_cl_phiCalo
+EgammaMVATool        INFO   ph_convtrk1nPixHits
+EgammaMVATool        INFO   ph_convtrk1nSCTHits
+EgammaMVATool        INFO   ph_convtrk2nPixHits
+EgammaMVATool        INFO   ph_convtrk2nSCTHits
+EgammaMVATool        INFO   ph_pt1conv
+EgammaMVATool        INFO   ph_pt2conv
+EgammaMVATool        INFO   ph_ptconv
+EgammaMVATool        INFO   ph_rawcl_Es0
+EgammaMVATool        INFO   ph_rawcl_Es1
+EgammaMVATool        INFO   ph_rawcl_Es2
+EgammaMVATool        INFO   ph_rawcl_Es3
+EgammaMVATool        INFO   ph_rawcl_calibHitsShowerDepth
+MVATreePhoton        INFO creating tree for 17 variables: ph_Rconv,ph_cl_E,ph_cl_eta,ph_cl_etaCalo,ph_cl_phiCalo,ph_convtrk1nPixHits,ph_convtrk1nSCTHits,ph_convtrk2nPixHits,ph_convtrk2nSCTHits,ph_pt1conv,ph_pt2conv,ph_ptconv,ph_rawcl_Es0,ph_rawcl_Es1,ph_rawcl_Es2,ph_rawcl_Es3,ph_rawcl_calibHitsShowerDepth
+egammaLayerReca...   INFO using scale 2012_alt_with_layer2
+egammaLayerReca...   INFO using scale ps_HV1
+egammaLayerReca...   INFO using scale layer2_alt_2012_v5
+egammaLayerReca...   INFO using scale ps_2012
+ToolSvc.AutoCon...   INFO ESModel: es2012c
+ToolSvc.AutoCon...   INFO ResolutionType: SigmaEff90
+ToolSvc.AutoCon...   INFO layer correction = 2
+ToolSvc.AutoCon...   INFO PS correction = 2
+ToolSvc.AutoCon...   INFO S12 correction = 2
+ToolSvc.AutoCon...   INFO layer2 recalibration = 2
+ToolSvc.AutoCon...   INFO intermodule correction = 1
+ToolSvc.AutoCon...   INFO phi uniformity correction = 1
+ToolSvc.AutoCon...   INFO gain correction = 1
+ToolSvc.AutoCon...   INFO smearing = 2
+ToolSvc.AutoCon...   INFO insitu scales = 2
+ToolSvc.AutoCon...   INFO ep combination = 0
+ToolSvc.AutoCon...   INFO use MVA calibration = 2
+ToolSvc.AutoCon...   INFO use temperature correction 2015 = 2
+ToolSvc.AutoCon...   INFO use uA2MeV correction 2015 1/2 week = 2
+PhotonCalib          INFO Initialising...
+MyMETAlg             INFO start initialize 
+AthenaSummarySvc     INFO  -> file incident: user.saparede.10916444.MYSTREAM._000003.root [GUID: ]
+THistSvc             INFO registered file [user.saparede.10916444.MYSTREAM._000003.root]... [ok]
+MyMETAlg             INFO Initializing MyMETAlg...
+MyMETAlg             INFO Retrieving tools...
+ToolSvc.METMaker     INFO Initializing ToolSvc.METMaker...
+ToolSvc.MuonSel...   INFO Initialising...
+ToolSvc.MuonSel...   INFO Maximum eta: 2.7
+ToolSvc.MuonSel...   INFO Muon quality: 1
+ToolSvc.MuonSel...   INFO Initialising tight working point histograms...
+ToolSvc.MuonSel...   INFO Reading muon tight working point histograms from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/MuonSelectorTools/PreRec2016_2016-04-13/muonSelection_tightWPHisto.root
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_qOverPCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_mediumPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_highPt_rhoCuts
+ToolSvc.EleSelTool   INFO operating point : MediumLHElectron
+ToolSvc.PhotonS...   INFO operating point : Tight
+ToolSvc.TauSele...   INFO Initializing TauSelectionTool
+ToolSvc.TauSele...   INFO Initializing TauOverlappingElectronLLHDecorator
+ToolSvc.TauSele...   INFO Loading ele OLR cut file TauAnalysisTools/00-02-35/Selection/eveto_cutvals.root
+ToolSvc.myJESTool    INFO Initializing ToolSvc.myJESTool...
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.myJESTool    INFO Initializing the xAOD Jet Calibration Tool for AntiKt4EMTopojets
+ToolSvc.myJESTool    INFO Reading global JES settings from: JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO resolved in: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationConfigs/JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO Initializing pileup correction.
+ToolSvc.myJESTo...   INFO JetPileupCorrection: Starting scale: JetConstitScaleMomentum
+ToolSvc.myJESTo...   INFO Jet area pile up correction will be applied.
+ToolSvc.myJESTo...   INFO Reading residual jet-area pile-up correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MCBasedOffset_April2015.config
+ToolSvc.myJESTo...   INFO Description: Residual 2015 mu- and N_{PV}-dependent jet pileup corrections
+ToolSvc.myJESTool    INFO Initializing JES correction.
+ToolSvc.myJESTo...   INFO Reading absolute calibration factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_EM_LCW_JES_v1.config
+ToolSvc.myJESTo...   INFO Description: JES derived May 2015 with Jet Areas, for application to MC15
+ToolSvc.myJESTool    INFO Initializing GSC correction.
+ToolSvc.myJESTo...   INFO Initializing the Global Sequential Calibration tool
+ToolSvc.myJESTo...   INFO GSC Tool has been initialized with binning and eta fit factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_GSC_factors_Aug2015.root
+ToolSvc.myJESTool    INFO Initializing Insitu correction.
+ToolSvc.myJESTo...   INFO Reading In-situ correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/InsituCalibration/InsituCalibration_20_7_4EM_4LC_30Sep2016.root
+ToolSvc.myJESTo...   INFO Tool configured to calibrate data
+ToolSvc.myJESTo...   INFO In-situ correction to be applied: 20.7 Eta-Intercalibration and Absolute Insitu
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.TrigDec...   INFO Initializing Trig::TrigDecisionTool (standalone version even for athena)
+ToolSvc.xAODCon...   INFO Initialising...
+StoreGateSvc         INFO Initializing StoreGateSvc - package version StoreGate-03-05-01-02
+MetaDataSvc          INFO Initializing MetaDataSvc - package version AthenaServices-01-59-25-03
+InputMetaDataStore   INFO Initializing InputMetaDataStore - package version StoreGate-03-05-01-02
+MetaDataStore        INFO Initializing MetaDataStore - package version StoreGate-03-05-01-02
+AthenaPoolCnvSvc     INFO Initializing AthenaPoolCnvSvc - package version AthenaPoolCnvSvc-00-26-29-06
+PoolSvc              INFO Initializing PoolSvc - package version PoolSvc-00-24-13
+EventSelector        INFO Initializing EventSelector - package version EventSelectorAthenaPool-00-19-12
+TagMetaDataStore     INFO Initializing TagMetaDataStore - package version StoreGate-03-05-01-02
+AthenaSummarySvc     INFO  -> file incident: FID:CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0 [GUID: FID:CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0]
+AthenaPoolAddre...   INFO Initializing AthenaPoolAddressProviderSvc - package version EventSelectorAthenaPool-00-19-12
+ProxyProviderSvc     INFO Initializing ProxyProviderSvc - package version SGComps-00-02-01
+ToolSvc.TrigDec...   INFO Initialized TDT
+ToolSvc.eleIsoTool   INFO Initialising...
+ToolSvc.eleIsoTool   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.eleIsoTool   INFO VersionInfo:2015_Sep_29_v2a
+ToolSvc.muonIso...   INFO Initialising...
+ToolSvc.muonIso...   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.muonIso...   INFO VersionInfo:2015_Sep_29_v2a
+HistogramPersis...WARNING Histograms saving not required.
+ActiveStoreSvc       INFO Initializing ActiveStoreSvc - package version StoreGate-03-05-01-02
+ApplicationMgr       INFO Application Manager Initialized successfully
+TagMetaDataStore     INFO Start TagMetaDataStore
+AthenaSummarySvc     INFO  -> file incident: root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 [GUID: ]
+ApplicationMgr       INFO Application Manager Started successfully
+AthenaSummarySvc     INFO  -> file incident: root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 [GUID: FID:CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0]
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2154, L1PSK = 1403, HLTPSK = 1019
+ToolSvc.TrigDec...   INFO updating config with SMK: 2154 and L1PSK: 1403 and HLTPSK: 1019
+ClassIDSvc           INFO  getRegistryEntries: read 9457 CLIDRegistry entries for module ALL
+ClassIDSvc           INFO  getRegistryEntries: read 197 CLIDRegistry entries for module ALL
+ClassIDSvc           INFO  getRegistryEntries: read 130 CLIDRegistry entries for module ALL
+ToolSvc.TrigDec...   INFO decision not set on first (?) assert. deciding how to unpack
+ToolSvc.TrigDec...   INFO SG contains xAOD decision, use DecisionUnpackerStandalone
+AthenaSummarySvc     INFO  -> file incident: FID:CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0 [GUID: ]
+AthenaSummarySvc     INFO  -> file incident: root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 [GUID: ]
+AthenaSummarySvc     INFO  -> file incident: end [GUID: ]
+TagMetaDataStore     INFO Stop TagMetaDataStore
+ApplicationMgr       INFO Application Manager Stopped successfully
+MyMETAlg             INFO Finalizing MyMETAlg...
+AthAlgSeq            INFO Finalizing AthAlgSeq...
+AthOutSeq            INFO Finalizing AthOutSeq...
+AthRegSeq            INFO Finalizing AthRegSeq...
+AthMasterSeq         INFO Finalizing AthMasterSeq...
+TagMetaDataStore     INFO Finalizing TagMetaDataStore - package version StoreGate-03-05-01-02
+ToolSvc              INFO Removing all tools created by ToolSvc
+ToolSvc.TrigDec...   INFO TDT finalized and removed from instance list
+ToolSvc.myJESTool    INFO Finalizing ToolSvc.myJESTool...
+ToolSvc.METMaker     INFO Finalizing ToolSvc.METMaker...
+*****Chrono*****     INFO ****************************************************************************************************
+*****Chrono*****     INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+*****Chrono*****     INFO ****************************************************************************************************
+AthenaSealSvc::...   INFO Time User   : Tot=   13 [ms]                                             #=  1
+ChronoStatSvc        INFO Time User   : Tot= 12.4  [s]                                             #=  1
+*****Chrono*****     INFO ****************************************************************************************************
+ChronoStatSvc.f...   INFO  Service finalized successfully 
+ApplicationMgr       INFO Application Manager Finalized successfully
+ApplicationMgr       INFO Application Manager Terminated successfully
+Py:Athena            INFO leaving with code 0: "successful run"
+
+=== list in run dir ===
+total 128
+drwx------ 3 osgatlas01 OG  4096 Mar  8 04:13 75657f26-8fb0-4ce0-9dde-b89ecae17457
+-rw------- 1 osgatlas01 OG  1177 Mar  8 04:13 AthSummary.txt
+drwx------ 3 osgatlas01 OG  4096 Mar  8 04:13 GridOut
+drwx------ 6 osgatlas01 OG  4096 Mar  8 04:13 InstallArea
+-rw------- 1 osgatlas01 OG    82 Mar  8 04:13 Makefile
+-rw------- 1 osgatlas01 OG 36782 Mar  8 04:13 PDGTABLE.MeV
+-rw------- 1 osgatlas01 OG   496 Mar  8 04:13 PoolFileCatalog.xml
+-rw------- 1 osgatlas01 OG   496 Mar  8 04:13 PoolFileCatalog.xml.BAK
+drwx------ 3 osgatlas01 OG  4096 Mar  8 04:13 WorkArea
+-rw------- 1 osgatlas01 OG    75 Mar  8 04:13 eventLoopHeartBeat.txt
+-rw------- 1 osgatlas01 OG  3280 Mar  8 04:13 extPoolRefs.C
+-rw------- 1 osgatlas01 OG  5918 Mar  8 04:13 myEfffile.root
+-rw------- 1 osgatlas01 OG  1911 Mar  8 04:13 post_bb1df7c2-9261-4e49-87f9-9148002e0bf2.py
+-rw------- 1 osgatlas01 OG  1645 Mar  8 04:13 pre_ef844800-67c9-4e10-bf51-c62446841365.py
+drwx------ 9 osgatlas01 OG  4096 Mar  8 04:13 testMetMaker
+-rw------- 1 osgatlas01 OG     0 Mar  8 04:13 tmp.stderr.34e9ac84-5b45-40f3-80c1-7b44ee72de9a
+-rw------- 1 osgatlas01 OG 15587 Mar  8 04:13 tmp.stdout.4db4cb52-694c-478c-a126-05251ef340f7
+-rw------- 1 osgatlas01 OG 16019 Mar  8 04:13 user.saparede.10916444.MYSTREAM._000003.root
+
+=== list in top dir ===
+/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+total 11076
+-rwx------  1 osgatlas01 OG  131324 Mar  7 22:21 AMSTaiwanExperiment.py
+-rw-------  1 osgatlas01 OG   81192 Mar  8 04:13 AMSTaiwanExperiment.pyc
+-rwx------  1 osgatlas01 OG   27600 Mar  7 22:21 AMSTaiwanSiteInformation.py
+-rw-------  1 osgatlas01 OG   20566 Mar  8 04:13 AMSTaiwanSiteInformation.pyc
+-rwx------  1 osgatlas01 OG    1820 Mar  7 22:21 ATLASEventService.py
+-rwx------  1 osgatlas01 OG  163316 Mar  7 22:21 ATLASExperiment.py
+-rw-------  1 osgatlas01 OG   96104 Mar  8 04:13 ATLASExperiment.pyc
+-rwx------  1 osgatlas01 OG   45661 Mar  7 22:21 ATLASSiteInformation.py
+-rw-------  1 osgatlas01 OG   25053 Mar  8 04:13 ATLASSiteInformation.pyc
+-rwx------  1 osgatlas01 OG    6142 Mar  7 22:21 ArgoJob.py
+-rw-------  1 osgatlas01 OG    1177 Mar  8 04:13 AthSummary.txt
+-rwx------  1 osgatlas01 OG   24262 Mar  7 22:21 BNLdCacheSiteMover.py
+-rw-------  1 osgatlas01 OG   15416 Mar  8 04:13 BNLdCacheSiteMover.pyc
+-rwx------  1 osgatlas01 OG    4045 Mar  7 22:21 BalsamJob.py
+-rwx------  1 osgatlas01 OG   24559 Mar  7 22:21 CMSExperiment.py
+-rw-------  1 osgatlas01 OG   16203 Mar  8 04:13 CMSExperiment.pyc
+-rwx------  1 osgatlas01 OG    8348 Mar  7 22:21 CMSSiteInformation.py
+-rw-------  1 osgatlas01 OG    8327 Mar  8 04:13 CMSSiteInformation.pyc
+-rwx------  1 osgatlas01 OG   18597 Mar  7 22:21 CastorSiteMover.py
+-rw-------  1 osgatlas01 OG   11188 Mar  8 04:13 CastorSiteMover.pyc
+-rwx------  1 osgatlas01 OG   11947 Mar  7 22:21 ChirpSiteMover.py
+-rw-------  1 osgatlas01 OG    8567 Mar  8 04:13 ChirpSiteMover.pyc
+-rwx------  1 osgatlas01 OG   14648 Mar  7 22:21 Cleaner.py
+-rwx------  1 osgatlas01 OG    4312 Mar  7 22:21 Configuration.py
+-rw-------  1 osgatlas01 OG    6174 Mar  8 04:13 Configuration.pyc
+-rwx------  1 osgatlas01 OG    3286 Mar  7 22:21 CustomEncoder.py
+-rwx------  1 osgatlas01 OG   12301 Mar  7 22:21 DBReleaseHandler.py
+-rw-------  1 osgatlas01 OG   10703 Mar  8 04:13 DBReleaseHandler.pyc
+-rwx------  1 osgatlas01 OG   40662 Mar  7 22:21 DeferredStageout.py
+-rwx------  1 osgatlas01 OG     647 Mar  7 22:21 Diagnosis.py
+-rw-------  1 osgatlas01 OG     868 Mar  8 04:13 Diagnosis.pyc
+-rwx------  1 osgatlas01 OG    7369 Mar  7 22:21 ErrorDiagnosis.py
+-rw-------  1 osgatlas01 OG    5925 Mar  8 04:13 ErrorDiagnosis.pyc
+-rwx------  1 osgatlas01 OG    3426 Mar  7 22:21 EventRanges.py
+-rw-------  1 osgatlas01 OG    3125 Mar  8 04:13 EventRanges.pyc
+-rwx------  1 osgatlas01 OG    6068 Mar  7 22:21 EventService.py
+-rwx------  1 osgatlas01 OG    1824 Mar  7 22:21 EventServiceFactory.py
+-rwx------  1 osgatlas01 OG   37903 Mar  7 22:21 Experiment.py
+-rw-------  1 osgatlas01 OG   25224 Mar  8 04:13 Experiment.pyc
+-rwx------  1 osgatlas01 OG    2674 Mar  7 22:21 ExperimentFactory.py
+-rw-------  1 osgatlas01 OG    2231 Mar  8 04:13 ExperimentFactory.pyc
+-rwx------  1 osgatlas01 OG   53659 Mar  7 22:21 FAXSiteMover.py
+-rw-------  1 osgatlas01 OG   34807 Mar  8 04:13 FAXSiteMover.pyc
+-rwx------  1 osgatlas01 OG    4408 Mar  7 22:21 FAXTools.py
+-rw-------  1 osgatlas01 OG    3383 Mar  8 04:13 FAXTools.pyc
+-rwx------  1 osgatlas01 OG   37524 Mar  7 22:21 FileHandling.py
+-rw-------  1 osgatlas01 OG   27765 Mar  8 04:13 FileHandling.pyc
+-rwx------  1 osgatlas01 OG   10790 Mar  7 22:21 FileState.py
+-rw-------  1 osgatlas01 OG   10275 Mar  8 04:13 FileState.pyc
+-rwx------  1 osgatlas01 OG    2776 Mar  7 22:21 FileStateClient.py
+-rw-------  1 osgatlas01 OG    3088 Mar  8 04:13 FileStateClient.pyc
+-rwx------  1 osgatlas01 OG   41936 Mar  7 22:21 GFAL2SiteMover.py
+-rw-------  1 osgatlas01 OG   29309 Mar  8 04:13 GFAL2SiteMover.pyc
+-rwx------  1 osgatlas01 OG   10758 Mar  7 22:21 GSIftpSiteMover.py
+-rw-------  1 osgatlas01 OG    8554 Mar  8 04:13 GSIftpSiteMover.pyc
+-rwx------  1 osgatlas01 OG   16509 Mar  7 22:21 GetJob.py
+drwx------  6 osgatlas01 OG    4096 Mar  8 04:13 HPC
+-rwx------  1 osgatlas01 OG   28949 Mar  7 22:21 JEMstub.py
+-rwx------  1 osgatlas01 OG   43602 Mar  7 22:21 Job.py
+-rw-------  1 osgatlas01 OG   26302 Mar  8 04:13 Job.pyc
+-rwx------  1 osgatlas01 OG    2043 Mar  7 22:21 JobInfoXML.py
+-rwx------  1 osgatlas01 OG   68551 Mar  7 22:21 JobLog.py
+-rwx------  1 osgatlas01 OG   29326 Mar  7 22:21 JobRecovery.py
+-rw-------  1 osgatlas01 OG   20832 Mar  8 04:13 JobRecovery.pyc
+-rwx------  1 osgatlas01 OG   10806 Mar  7 22:21 JobState.py
+-rw-------  1 osgatlas01 OG    8052 Mar  8 04:13 JobState.pyc
+-rwx------  1 osgatlas01 OG   39295 Mar  7 22:21 LocalSiteMover.py
+-rw-------  1 osgatlas01 OG   27056 Mar  8 04:13 LocalSiteMover.pyc
+-rwx------  1 osgatlas01 OG    3529 Mar  7 22:21 Logger.py
+-rwx------  1 osgatlas01 OG    9270 Mar  7 22:21 MessageInterface.py
+-rwx------  1 osgatlas01 OG  106361 Mar  7 22:21 Monitor.py
+-rwx------  1 osgatlas01 OG  285235 Mar  7 22:21 Mover.py
+-rw-------  1 osgatlas01 OG  149920 Mar  8 04:13 Mover.pyc
+-rwx------  1 osgatlas01 OG   10317 Mar  7 22:21 Node.py
+-rw-------  1 osgatlas01 OG    8883 Mar  8 04:13 Node.pyc
+-rwx------  1 osgatlas01 OG   15998 Mar  7 22:21 NordugridATLASExperiment.py
+-rw-------  1 osgatlas01 OG   11409 Mar  8 04:13 NordugridATLASExperiment.pyc
+-rwx------  1 osgatlas01 OG    1933 Mar  7 22:21 NordugridATLASSiteInformation.py
+-rw-------  1 osgatlas01 OG    2149 Mar  8 04:13 NordugridATLASSiteInformation.pyc
+-rwx------  1 osgatlas01 OG    3914 Mar  7 22:21 OtherExperiment.py
+-rw-------  1 osgatlas01 OG    4719 Mar  8 04:13 OtherExperiment.pyc
+-rwx------  1 osgatlas01 OG    1991 Mar  7 22:21 OtherSiteInformation.py
+-rw-------  1 osgatlas01 OG    2619 Mar  8 04:13 OtherSiteInformation.pyc
+-rwx------  1 osgatlas01 OG    2311 Mar  7 22:21 OtherSiteMover.py
+-rw-------  1 osgatlas01 OG      12 Mar  7 22:21 PILOTVERSION
+-rw-------  1 osgatlas01 OG     124 Mar  8 04:13 PILOT_INITDIR
+-rwx------  1 osgatlas01 OG   47832 Mar  7 22:21 PandaServerClient.py
+-rwx------  1 osgatlas01 OG   17187 Mar  7 22:21 PilotErrors.py
+-rw-------  1 osgatlas01 OG   16644 Mar  8 04:13 PilotErrors.pyc
+-rwx------  1 osgatlas01 OG    1717 Mar  7 22:21 PilotTCPServer.py
+-rwx------  1 osgatlas01 OG   13275 Mar  7 22:21 PilotUtils.py
+-rwx------  1 osgatlas01 OG    1509 Mar  7 22:21 PilotYamplServer.py
+-rw-------  1 osgatlas01 OG     496 Mar  8 04:13 PoolFileCatalog.xml
+-rwx------  1 osgatlas01 OG    4281 Mar  7 22:21 ProxyGuard.py
+-rw-------  1 osgatlas01 OG    5121 Mar  8 04:13 ProxyGuard.pyc
+-rwx------  1 osgatlas01 OG   83033 Mar  7 22:21 RunJob.py
+-rwx------  1 osgatlas01 OG   23782 Mar  7 22:21 RunJobAnselm.py
+-rwx------  1 osgatlas01 OG   37079 Mar  7 22:21 RunJobArgo.py
+-rwx------  1 osgatlas01 OG   28471 Mar  7 22:21 RunJobEdison.py
+-rwx------  1 osgatlas01 OG  158096 Mar  7 22:21 RunJobEvent.py
+-rwx------  1 osgatlas01 OG    2323 Mar  7 22:21 RunJobFactory.py
+-rwx------  1 osgatlas01 OG    3069 Mar  7 22:21 RunJobHPC.py
+-rwx------  1 osgatlas01 OG   28507 Mar  7 22:21 RunJobHopper.py
+-rwx------  1 osgatlas01 OG   83286 Mar  7 22:21 RunJobHpcEvent.py
+-rwx------  1 osgatlas01 OG    4649 Mar  7 22:21 RunJobHpcarcEvent.py
+-rwx------  1 osgatlas01 OG    2072 Mar  7 22:21 RunJobMira.py
+-rwx------  1 osgatlas01 OG    2050 Mar  7 22:21 RunJobNormal.py
+-rwx------  1 osgatlas01 OG   29626 Mar  7 22:21 RunJobTitan.py
+-rwx------  1 osgatlas01 OG   35644 Mar  7 22:21 RunJobUtilities.py
+-rw-------  1 osgatlas01 OG   26743 Mar  8 04:13 RunJobUtilities.pyc
+-rwx------  1 osgatlas01 OG   20984 Mar  7 22:21 S3ObjectstoreHttpSiteMover.py
+-rwx------  1 osgatlas01 OG   26576 Mar  7 22:21 S3ObjectstoreSiteMover.py
+-rw-------  1 osgatlas01 OG   22662 Mar  8 04:13 S3ObjectstoreSiteMover.pyc
+-rwx------  1 osgatlas01 OG    7454 Mar  7 22:21 S3SiteMover.py
+-rw-------  1 osgatlas01 OG    5740 Mar  8 04:13 S3SiteMover.pyc
+-rwx------  1 osgatlas01 OG     801 Mar  7 22:21 Site.py
+-rw-------  1 osgatlas01 OG    1278 Mar  8 04:13 Site.pyc
+-rwx------  1 osgatlas01 OG   96017 Mar  7 22:21 SiteInformation.py
+-rw-------  1 osgatlas01 OG   62745 Mar  8 04:13 SiteInformation.pyc
+-rwx------  1 osgatlas01 OG    3248 Mar  7 22:21 SiteInformationFactory.py
+-rw-------  1 osgatlas01 OG    2450 Mar  8 04:13 SiteInformationFactory.pyc
+-rwx------  1 osgatlas01 OG  121552 Mar  7 22:21 SiteMover.py
+-rw-------  1 osgatlas01 OG   83599 Mar  8 04:13 SiteMover.pyc
+-rwx------  1 osgatlas01 OG    8489 Mar  7 22:21 SiteMoverFarm.py
+-rw-------  1 osgatlas01 OG    6276 Mar  8 04:13 SiteMoverFarm.pyc
+-rwx------  1 osgatlas01 OG     446 Mar  7 22:21 StoppableThread.py
+-rwx------  1 osgatlas01 OG    1197 Mar  7 22:21 SysLog.py
+-rw-------  1 osgatlas01 OG    1770 Mar  8 04:13 SysLog.pyc
+-rwx------  1 osgatlas01 OG   10422 Mar  7 22:21 ThreadPool.py
+-rwx------  1 osgatlas01 OG    3851 Mar  7 22:21 TimerCommand.py
+-rw-------  1 osgatlas01 OG    3628 Mar  8 04:13 TimerCommand.pyc
+-rwx------  1 osgatlas01 OG   11961 Mar  7 22:21 UpdateHandler.py
+-rwx------  1 osgatlas01 OG    3453 Mar  7 22:21 VmPeak.py
+-rwx------  1 osgatlas01 OG    4607 Mar  7 22:21 WatchDog.py
+-rwx------  1 osgatlas01 OG       0 Mar  7 22:21 __init__.py
+-rwx------  1 osgatlas01 OG   38290 Mar  7 22:21 aria2cSiteMover.py
+-rw-------  1 osgatlas01 OG   22878 Mar  8 04:13 aria2cSiteMover.pyc
+-rw-------  1 osgatlas01 OG       0 Mar  8 04:13 athena_stderr.txt
+-rw-------  1 osgatlas01 OG   61067 Mar  8 04:13 athena_stdout.txt
+-rwx------  1 osgatlas01 OG    1584 Mar  7 22:21 build.py
+-rwx------  1 osgatlas01 OG   15485 Mar  7 22:21 castorSvcClassSiteMover.py
+-rw-------  1 osgatlas01 OG   10124 Mar  8 04:13 castorSvcClassSiteMover.pyc
+-rwx------  1 osgatlas01 OG     246 Mar  7 22:21 configSiteMover.py
+-rw-------  1 osgatlas01 OG     605 Mar  8 04:13 configSiteMover.pyc
+-rwx------  1 osgatlas01 OG   30868 Mar  7 22:21 curlSiteMover.py
+-rw-------  1 osgatlas01 OG   17305 Mar  8 04:13 curlSiteMover.pyc
+-rwx------  1 osgatlas01 OG    9107 Mar  7 22:21 dCacheLFCSiteMover.py
+-rw-------  1 osgatlas01 OG    7071 Mar  8 04:13 dCacheLFCSiteMover.pyc
+-rwx------  1 osgatlas01 OG   30522 Mar  7 22:21 dCacheSiteMover.py
+-rw-------  1 osgatlas01 OG   20038 Mar  8 04:13 dCacheSiteMover.pyc
+-rwx------  1 osgatlas01 OG   34155 Mar  7 22:21 dataPilot.py
+-rwx------  1 osgatlas01 OG    9271 Mar  7 22:21 environment.py
+-rw-------  1 osgatlas01 OG    4838 Mar  8 04:13 environment.pyc
+-rwx------  1 osgatlas01 OG    5451 Mar  7 22:21 futil.py
+-rw-------  1 osgatlas01 OG    6652 Mar  8 04:13 futil.pyc
+-rwx------  1 osgatlas01 OG    2282 Mar  7 22:21 glexec_aux.py
+-rwx------  1 osgatlas01 OG   17253 Mar  7 22:21 glexec_utils.py
+-rwx------  1 osgatlas01 OG   26864 Mar  7 22:21 globusPilot.py
+-rw-------  1 osgatlas01 OG    9411 Mar  8 04:13 jobState-3267651254.pickle
+-rw-------  1 osgatlas01 OG    1360 Mar  8 04:13 job_setup.sh
+-rwx------  1 osgatlas01 OG   28627 Mar  7 22:21 lcgcp2SiteMover.py
+-rw-------  1 osgatlas01 OG   15582 Mar  8 04:13 lcgcp2SiteMover.pyc
+-rwx------  1 osgatlas01 OG   34407 Mar  7 22:21 lcgcpSiteMover.py
+-rw-------  1 osgatlas01 OG   18984 Mar  8 04:13 lcgcpSiteMover.pyc
+-rw-------  1 osgatlas01 OG     401 Mar  8 04:13 matched_replicas.json
+-rw-------  1 osgatlas01 OG     120 Mar  8 04:13 memory_monitor_output.txt
+-rw-------  1 osgatlas01 OG     298 Mar  8 04:13 memory_monitor_summary.json_snapshot
+drwx------  2 osgatlas01 OG    4096 Mar  7 22:21 movers
+-rwx------  1 osgatlas01 OG   11179 Mar  7 22:21 mvSiteMover.py
+-rw-------  1 osgatlas01 OG    8944 Mar  8 04:13 mvSiteMover.pyc
+-rwx------  1 osgatlas01 OG    9674 Mar  7 22:21 myproxyUtils.py
+-rw-------  1 osgatlas01 OG    3023 Mar  8 04:13 newJobDef.py
+-rw-------  1 osgatlas01 OG    3529 Mar  8 04:13 newJobDef.pyc
+-rwx------  1 osgatlas01 OG    5274 Mar  7 22:21 objectstoreSiteMover.py
+-rw-------  1 osgatlas01 OG    3901 Mar  8 04:13 objectstoreSiteMover.pyc
+-rwx------  1 osgatlas01 OG  175037 Mar  7 22:21 pUtil.py
+-rw-------  1 osgatlas01 OG  132795 Mar  8 04:13 pUtil.pyc
+-rw-r--r--  1 osgatlas01 OG 6159609 Mar  8 04:13 panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+-rw-------  1 osgatlas01 OG    2904 Mar  8 04:13 pandaJobData.out
+-rwx------  1 osgatlas01 OG  153121 Mar  7 22:21 pilot.py
+-rw-------  1 osgatlas01 OG     200 Mar  8 04:13 pilotlog.txt
+-rwx------  1 osgatlas01 OG   10455 Mar  7 22:21 processes.py
+-rw-------  1 osgatlas01 OG    9647 Mar  8 04:13 processes.pyc
+drwx------  3 osgatlas01 OG    4096 Mar  8 04:13 radical
+-rwx------  1 osgatlas01 OG   18248 Mar  7 22:21 rfcpLFCSiteMover.py
+-rw-------  1 osgatlas01 OG   12156 Mar  8 04:13 rfcpLFCSiteMover.pyc
+-rwxr-xr-x  1 osgatlas01 OG   91998 Mar  2 02:09 runAthena-00-00-12
+-rw-------  1 osgatlas01 OG       0 Mar  8 04:13 runjob.stderr
+drwx------ 11 osgatlas01 OG    4096 Mar  8 04:13 saga
+-rwx------  1 osgatlas01 OG    4737 Mar  7 22:21 stormSiteMover.py
+-rw-------  1 osgatlas01 OG    3764 Mar  8 04:13 stormSiteMover.pyc
+-rwx------  1 osgatlas01 OG    8743 Mar  7 22:21 timed_command.py
+-rw-------  1 osgatlas01 OG    6571 Mar  8 04:13 timed_command.pyc
+-rw-------  1 osgatlas01 OG     857 Mar  8 04:13 tracing_report.json
+-rw-------  1 osgatlas01 OG    5918 Mar  8 04:13 user.saparede.10916444.EXT0._000003.myEfffile.root
+-rw-------  1 osgatlas01 OG   16019 Mar  8 04:13 user.saparede.10916444.MYSTREAM._000003.root
+drwx------  7 osgatlas01 OG    4096 Mar  8 04:13 workDir
+-rwx------  1 osgatlas01 OG   10820 Apr 28  2015 wrapper.py
+-rwx------  1 osgatlas01 OG     592 Apr 28  2015 wrapperexceptions.py
+-rwx------  1 osgatlas01 OG   14982 Apr 28  2015 wrapperutils.py
+-rwx------  1 osgatlas01 OG   44677 Mar  7 22:21 xrdcpSiteMover.py
+-rw-------  1 osgatlas01 OG   29898 Mar  8 04:13 xrdcpSiteMover.pyc
+-rwx------  1 osgatlas01 OG   43993 Mar  7 22:21 xrootdObjectstoreSiteMover.py
+-rw-------  1 osgatlas01 OG   30001 Mar  8 04:13 xrootdObjectstoreSiteMover.pyc
+-rwx------  1 osgatlas01 OG   32474 Mar  7 22:21 xrootdSiteMover.py
+-rw-------  1 osgatlas01 OG   21254 Mar  8 04:13 xrootdSiteMover.pyc
+
+=== result ===
+execute script: Running athena was successful

@@ -1,0 +1,14 @@
+
+
+# --Beg TriggerList.components
+# --Date inserted: 2017-04-28 17:34:06.849937
+libTriggerList.so:TrigPassNums
+libTriggerList.so:TriggerListAlg
+# --End TriggerList.components
+
+
+# --Beg testMetMaker.components
+# --Date inserted: 2017-04-28 17:34:56.932402
+libtestMetMaker.so:MyAlg
+libtestMetMaker.so:PtPlottingAlg
+# --End testMetMaker.components

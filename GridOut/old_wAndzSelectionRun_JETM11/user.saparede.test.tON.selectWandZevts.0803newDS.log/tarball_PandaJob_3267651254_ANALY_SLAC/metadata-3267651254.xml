@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- ATLAS file meta-data catalog -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="674881c2-50c8-43f1-9495-546633c08a22">
+    <logical>
+      <lfn name="user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz"/>
+    </logical>
+    <metadata att_name="surl" att_value="674881c2-50c8-43f1-9495-546633c08a22-surltobeset"/>
+    <metadata att_name="fsize" att_value=""/>
+    <metadata att_name="csumtypetobeset" att_value=""/>
+  </File>
+  <File ID="15d300f6-4bf1-4c5e-a708-174fb0655228">
+    <logical>
+      <lfn name="user.saparede.10916444.MYSTREAM._000003.root"/>
+    </logical>
+    <metadata att_name="surl" att_value="15d300f6-4bf1-4c5e-a708-174fb0655228-surltobeset"/>
+    <metadata att_name="fsize" att_value="16019"/>
+    <metadata att_name="adler32" att_value="f8c6589e"/>
+  </File>
+  <File ID="69654fad-f2e3-4c82-b15e-54de27c97567">
+    <logical>
+      <lfn name="user.saparede.10916444.EXT0._000003.myEfffile.root"/>
+    </logical>
+    <metadata att_name="surl" att_value="69654fad-f2e3-4c82-b15e-54de27c97567-surltobeset"/>
+    <metadata att_name="fsize" att_value="5918"/>
+    <metadata att_name="adler32" att_value="6157266d"/>
+  </File>
+</POOLFILECATALOG>

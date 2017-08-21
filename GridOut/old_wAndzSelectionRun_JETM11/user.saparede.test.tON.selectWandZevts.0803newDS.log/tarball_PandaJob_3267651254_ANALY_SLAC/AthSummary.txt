@@ -1,0 +1,23 @@
+Files read: 1
+  root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+File Read error: 0
+Files written: 1
+  user.saparede.10916444.MYSTREAM._000003.root
+File Write Error: 0
+Tag Files Read: 1
+  root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+Tag Files Error: 0
+Events Read:    114
+Events Written: 0
+Events Skipped: 0
+Runs: 1
+Message Count: 
+ FATAL:   0
+ ERROR:   0
+ WARNING: 2
+ INFO:    159
+Message Log: 
+  FATAL  0
+Keyword tracked messages: 
+Exit Status: 0
+{"bad_alloc":0,"events":{"read":114,"skip":0,"write":0},"exit":0,"files":{"read":"root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1","read error":"","tag":"root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1","tag error":"","write":"user.saparede.10916444.MYSTREAM._000003.root","write error":""},"message count":{"ERROR":0,"FATAL":0,"INFO":159,"WARNING":2},"messages":{"FATAL":{}},"runs":1}

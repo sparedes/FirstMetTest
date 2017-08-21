@@ -1,0 +1,120 @@
+#CMT---> Info: Execute action compile => cd $TestArea/WorkArea/cmt; cmt bro make ; cd -
+#--------------------------------------------------------------
+# testMetMaker testMetMaker-00-00-00 : Now trying [make] in /home/paredes/TestArea/athenaMetTest2/testMetMaker/cmt (182/184)
+#--------------------------------------------------------------
+#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting check_install_joboptions
+#CMT---> (constituents.make) Starting check_install_python_modules
+#CMT---> (constituents.make) Starting testMetMaker
+#CMT---> (constituents.make) Starting install_root_include_path
+#CMT---> (constituents.make) Starting install_includes
+No standard include file area
+No standard include file area
+#CMT---> (constituents.make) check_install_python_modules done
+#CMT---> (constituents.make) install_root_include_path done
+#CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) Starting install_python_modules
+make[2]: `install_python_modules' is up to date.
+#CMT---> (constituents.make) install_python_modules done
+#CMT---> (constituents.make) check_install_joboptions done
+#CMT---> (constituents.make) Starting install_joboptions
+installation done
+installation done
+installation done
+#CMT---> (constituents.make) install_joboptions done
+#CMT---> compiling ../src/MyAlg.cxx
+#CMT---> compiling ../src/components/testMetMaker_entries.cxx
+../src/MyAlg.cxx:489:64: warning: "/*" within comment [-Wcomment]
+   bool eventSelected = (goodMuCount >= 2 /*&& goodElCount == 0 /**/);
+ ^
+
+CHECKREQ---> checkreq SUCCESS
+#CMT---> (constituents.make) checkreq done
+#CMT---> building shared library ../x86_64-slc6-gcc49-opt/libtestMetMaker.so
+#CMT---> testMetMaker : library ok
+#CMT---> testMetMaker ok
+#CMT---> installing file libtestMetMaker.so into /home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib
+#CMT---> installation done
+#CMT---> (constituents.make) testMetMaker done
+#CMT---> (constituents.make) Starting testMetMakerConf
+#CMT---> (constituents.make) Starting testMetMakerCLIDDB
+#CMT---> (constituents.make) Starting testMetMaker_optdebug_library
+#CMT---> stripping dbg symbols into separate file ../x86_64-slc6-gcc49-opt/libtestMetMaker.so.debug
+touch /home/paredes/TestArea/athenaMetTest2/InstallArea/share/clid.db
+#CMT---> installing file libtestMetMaker.so.debug into /home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib
+#CMT---> libtestMetMaker.so.debug installation done
+#CMT---> (constituents.make) testMetMaker_optdebug_library done
+Installing /home/paredes/TestArea/athenaMetTest2/testMetMaker/genConf/testMetMaker in /home/paredes/TestArea/athenaMetTest2/InstallArea/python
+------> genCLIDDB.exe [testMetMaker]
+#CMT---> (constituents.make) testMetMakerCLIDDB done
+#CMT---> (constituents.make) Starting testMetMakerComponentsList
+Generating componentslist file for libtestMetMaker.so
+cd ../x86_64-slc6-gcc49-opt;listcomponents.exe --output ../x86_64-slc6-gcc49-opt/testMetMaker.components libtestMetMaker.so
+Copy '../../../testMetMaker/genConf/testMetMaker/testMetMakerConf.py' -> '/home/paredes/TestArea/athenaMetTest2/InstallArea/python/testMetMaker/testMetMakerConf.py'
+#CMT---> (constituents.make) testMetMakerConf done
+#CMT---> (constituents.make) Starting testMetMaker_python_init
+#CMT---> (constituents.make) Starting testMetMakerConfDbMerge
+#CMT---> (constituents.make) testMetMaker_python_init done
+Running merge_genconfDb  testMetMakerConfDbMerge
+python /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/AtlasCommonPolicy/scripts/merge_files.py \
+          --do-merge \
+          --input-file /home/paredes/TestArea/athenaMetTest2/testMetMaker/genConf/testMetMaker/testMetMaker.confdb \
+          --merged-file /home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/TestArea.confdb
+#CMT---> (constituents.make) testMetMakerComponentsList done
+#CMT---> (constituents.make) Starting testMetMakerMergeComponentsList
+Running merge_componentslist  testMetMakerMergeComponentsList
+python /cvmfs/atlas.cern.ch/repo/sw/software/AthAnalysisBase/x86_64-slc6-gcc49-opt/2.4.25/AthAnalysisBase/2.4.25/AtlasCommonPolicy/scripts/merge_files.py --do-merge \
+         --input-file ../x86_64-slc6-gcc49-opt/testMetMaker.components --merged-file /home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/TestArea.components
+#CMT---> (constituents.make) testMetMakerConfDbMerge done
+#CMT---> (constituents.make) testMetMakerMergeComponentsList done
+#CMT---> all ok.
+#--------------------------------------------------------------
+# WorkArea WorkArea-00-00-00 : Now trying [make] in /home/paredes/TestArea/athenaMetTest2/WorkArea/cmt (184/184)
+#--------------------------------------------------------------
+#CMT---> (constituents.make) Starting post_merge_rootmap
+#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting post_merge_genconfdb
+#CMT---> (constituents.make) Starting post_build_tpcnvdb
+#CMT---> (constituents.make) Starting check_install_python_modules
+#CMT---> (constituents.make) Starting install_root_include_path
+#CMT---> (constituents.make) Starting install_includes
+No standard include file area
+#CMT---> (constituents.make) install_root_include_path done
+No standard include file area
+#CMT---> (constituents.make) check_install_python_modules done
+#CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) Starting install_python_modules
+make[2]: `install_python_modules' is up to date.
+#CMT---> (constituents.make) install_python_modules done
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::: abuild-merge-genconfdb
+::: collecting genconfdb files...
+::: collecting genconfdb files... [done] (nbr=0)
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/python2.7/TestArea_merged_confDb.py]...
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/python2.7/TestArea_merged_confDb.py]... [done]
+::: bye.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#CMT---> (constituents.make) post_build_tpcnvdb done
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::: abuild-merge-genconfdb
+::: collecting genconfdb files...
+::: collecting genconfdb files... [done] (nbr=0)
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/python2.7/TestArea_merged_confDb.py]...
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/python2.7/TestArea_merged_confDb.py]... [done]
+::: bye.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#CMT---> (constituents.make) post_merge_genconfdb done
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::: abuild-merge-rootmap
+::: collecting dsomap files...
+::: collecting dsomap files... [done] (nbr=0)
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/TestArea.rootmap]...
+::: merging files into [/home/paredes/TestArea/athenaMetTest2/InstallArea/x86_64-slc6-gcc49-opt/lib/TestArea.rootmap]... [done]
+::: bye.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#CMT---> (constituents.make) post_merge_rootmap done
+
+CHECKREQ---> checkreq SUCCESS
+#CMT---> (constituents.make) checkreq done
+#CMT---> all ok.
+/home/paredes/TestArea/athenaMetTest2

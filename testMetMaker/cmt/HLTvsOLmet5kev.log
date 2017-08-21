@@ -1,0 +1,10 @@
+Tue Dec 13 19:05:33 GMT 2016
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO using release [AthAnalysisBase-2.4.19] [x86_64-slc6-gcc49-opt] [AthAnalysisBase-2.4.X/rel_2] -- built on [2016-09-19 17:26]
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+[?1034hPy:Athena            INFO including file "AthenaCommon/Execution.py"
+Shortened traceback (most recent user call last):
+ IncludeError: include file testMetMaker/share/MyAlgJobo.py can not be found
+Py:Athena            INFO leaving with code 2: "an error occurred when including a file"

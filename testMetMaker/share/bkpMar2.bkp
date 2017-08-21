@@ -1,0 +1,898 @@
+#include "MyAlg.h"
+#include "METInterface/IMETMaker.h"
+#include "xAODMissingET/MissingETContainer.h"
+#include "xAODMissingET/MissingETAuxContainer.h"
+#include "xAODMissingET/MissingETComposition.h"
+#include "xAODMissingET/MissingETAssociationMap.h"
+#include "xAODJet/JetContainer.h"
+#include "xAODEgamma/ElectronContainer.h"
+#include "xAODEgamma/PhotonContainer.h"
+#include "xAODMuon/MuonContainer.h"
+#include "xAODTau/TauJetContainer.h"
+#include "xAODTracking/VertexContainer.h"
+#include "MuonSelectorTools/IMuonSelectionTool.h"
+#include "ElectronPhotonSelectorTools/IAsgElectronLikelihoodTool.h"
+#include "ElectronPhotonSelectorTools/IAsgPhotonIsEMSelector.h"
+#include "TauAnalysisTools/ITauSelectionTool.h"
+
+#include "GaudiKernel/ITHistSvc.h"
+#include "xAODTrigger/EnergySumRoI.h"
+#include "TFile.h"
+//CHECK//to do L1 Trigger emulation
+//CHECK#include "TrigT1Interfaces/L1METvalue.h"
+//CHECK#include <cmath>
+//CHECK
+#include "xAODTrigMissingET/TrigMissingETContainer.h"
+#include "TrigDecisionTool/TrigDecisionTool.h"
+
+#include "TrigDecisionTool/ChainGroup.h"
+
+#include "TEfficiency.h"
+
+
+using std::string;
+using namespace xAOD;
+//namespace met {
+  typedef ElementLink<xAOD::IParticleContainer> iplink_t;
+  static const SG::AuxElement::ConstAccessor< std::vector<iplink_t > > acc_constitObjLinks("ConstitObjectLinks");
+//    For TrigDecisionTool
+//**********************************************************************
+MyAlg::MyAlg(const std::string& name,
+                         ISvcLocator* pSvcLocator )
+  : ::AthAlgorithm( name, pSvcLocator ),
+  m_muonSelTool(""),
+  m_elecSelLHTool(""),
+  m_photonSelIsEMTool(""),
+  m_tauSelTool(""),
+  //m_all( 0 ), m_allL1( 0 ), m_allHLT( 0 )
+//  m_trigDecTool( "Trig::TrigDecisionTool/TrigDecisionTool" )
+
+  m_trigDecTool(""),
+  m_muIsoSelTool("")
+{
+  declareProperty( "Maker",          m_metmaker                        );
+  declareProperty( "METMapName",     m_mapname   = "METAssoc"          );
+  declareProperty( "METCoreName",    m_corename  = "MET_Core"          );
+  declareProperty( "METName",        m_outname   = "MET_Reference"     );
+  declareProperty( "METSoftClName",  m_softclname  = "SoftClus"        );
+  declareProperty( "METSoftTrkName", m_softtrkname = "PVSoftTrk"       );
+  declareProperty( "InputJets",      m_jetColl   = "AntiKt4LCTopoJets" );
+  declareProperty( "InputElectrons", m_eleColl   = "Electrons"         );
+  declareProperty( "InputPhotons",   m_gammaColl = "Photons"           );
+  declareProperty( "InputTaus",      m_tauColl   = "TauJets"           );
+  declareProperty( "InputMuons",     m_muonColl  = "Muons"             );
+  declareProperty( "MuonSelectionTool",        m_muonSelTool           );
+  declareProperty( "ElectronLHSelectionTool",  m_elecSelLHTool         );
+  declareProperty( "PhotonIsEMSelectionTool" , m_photonSelIsEMTool     );
+  declareProperty( "TauSelectionTool",         m_tauSelTool            );
+  declareProperty( "DoTruthLeptons", m_doTruthLep = false              );
+  declareProperty( "IsData",         m_isData = true                   );
+  declareProperty( "TrigDecTool",    m_trigDecTool                     );
+  declareProperty( "MuonIsoSelTool",    m_muIsoSelTool                     );
+  declareProperty( "ElectronIsoSelTool",    m_eleIsoSelTool                     );
+}
+//**********************************************************************
+MyAlg::~MyAlg() { }
+//**********************************************************************
+StatusCode MyAlg::initialize() {
+  MyMetHist = new TH1D("MyMetHist","Offline MET",100,0,200);
+  ATH_MSG_INFO ("Histogram booked ");
+  ServiceHandle<ITHistSvc> histSvc("THistSvc",name()); 
+  CHECK( histSvc.retrieve() );
+  // myHist = new TH1D("myHist","myHist",10,0,10);
+  mySuMetHist = new TH1D("mySuMetHist","mySuMetHist",400, 0, 400);
+  histSvc->regHist("/MYSTREAM/MyMetHist",MyMetHist).ignore(); //or check the statuscode
+  CHECK( histSvc->regHist("/MYSTREAM/MyDirectory/mySuMetHist",mySuMetHist) ); //will put mySuMetHist in a TDirectory called MyDirectory
+
+  //TRUTH ONLY ON MC SAMPLE    h_truthMet = new TH1D("TruthMET", "Truth MET;E_{T}^{miss} (Truth) [GeV]", 400, 0, 400);
+  //TRUTH ONLY ON MC SAMPLE    CHECK( histSvc->regHist("/MYSTREAM/truthMET", h_truthMet) );
+
+  h_l1Met = new TH1D("L1Met", "L1 Trigger MET;E_{T}^{miss}  [GeV]", 400, 0, 400);
+  CHECK( histSvc->regHist("/MYSTREAM/l1Met", h_l1Met) );
+
+  h2_OLvsL1Met = new TH2D("OffLineVSl1Met", "Offline vs L1  MET;OffLine E_{T}^{miss}  [GeV];l1 E_{T}^{miss}  [GeV]", 100,0,200,100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/OLvsL1Met", h2_OLvsL1Met) );
+
+
+  h_HLTMet = new TH1D("HLTMet", "HLT Trigger MET;E_{T}^{miss}  [GeV]", 400, 0, 400);
+  CHECK( histSvc->regHist("/MYSTREAM/HLTMet", h_HLTMet) );
+
+  h2_OLvsHLTMet = new TH2D("OffLineVSHLTMet", "Offline vs HLT  MET;OffLine E_{T}^{miss}  [GeV];HLT E_{T}^{miss}  [GeV]", 100,0,200,100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/OLvsHLTMet", h2_OLvsHLTMet) );
+
+  h_Met_wSel_trig_muon = new TH1D("h_Met_wSel_trig_muon", "MET, muon triggers. Sel W events;E_{T}^{miss}  [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/h_Met_wSel_trig_muon", h_Met_wSel_trig_muon) );
+
+  h_Met_zSel_trig_muon = new TH1D("h_Met_zSel_trig_muon", "MET, muon triggers. Sel Z events;E_{T}^{miss}  [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/h_Met_zSel_trig_muon", h_Met_zSel_trig_muon) );
+
+  h_Met_trig_muon = new TH1D("h_Met_trig_muon", "MET, muon trigger;E_{T}^{miss}  [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/h_Met_trig_muon", h_Met_trig_muon) );
+
+  h_l1TrigTurnON = new TH1D("l1TrigTurnON", "()Turn On MET, l1ton trigger;E_{T}^{miss}  [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/l1TrigTurnON", h_l1TrigTurnON) );
+
+  // Object Histograms^^^^^^^^^
+
+
+  h_nSelMuons = new TH1D("nSelMuons", "Number of muons selected per event ;num. Mu", 20,0,20);
+  CHECK( histSvc->regHist("/MYSTREAM/nSelMuons", h_nSelMuons) );
+
+  h_mumuInvMass = new TH1D("mumuInvMass", "MuMu inv. Mass ;M_{inv} [GeV]", 50,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/mumuInvMass", h_mumuInvMass) );
+
+  //testing TLV object
+  h_goodMu1_Pt = new TH1D("h_goodMu1_Pt", "Good Muon 1 PT ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/h_goodMu1_Pt", h_goodMu1_Pt) );
+
+  h_goodMu1_PtTLV = new TH1D("h_goodMu1_PtTLV", "Good Muon 1 PT ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/h_goodMu1_PtTLV", h_goodMu1_PtTLV) );
+
+  h_muonPT = new TH1D("muonPT", "Muon PT ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/muonPT", h_muonPT) );
+
+  h_cutQualMuonPT = new TH1D("cutQualMuonPT", "Muon PT, quality cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/cutQualMuonPT", h_cutQualMuonPT) );
+
+  h_cutIsoMuonPT = new TH1D("cutIsoMuonPT", "Muon PT, iso cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/cutIsoMuonPT", h_cutIsoMuonPT) );
+
+  h_cut2GoodMuonPT = new TH1D("cut2GoodMuonPT", "Muon PT, 2 good mu cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/cut2GoodMuonPT", h_cut2GoodMuonPT) );
+
+  h_muonEta = new TH1D("muonEta", "Muon Eta ; eta", 100,-4,4);
+  CHECK( histSvc->regHist("/MYSTREAM/muonEta", h_muonEta) );
+
+  h_electronPT = new TH1D("electronPT", "Electron PT ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/electronPT", h_electronPT) );
+
+  h_cutQualElectronPT = new TH1D("cutQualElectronPT", "Electron PT, quality cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/cutQualElectronPT", h_cutQualElectronPT) );
+
+  h_cutIsoElectronPT = new TH1D("cutIsoElectronPT", "Electron PT, iso cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/cutIsoElectronPT", h_cutIsoElectronPT) );
+
+  h_electronEta = new TH1D("electronEta", "Electron Eta ; eta", 100,-4,4);
+  CHECK( histSvc->regHist("/MYSTREAM/electronEta", h_electronEta) );
+
+  // Selected event histo
+  MyWSelMetHist = new TH1D("MyWSelMetHist","Offline MET, W to mu nu events",100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/MyDirectory/MyWSelMetHist",MyWSelMetHist) ); 
+
+  MyZSelMetHist = new TH1D("MyZSelMetHist","Offline MET, Z to mu mu events",100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/MyDirectory/MyZSelMetHist",MyZSelMetHist) ); 
+
+  h_wmunuSelectMuonPT = new TH1D("wmunuSelectMuonPT", "Muon PT,  W mu nu selection cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/wmunuSelectMuonPT", h_wmunuSelectMuonPT) );
+
+  h_zmumuSelectMuonPT = new TH1D("zmumuSelectMuonPT", "Muon PT,  Z mu mu selection cut ;P_{T} [GeV]", 100,0,200);
+  CHECK( histSvc->regHist("/MYSTREAM/zmumuSelectMuonPT", h_zmumuSelectMuonPT) );
+
+
+  //TEfficiency* pEff = 0;
+  //CHECK( histSvc->regHist("/MYSTREAM/pEff", pEff) );
+
+
+  //  myTree = new TTree("myTree","myTree");
+  //  myTree = new TTree("myTree","myTree");
+  //  CHECK( histSvc->regTree("/ANOTHERSTREAM/myTree",myTree) );
+
+  ATH_MSG_INFO("Initializing " << name() << "...");
+  ATH_MSG_INFO("Retrieving tools...");
+  // retrieve tools
+  if( m_metmaker.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_metmaker->name());
+    return StatusCode::FAILURE;
+  };
+  if( m_muonSelTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_muonSelTool->name());
+    return StatusCode::FAILURE;
+  };
+  if( m_elecSelLHTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_elecSelLHTool->name());
+    return StatusCode::FAILURE;
+  };
+  if( m_photonSelIsEMTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_photonSelIsEMTool->name());
+    return StatusCode::FAILURE;
+  };
+  if( m_tauSelTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_tauSelTool->name());
+    return StatusCode::FAILURE;
+  };
+
+  m_jetCalibration.setTypeAndName("JetCalibrationTool/myJESTool");
+  //CHECK( m_jetCalibration.retrieve() ); //optional, just forces initializing the tool here instead of at first use
+
+  if( m_jetCalibration.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_jetCalibration->name());
+    return StatusCode::FAILURE;
+  };
+
+  ATH_CHECK( m_trigDecTool.retrieve() );
+
+
+  // Setup IsolationSelectionTool
+  if( m_eleIsoSelTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_eleIsoSelTool->name());
+    return StatusCode::FAILURE;
+  };
+  
+  if( m_muIsoSelTool.retrieve().isFailure() ) {
+    ATH_MSG_ERROR("Failed to retrieve tool: " << m_muIsoSelTool->name());
+    return StatusCode::FAILURE;
+  };
+
+
+  //  ServiceHandle<ITHistSvc> histSvc("THistSvc",name());
+  //  CHECK( histSvc.retrieve() );
+  //  CHECK( histSvc->regHist("/MYSTREAM/myHist",MyMetHist) );
+
+
+    return StatusCode::SUCCESS;
+  }
+//**********************************************************************
+StatusCode MyAlg::finalize() {
+
+  //write histos in jobOptions TFile f1("myfile.root","RECREATE");
+  //write histos in jobOptions MyMetHist->Write();
+  //write histos in jobOptions h_l1Met->Write();  
+  //write histos in jobOptions h2_OLvsL1Met->Write(); 
+  //write histos in jobOptions h2_OLvsHLTMet->Write(); 
+  //write histos in jobOptions h_Met_trig_muon->Write();  
+  //write histos in jobOptions h_l1TrigTurnON->Write();
+
+  //write histos in jobOptions ATH_MSG_INFO ("Histogram written to file ");
+  //write histos in jobOptions f1.Close();
+  TEfficiency* pwEff = 0;
+  TEfficiency* pwEff2 = 0;
+  TEfficiency* pzEff = 0;
+  //TEfficiency* pzEff2 = 0;
+
+  TFile* pFile = new TFile("myEfffile.root","recreate");
+
+  //h_l1TrigTurnON->Divide(h_Met_zSel_trig_muon,MyZSelMetHist);
+  h_l1TrigTurnON->Divide(h_Met_wSel_trig_muon,MyWSelMetHist);
+  if(TEfficiency::CheckConsistency(*h_Met_wSel_trig_muon,*MyWSelMetHist))
+  {
+    pwEff = new TEfficiency(*h_Met_wSel_trig_muon,*MyWSelMetHist);
+    pwEff->SetTitle("Turn on curve of muon, W munu selected");
+    // this will write the TEfficiency object to "myfile.root"
+    // AND pwEff will be attached to the current directory
+    pwEff->Write();
+  }
+  if(TEfficiency::CheckConsistency(*h_Met_trig_muon,*MyMetHist))
+  {
+    pwEff2 = new TEfficiency(*h_Met_trig_muon,*MyMetHist);
+    // this will write the TEfficiency object to "myfile.root"
+    // AND pwEff will be attached to the current directory
+    pwEff2->SetTitle("Turn on curve of muon");
+    pwEff2->Write();
+  }
+  if(TEfficiency::CheckConsistency(*h_Met_zSel_trig_muon,*MyZSelMetHist))
+  {
+    pzEff = new TEfficiency(*h_Met_zSel_trig_muon,*MyZSelMetHist);
+    pzEff->SetTitle("Turn on curve of muon, Z mumu selected");
+    // this will write the TEfficiency object to "myfile.root"
+    // AND pzEff will be attached to the current directory
+    pzEff->Write();
+  }
+  ///if(TEfficiency::CheckConsistency(*h_Met_trig_muon,*MyMetHist))
+  ///{
+  ///  pzEff2 = new TEfficiency(*h_Met_trig_muon,*MyMetHist);
+  ///  // this will write the TEfficiency object to "myfile.root"
+  ///  // AND pzEff will be attached to the current directory
+  ///  pzEff2->SetTitle("Turn on curve of muon");
+  ///  pzEff2->Write();
+  ///}
+  pFile->Close();
+
+
+  ATH_MSG_INFO ("Finalizing " << name() << "...");
+  return StatusCode::SUCCESS;
+}
+//**********************************************************************
+
+StatusCode MyAlg::execute() {
+  ATH_MSG_VERBOSE("Executing " << name() << "...");
+  // Test of TDT
+
+  // Test for primary vertex
+  const xAOD::VertexContainer* vtcs(0);
+  ATH_CHECK(evtStore()->retrieve(vtcs, "PrimaryVertices") );
+  bool hasPrimary(false);
+  for (const xAOD::Vertex* vtx : *vtcs) {
+    if (vtx->vertexType() == xAOD::VxType::PriVtx) {
+      hasPrimary = true;
+      break;
+    }
+  }
+  if (!hasPrimary) return StatusCode::SUCCESS;
+
+  // Create a MissingETContainer with its aux store
+  MissingETContainer* newMet = new MissingETContainer();
+  if( evtStore()->record(newMet, m_outname).isFailure() ) {
+    ATH_MSG_WARNING("Unable to record MissingETContainer: " << m_outname);
+    return StatusCode::SUCCESS;
+  }
+  MissingETAuxContainer* metAuxCont = new MissingETAuxContainer();
+  if( evtStore()->record(metAuxCont, m_outname+"Aux.").isFailure() ) {
+    ATH_MSG_WARNING("Unable to record MissingETAuxContainer: " << m_outname+"Aux.");
+    return StatusCode::SUCCESS;
+  }
+  newMet->setStore(metAuxCont);
+  const MissingETAssociationMap* metMap = 0;
+  if( evtStore()->retrieve(metMap, m_mapname).isFailure() ) {
+    ATH_MSG_WARNING("Unable to retrieve MissingETAssociationMap: " << m_mapname);
+    return StatusCode::SUCCESS;
+  }
+  metMap->resetObjSelectionFlags();
+  // Retrieve containers ***********************************************
+  /// MET
+  const MissingETContainer* coreMet(0);
+  if( evtStore()->retrieve(coreMet, m_corename).isFailure() ) {
+    ATH_MSG_WARNING("Unable to retrieve MissingETContainer: " << m_corename);
+    return StatusCode::SUCCESS;
+  }
+  /// Jets
+  const JetContainer* jetCont(0);
+  if( evtStore()->retrieve(jetCont, m_jetColl).isFailure() ) {
+    ATH_MSG_WARNING("Unable to retrieve input jet container: " << m_jetColl);
+    return StatusCode::SUCCESS;
+  }
+  ATH_MSG_DEBUG("Successfully retrieved jet collection");
+  /// Electrons
+  const ElectronContainer* elCont(0);
+  if(!m_eleColl.empty()) {
+    if( evtStore()->retrieve(elCont, m_eleColl).isFailure() ) {
+      ATH_MSG_WARNING("Unable to retrieve input electron container: " << m_eleColl);
+      return StatusCode::SUCCESS;
+    }
+    ATH_MSG_DEBUG("Successfully retrieved electron collection");
+  }
+  /// Photons
+  const PhotonContainer* phCont(0);
+  if(!m_gammaColl.empty()) {
+    if( evtStore()->retrieve(phCont, m_gammaColl).isFailure() ) {
+      ATH_MSG_WARNING("Unable to retrieve input photon container: " << m_gammaColl);
+      return StatusCode::SUCCESS;
+    }
+    ATH_MSG_DEBUG("Successfully retrieved photon collection");
+  }
+  /// Taus
+  const TauJetContainer* tauCont(0);
+  if(!m_tauColl.empty()) {
+    if( evtStore()->retrieve(tauCont, m_tauColl).isFailure() ) {
+      ATH_MSG_WARNING("Unable to retrieve input tau container: " << m_tauColl);
+      return StatusCode::SUCCESS;
+    }
+    ATH_MSG_DEBUG("Successfully retrieved tau collection");
+  }
+  /// Muons
+  const MuonContainer* muonCont(0);
+  if(!m_muonColl.empty()) {
+    if( evtStore()->retrieve(muonCont, m_muonColl).isFailure() ) {
+      ATH_MSG_WARNING("Unable to retrieve input muon container: " << m_muonColl);
+      return StatusCode::SUCCESS;
+    }
+    ATH_MSG_DEBUG("Successfully retrieved muon collection");
+  }
+  // Select and flag objects for final MET building ***************************
+  MissingETBase::UsageHandler::Policy objScale = MissingETBase::UsageHandler::PhysicsObject;
+  if(m_doTruthLep) objScale = MissingETBase::UsageHandler::TruthParticle;
+  // Electrons
+  //bool elPass = false; //test for seleciton
+  if(!m_eleColl.empty()) {
+    ConstDataVector<ElectronContainer> metElectrons(SG::VIEW_ELEMENTS);
+    for(const auto& el : *elCont) {
+      if(accept(el)) {
+        metElectrons.push_back(el);
+        //elPass = true;
+      }
+    }
+    if( m_metmaker->rebuildMET("RefEle", xAOD::Type::Electron, newMet,
+                               metElectrons.asDataVector(),
+                               metMap, objScale).isFailure() ) {
+      ATH_MSG_WARNING("Failed to build electron term.");
+    }
+    ATH_MSG_DEBUG("Selected " << metElectrons.size() << " MET electrons. "
+                  << acc_constitObjLinks(*(*newMet)["RefEle"]).size() << " are non-overlapping.");
+  }
+  // Photons
+  if(!m_gammaColl.empty()) {
+    ConstDataVector<PhotonContainer> metPhotons(SG::VIEW_ELEMENTS);
+    for(const auto& ph : *phCont) {
+      if(accept(ph)) {
+        metPhotons.push_back(ph);
+      }
+    }
+    if( m_metmaker->rebuildMET("RefGamma", xAOD::Type::Photon, newMet,
+                               metPhotons.asDataVector(),
+                               metMap, objScale).isFailure() ) {
+      ATH_MSG_WARNING("Failed to build photon term.");
+    }
+    ATH_MSG_DEBUG("Selected " << metPhotons.size() << " MET photons. "
+                  << acc_constitObjLinks(*(*newMet)["RefGamma"]).size() << " are non-overlapping.");
+  }
+  // Taus
+  if(!m_tauColl.empty()) {
+    ConstDataVector<TauJetContainer> metTaus(SG::VIEW_ELEMENTS);
+    for(const auto& tau : *tauCont) {
+      if(accept(tau)) {
+        metTaus.push_back(tau);
+      }
+    }
+    if( m_metmaker->rebuildMET("RefTau", xAOD::Type::Tau, newMet,
+                               metTaus.asDataVector(),
+                               metMap, objScale).isFailure() ){
+      ATH_MSG_WARNING("Failed to build tau term.");
+    }
+    ATH_MSG_DEBUG("Selected " << metTaus.size() << " MET taus. "
+                  << acc_constitObjLinks(*(*newMet)["RefTau"]).size() << " are non-overlapping.");
+  }
+  // Muons
+  //oldTest bool muPass = false; //test for seleciton
+  if(!m_muonColl.empty()) {
+    ConstDataVector<MuonContainer> metMuons(SG::VIEW_ELEMENTS);
+    for(const auto& mu : *muonCont) {
+      if(accept(mu)) {
+        metMuons.push_back(mu);
+        //muPass = true;
+      }
+    }
+    //ATH_CHECK( m_metmaker->markInvisible(metMuons.asDataVector(), metMap, newMet) ); //Treat muons as invisible
+
+    if(m_doTruthLep) objScale = MissingETBase::UsageHandler::OnlyTrack;
+    if( m_metmaker->rebuildMET("Muons", xAOD::Type::Muon, newMet,
+                               metMuons.asDataVector(),
+                               metMap, objScale).isFailure() ) {
+      ATH_MSG_WARNING("Failed to build muon term.");
+    }
+    ATH_MSG_DEBUG("Selected " << metMuons.size() << " MET muons. "
+                  << acc_constitObjLinks(*(*newMet)["Muons"]).size() << " are non-overlapping.");
+
+  }
+  if( m_metmaker->rebuildJetMET("RefJet", m_softclname, m_softtrkname, newMet,
+                                jetCont, coreMet, metMap, false ).isFailure() ) {
+    ATH_MSG_WARNING("Failed to build jet and soft terms.");
+  }
+  ATH_MSG_DEBUG("Of " << jetCont->size() << " jets, "
+                << acc_constitObjLinks(*(*newMet)["RefJet"]).size() << " are non-overlapping, "
+                << acc_constitObjLinks(*(*newMet)[m_softtrkname]).size() << " are soft");
+  MissingETBase::Types::bitmask_t trksource = MissingETBase::Source::Track;
+  if((*newMet)[m_softtrkname]) trksource = (*newMet)[m_softtrkname]->source();
+  if( m_metmaker->buildMETSum("FinalTrk", newMet, trksource).isFailure() ){
+    ATH_MSG_WARNING("Building MET FinalTrk sum failed.");
+  }
+  MissingETBase::Types::bitmask_t clsource = MissingETBase::Source::LCTopo;
+  if((*newMet)[m_softclname]) clsource = (*newMet)[m_softclname]->source();
+  if( m_metmaker->buildMETSum("FinalClus", newMet, clsource).isFailure() ) {
+    ATH_MSG_WARNING("Building MET FinalClus sum failed.");
+  }
+  auto metItr = newMet->find("FinalTrk");
+  if (metItr == newMet->end() ) {
+    ATH_MSG_ERROR( "Failed to find " << "FinalTrk" << " term in rebuilt MET!" );
+    return StatusCode::FAILURE;
+  }
+  
+  //------------Getting MET info---------------------
+
+  const xAOD::MissingET& finalMet = **metItr;
+  //ATH_MSG_INFO( "Rebuilt MET is: ");
+  //ATH_MSG_INFO( "  met_x: " << finalMet.mpx () );
+  //ATH_MSG_INFO( "  met_y: " << finalMet.mpy () );
+  //ATH_MSG_INFO( "  met  : " << finalMet.met () );
+  //ATH_MSG_INFO( "  phi  : " << finalMet.phi () );
+  //ATH_MSG_INFO( "  sumet: " << finalMet.sumet () );
+  MyMetHist->Fill(finalMet.met ()*0.001);
+  mySuMetHist->Fill(finalMet.sumet ()*0.001);
+
+  int goodMuCount = 0;
+  int goodElCount = 0;
+  
+  bool metCut_Wmunu = finalMet.met ()*0.001 > 25;
+  float goodMu1_Pt = 0;
+  float goodMu1_Mt = 0;
+  float goodMu1_Ch = 100;  //make sure original charge is different
+  TLorentzVector goodMu1;
+  TLorentzVector goodMu2;
+  //TLorentzVector goodMu3;
+
+  for(const auto& mu : *muonCont) {
+
+    bool mediumMuon = m_muonSelTool->getQuality(*mu) > 0; 
+    bool gradientIsoMuon = m_muIsoSelTool->accept(*mu); 
+    //if (m_muIsoSelTool->accept(*mu) > 0)ATH_MSG_INFO( " muon passes isolation "); 
+    bool muSelected = (mu->pt()*0.001 > 25 && fabs(mu->eta()) < 2.4 && mediumMuon && gradientIsoMuon);
+    if (muSelected) {
+      if (goodMuCount == 0) {
+        goodMu1_Pt = mu->pt()*0.001;
+        goodMu1_Mt = sqrt(2*mu->pt()*finalMet.met()*(1-cos(finalMet.phi()- mu->phi())))*0.001;
+        goodMu1.SetPtEtaPhiM(mu->pt(),mu->eta(),mu->phi(),mu->e());
+        h_goodMu1_Pt->Fill(mu->pt()*0.001);
+        h_goodMu1_PtTLV->Fill(goodMu1.Pt()*0.001);
+      }
+      if (goodMuCount == 1 && (goodMu1_Ch != mu->charge())) {
+        goodMu2.SetPtEtaPhiM(mu->pt(),mu->eta(),mu->phi(),mu->e());
+        h_mumuInvMass->Fill((goodMu1+goodMu2).Mag()*0.001);
+        //ATH_MSG_INFO( " Inv Mass "<<(goodMu1+goodMu2).Mag()*0.001<<" Pt1  "<<goodMu1.Pt()*0.001<<" Pt1 "<<goodMu2.Pt()*0.001 );
+      }
+      goodMuCount++;
+    }
+    // Cut Flow plot for muon selection 
+    h_muonPT->Fill(mu->pt()*0.001);
+    h_muonEta->Fill(mu->eta()*0.001);
+    if (mediumMuon) {
+      h_cutQualMuonPT->Fill(mu->pt()*0.001); 
+      if (gradientIsoMuon) h_cutIsoMuonPT->Fill(mu->pt()*0.001); 
+        if (goodMuCount > 1) h_cut2GoodMuonPT->Fill(mu->pt()*0.001);
+    }
+  }
+  
+  h_nSelMuons->Fill(goodMuCount);
+
+  for(const auto& el : *elCont) {
+    h_electronPT->Fill(el->pt()*0.001);
+    h_electronEta->Fill(el->eta()*0.001);
+
+    bool gradientIsoElectron = m_eleIsoSelTool->accept(*el); 
+    if (gradientIsoElectron) h_cutIsoElectronPT->Fill(el->pt()*0.001); 
+
+  //if (m_eleIsoSelTool->accept(*el) > 0)ATH_MSG_INFO( " electron passes isolation "); 
+    bool elSelected = (el->pt()*0.001 > 25 && fabs(el->eta()) < 2.4 && m_eleIsoSelTool->accept(*el) );
+    if (elSelected) goodElCount++;
+    //if (elSelected) break;
+  }
+    // checking muon trigger
+  bool muon_trigger = (m_trigDecTool->isPassed("HLT_mu22_mu8noL1") || m_trigDecTool->isPassed("HLT_mu20_mu8noL1")  || m_trigDecTool->isPassed("HLT_mu26_imedium") || m_trigDecTool->isPassed("HLT_mu24_imedium") || m_trigDecTool->isPassed("HLT_mu40") || m_trigDecTool->isPassed("HLT_mu24_ivarloose") || m_trigDecTool->isPassed("HLT_mu40") || m_trigDecTool->isPassed("HLT_mu50") /**/); 
+  //if (muon_trigger) ATH_MSG_INFO( " Muon trigger passed " );// check if any events pass muon trigger
+    // making event selection
+  bool eventSelected_zmumu = (goodMuCount >= 2 && goodElCount == 0 /**/);
+  bool eventSelected_Wmunu = (goodMuCount >= 1 && goodElCount == 0 && metCut_Wmunu && goodMu1_Mt > 50/**/);
+
+  if(eventSelected_zmumu) {
+    ATH_MSG_INFO( " Z to Mu Mu event selected " );
+    h_zmumuSelectMuonPT->Fill(goodMu1_Pt);
+
+    if (muon_trigger) h_Met_zSel_trig_muon->Fill(finalMet.met ()*0.001);
+    MyZSelMetHist->Fill(finalMet.met ()*0.001);
+    //ATH_MSG_INFO( " electron pt is " << el->pt()*0.001 );
+  }
+  //-------------W->Mu Nu selected events---------------
+  if(eventSelected_Wmunu) {
+    ATH_MSG_INFO( " W to Mu Nu event selected" );
+    if (goodMuCount > 1) ATH_MSG_INFO( " What Event has "<<goodMuCount<<" good muons" );
+    h_wmunuSelectMuonPT->Fill(goodMu1.Pt()*0.001);
+
+    if (muon_trigger) h_Met_wSel_trig_muon->Fill(finalMet.met ()*0.001);
+    MyWSelMetHist->Fill(finalMet.met ()*0.001);
+    //ATH_MSG_INFO( " electron pt is " << el->pt()*0.001 );
+  }
+  
+  // for selection test
+  //ATH_MSG_INFO( "Event has  " << goodMuCount << " good muons and " << goodElCount << " electrons" );
+  //ATH_MSG_INFO ("filling histo");
+  //if(m_trigDecTool->isPassed("L1_.*")) ATH_MSG_INFO("L1_.*  is passed!");
+
+  //  Test turn on curve of L1 trigger
+  // old test trigger. replaced by muon triggersif(m_trigDecTool->isPassed("muon")) h_Met_trig_muon->Fill(finalMet.met ()*0.001);
+  if(muon_trigger) h_Met_trig_muon->Fill(finalMet.met ()*0.001);// use either mu26_ivarmedium/imedium for mu24 as well
+
+
+  // Change name of h_Met_trig_muon? something related to muon
+
+
+
+  //TRUTH ONLY ON MC SAMPLE    const xAOD::MissingETContainer* truthMet(0);
+  //TRUTH ONLY ON MC SAMPLE    CHECK( evtStore()->retrieve(truthMet, "MET_Truth") );
+  //TRUTH ONLY ON MC SAMPLE
+  //TRUTH ONLY ON MC SAMPLE    auto truthMetItr = truthMet->find("NonInt");
+  //TRUTH ONLY ON MC SAMPLE    if (truthMetItr == truthMet->end() ) {
+  //TRUTH ONLY ON MC SAMPLE      ATH_MSG_ERROR("No NonInt component found in MET_Truth");
+  //TRUTH ONLY ON MC SAMPLE      return StatusCode::FAILURE;
+  //TRUTH ONLY ON MC SAMPLE    }
+  //TRUTH ONLY ON MC SAMPLE
+  //TRUTH ONLY ON MC SAMPLE    h_truthMet->Fill( (*truthMetItr)->met() * 0.001);
+  //TRUTH ONLY ON MC SAMPLE
+  // Emulatinng MET Trigger
+  const xAOD::EnergySumRoI* l1MetObject(0);
+  CHECK( evtStore()->retrieve(l1MetObject, "LVL1EnergySumRoI") );
+
+  float l1_mex = l1MetObject->exMiss();
+  float l1_mey = l1MetObject->eyMiss();
+  float l1_met = sqrt(l1_mex*l1_mex + l1_mey*l1_mey);
+  
+  // L1 Trigger emulation
+  // L1 decision emulation const xAOD::EnergySumRoI* l1MetObject(0);
+  // L1 decision emulatio  CHECK( evtStore()->retrieve(l1MetObject, "LVL1EnergySumRoI") );
+  // L1 decision emulatio
+  // L1 decision emulatio  float l1_mex = l1MetObject->exMiss();
+  // L1 decision emulatio  float l1_mey = l1MetObject->eyMiss();
+  // L1 decision emulatio
+  // L1 decision emulatio  float l1_met(0.);
+  // L1 decision emulatio  bool l1_overflow(false);
+  // L1 decision emulatio  static LVL1::L1METvalue l1calc;
+  // L1 decision emulatio  // Note that the L1METvalue object expects and returns values in GeV
+  // L1 decision emulatio  l1calc.calcL1MET(l1_mex/1000, l1_mey/1000, l1_met, l1_overflow);
+  // L1 decision emulatio
+  // L1 decision emulatio  float threshold = 50; // GeV (for L1_XE50) 
+  // L1 decision emulatio
+  // L1 decision emulatio  bool passTrigger = l1_overflow || l1_met > threshold;
+  // L1 decision emulatio
+  
+  h_l1Met->Fill(l1_met*0.001);
+  h2_OLvsL1Met->Fill(finalMet.met ()*0.001,l1_met*0.001);
+
+  // Emulating HLT
+  const xAOD::TrigMissingETContainer* hltCont(0);
+  CHECK( evtStore()->retrieve(hltCont, "HLT_xAOD__TrigMissingETContainer_TrigEFMissingET_topocl") );
+
+  float ex = hltCont->front()->ex();
+  float ey = hltCont->front()->ey();
+
+  float hltMet = sqrt(ex*ex + ey*ey);
+
+  h_HLTMet->Fill(hltMet*0.001);
+  h2_OLvsHLTMet->Fill(finalMet.met ()*0.001,hltMet*0.001);
+  
+//  if ( elPass || muPass) {
+//    if (!(elPass && muPass)) h_Met_trig_muon->Fill(finalMet.met ()*0.001);
+//  }
+
+  return StatusCode::SUCCESS;
+  }
+ 
+//  **********************************************************************
+  bool MyAlg::accept(const xAOD::Muon* mu)
+  {
+    if( mu->pt()<2.5e3 || mu->pt()/cosh(mu->eta())<4e3 ) return false;
+    return m_muonSelTool->accept(*mu);
+  }
+  bool MyAlg::accept(const xAOD::Electron* el)
+  {
+    if( fabs(el->eta())>2.47 || el->pt()<10e3 ) return false;
+    return m_elecSelLHTool->accept(*el);
+  }
+  bool MyAlg::accept(const xAOD::Photon* ph)
+  {
+    if( !(ph->author()&20) || fabs(ph->eta())>2.47 || ph->pt()<10e3 ) return false;
+    return m_photonSelIsEMTool->accept(ph);
+  }
+  bool MyAlg::accept(const xAOD::TauJet* tau)
+  { return m_tauSelTool->accept( *tau ); }
+//}
+
+
+
+//Original MyAlg.cxx // testMetMaker includes
+//Original MyAlg.cxx #include "MyAlg.h"
+//Original MyAlg.cxx 
+//Original MyAlg.cxx //#include "xAODEventInfo/EventInfo.h"
+//Original MyAlg.cxx 
+//Original MyAlg.cxx //uncomment the line below to use the HistSvc for outputting trees and histograms
+//Original MyAlg.cxx //#include "GaudiKernel/ITHistSvc.h"
+//Original MyAlg.cxx //#include "TTree.h"
+//Original MyAlg.cxx //#include "TH1D.h"
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx MyAlg::MyAlg( const std::string& name, ISvcLocator* pSvcLocator ) : AthAnalysisAlgorithm( name, pSvcLocator ){
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //declareProperty( "Property", m_nProperty ); //example property declaration
+//Original MyAlg.cxx 
+//Original MyAlg.cxx }
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx MyAlg::~MyAlg() {}
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx StatusCode MyAlg::initialize() {
+//Original MyAlg.cxx   ATH_MSG_INFO ("Initializing " << name() << "...");
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx   //This is called once, before the start of the event loop
+//Original MyAlg.cxx   //Retrieves of tools you have configured in the joboptions go here
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //HERE IS AN EXAMPLE
+//Original MyAlg.cxx   //We will create a histogram and a ttree and register them to the histsvc
+//Original MyAlg.cxx   //Remember to uncomment the configuration of the histsvc stream in the joboptions
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx   //ServiceHandle<ITHistSvc> histSvc("THistSvc",name());
+//Original MyAlg.cxx   //TH1D* myHist = new TH1D("myHist","myHist",10,0,10);
+//Original MyAlg.cxx   //CHECK( histSvc->regHist("/MYSTREAM/myHist", myHist) ); //registers histogram to output stream (like SetDirectory in EventLoop)
+//Original MyAlg.cxx   //TTree* myTree = new TTree("myTree","myTree");
+//Original MyAlg.cxx   //CHECK( histSvc->regTree("/MYSTREAM/SubDirectory/myTree", myTree) ); //registers tree to output stream (like SetDirectory in EventLoop) inside a sub-directory
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   return StatusCode::SUCCESS;
+//Original MyAlg.cxx }
+//Original MyAlg.cxx 
+//Original MyAlg.cxx StatusCode MyAlg::finalize() {
+//Original MyAlg.cxx   ATH_MSG_INFO ("Finalizing " << name() << "...");
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx   //Things that happen once at the end of the event loop go here
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   return StatusCode::SUCCESS;
+//Original MyAlg.cxx }
+//Original MyAlg.cxx 
+//Original MyAlg.cxx StatusCode MyAlg::execute() {  
+//Original MyAlg.cxx   ATH_MSG_DEBUG ("Executing " << name() << "...");
+//Original MyAlg.cxx   setFilterPassed(false); //optional: start with algorithm not passed
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx   //Your main analysis code goes here
+//Original MyAlg.cxx   //If you will use this algorithm to perform event skimming, you
+//Original MyAlg.cxx   //should ensure the setFilterPassed method is called
+//Original MyAlg.cxx   //If never called, the algorithm is assumed to have 'passed' by default
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //HERE IS AN EXAMPLE
+//Original MyAlg.cxx   //const xAOD::EventInfo* evtInfo = 0;
+//Original MyAlg.cxx   //CHECK( evtStore()->retrieve( evtInfo, "EventInfo" ) );
+//Original MyAlg.cxx   //ATH_MSG_INFO("eventNumber=" << evtInfo->eventNumber() );
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   setFilterPassed(true); //if got here, assume that means algorithm passed
+//Original MyAlg.cxx   return StatusCode::SUCCESS;
+//Original MyAlg.cxx }
+//Original MyAlg.cxx 
+//Original MyAlg.cxx StatusCode MyAlg::beginInputFile() { 
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx   //This method is called at the start of each input file, even if
+//Original MyAlg.cxx   //the input file contains no events. Accumulate metadata information here
+//Original MyAlg.cxx   //
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //example of retrieval of CutBookkeepers: (remember you will need to include the necessary header files and use statements in requirements file)
+//Original MyAlg.cxx   // const xAOD::CutBookkeeperContainer* bks = 0;
+//Original MyAlg.cxx   // CHECK( inputMetaStore()->retrieve(bks, "CutBookkeepers") );
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   //example of IOVMetaData retrieval (see https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/AthAnalysisBase#How_to_access_file_metadata_in_C)
+//Original MyAlg.cxx   //float beamEnergy(0); CHECK( retrieveMetadata("/TagInfo","beam_energy",beamEnergy) );
+//Original MyAlg.cxx   //std::vector<float> bunchPattern; CHECK( retrieveMetadata("/Digitiation/Parameters","BeamIntensityPattern",bunchPattern) );
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//Original MyAlg.cxx   return StatusCode::SUCCESS;
+//Original MyAlg.cxx }
+//Original MyAlg.cxx 
+//Original MyAlg.cxx 
+//CHECK namespace LVL1 {
+//CHECK 
+//CHECK 
+//CHECK void LVL1::L1METvalue::calcL1METQ(int Ex, int Ey, int& METQ, bool& Overflow) {
+//CHECK 
+//CHECK   /** Greater of 2 values determines range of bits used */
+//CHECK   unsigned int absEx = std::abs(Ex);
+//CHECK   unsigned int absEy = std::abs(Ey);
+//CHECK   int max = (absEx > absEy ? absEx : absEy);
+//CHECK 
+//CHECK   /** If Ex/Ey overflows the LUT input range, trigger fires all thresholds.
+//CHECK       Indicate this with overflow flag and an out of range ETmiss value */
+//CHECK   if ( max >= (1<<(m_nBits+m_nRanges-1)) )  {
+//CHECK     METQ = 16777216; // 4096**2
+//CHECK     Overflow = true;
+//CHECK   }
+//CHECK   /** Otherwise, emulate precision by checking which ET range we are in and
+//CHECK       zeroing bits below that. */
+//CHECK   else {
+//CHECK     for (unsigned int range = 0; range < m_nRanges; ++range) {
+//CHECK       if ( max < (1<<(m_nBits+range)) ) {
+//CHECK         absEx &= (m_mask<<range);
+//CHECK         absEy &= (m_mask<<range);
+//CHECK         break;
+//CHECK       }
+//CHECK     }
+//CHECK     METQ = absEx*absEx + absEy*absEy;
+//CHECK     Overflow = false;
+//CHECK   }
+//CHECK    
+//CHECK }
+//CHECK 
+//CHECK void LVL1::L1METvalue::calcL1MET(int Ex, int Ey, float& MET, bool& Overflow) {
+//CHECK   int METQ;
+//CHECK   calcL1METQ(Ex, Ey, METQ, Overflow);
+//CHECK   MET = sqrt(static_cast<float>(METQ));
+//CHECK }
+//CHECK 
+//CHECK void LVL1::L1METvalue::calcL1MET(int Ex, int Ey, int& MET, unsigned int& Range, bool& Overflow) {
+//CHECK   
+//CHECK   /** Greater of 2 values determines range of bits used */
+//CHECK   unsigned int absEx = std::abs(Ex);
+//CHECK   unsigned int absEy = std::abs(Ey);
+//CHECK   int max = (absEx > absEy ? absEx : absEy);
+//CHECK 
+//CHECK   /** If Ex/Ey overflows the LUT input range, trigger fires all thresholds.
+//CHECK       Indicate this with overflow flag and an out of range ETmiss value */
+//CHECK   if ( max >= (1<<(m_nBits+m_nRanges-1)) )  {
+//CHECK     MET = m_rangeMask + m_valueMask; // 7 bit ET + 2 bit range, all bits set
+//CHECK     Overflow = true;
+//CHECK   }
+//CHECK   /** Otherwise, emulate precision by checking which ET range we are in and
+//CHECK       zeroing bits below that. */
+//CHECK   else {
+//CHECK     Range = 0;
+//CHECK     for (unsigned int range = 0; range < m_nRanges; ++range) {
+//CHECK       if ( max < (1<<(m_nBits+range)) ) {
+//CHECK         absEx &= (m_mask<<range);
+//CHECK         absEy &= (m_mask<<range);
+//CHECK         Range = range;
+//CHECK         break;
+//CHECK       }
+//CHECK     }
+//CHECK     // Shift Ex/Ey values to lowest 6 bits
+//CHECK     absEx = (absEx >> Range);
+//CHECK     absEy = (absEy >> Range);
+//CHECK     // Calculate 7 bit MET value, rounded up to the ceiling 
+//CHECK     int METQ = absEx*absEx + absEy*absEy;
+//CHECK     MET = ceil(sqrt(static_cast<float>(METQ)));
+//CHECK     Overflow = false;
+//CHECK   }
+//CHECK 
+//CHECK }
+//CHECK 
+//CHECK void LVL1::L1METvalue::calcL1METSig(int Ex, int Ey, int SumET, float a, float b, int XEmin, int XEmax, int sqrtTEmin, int sqrtTEmax,
+//CHECK                                     float& XS, int& OutOfRange) {
+//CHECK   
+//CHECK   /// Calculate MET value with correct precision and format
+//CHECK   bool overflow = false;
+//CHECK   int MET = 0;
+//CHECK   unsigned int Range = 0;
+//CHECK   calcL1MET(Ex, Ey, MET, Range, overflow);
+//CHECK   
+//CHECK   ///Use that plus provided SumET and coefficients to calculate METSig
+//CHECK   calcL1METSig(MET, Range, SumET, a, b, XEmin, XEmax, sqrtTEmin, sqrtTEmax, XS, OutOfRange);
+//CHECK   
+//CHECK }
+//CHECK 
+//CHECK void LVL1::L1METvalue::calcL1METSig(int MET, unsigned int Range, int SumET, float a, float b, int XEmin, int XEmax, int sqrtTEmin, int sqrtTEmax,
+//CHECK                                     float& XS, int& OutOfRange) {
+//CHECK  
+//CHECK   /// Initialise default values
+//CHECK   XS = -1.;
+//CHECK   OutOfRange = 0;
+//CHECK     
+//CHECK   /// Impose firmware limitations on specified ranges
+//CHECK   if (XEmax > m_xsXEmax)          XEmax     = m_xsXEmax;
+//CHECK   if (sqrtTEmax > m_xsSqrtTEmax)  sqrtTEmax = m_xsSqrtTEmax;
+//CHECK   
+//CHECK   /// Convert MET value to single linear scale
+//CHECK   int XE = (MET<<Range);
+//CHECK   
+//CHECK   /// Impose hardware limits on MET input to LUT
+//CHECK   if (XE > m_xsXEmax) XE = m_xsXEmax;
+//CHECK 
+//CHECK   /// MET overflow check takes precedence over all other conditions
+//CHECK   if (XE >= XEmax) {
+//CHECK     XS = 9999.;
+//CHECK     OutOfRange = 1;
+//CHECK     return;
+//CHECK   }
+//CHECK 
+//CHECK   /// Protection against invalid input (can never happen in reality, but this is software)
+//CHECK   if (SumET < 0) {
+//CHECK      OutOfRange = -1;
+//CHECK      return;
+//CHECK   }
+//CHECK   
+//CHECK   /// Calculate sqrt(SumET) with integer precision & hardware limits
+//CHECK   int sqrtSumET = sqrt(SumET);
+//CHECK   if (sqrtSumET > m_xsSqrtTEmax) sqrtSumET = m_xsSqrtTEmax;
+//CHECK  
+//CHECK   if (XE < XEmin || sqrtSumET >= sqrtTEmax || sqrtSumET < sqrtTEmin) {
+//CHECK     //XS = 0.;
+//CHECK     OutOfRange = -1;
+//CHECK   }
+//CHECK   /// If in range, calculate XS
+//CHECK   else { 
+//CHECK     OutOfRange = 0;
+//CHECK     if (sqrtSumET > b) XS = float(XE)/(a*(sqrtSumET-b));
+//CHECK   }
+//CHECK 
+//CHECK }
+//CHECK 
+//CHECK } // end of namespace bracket

@@ -1,0 +1,1292 @@
+Fri Apr 28 17:35:30 BST 2017
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO using release [AthAnalysisBase-2.4.25] [x86_64-slc6-gcc49-opt] [AthAnalysisBase-2.4.X/rel_3] -- built on [2017-01-18 06:13]
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+[?1034hPy:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "testMetMaker/share/MyAlgJobo.py"
+Py:ConfigurableDb    INFO Read module info for 623 configurables from 3 genConfDb files
+Py:ConfigurableDb    INFO No duplicates have been found: that's good !
+Py:Athena            INFO including file "AthAnalysisBaseComps/SuppressLogging.py"
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v3r4)
+                                          running on pplxint8.physics.ox.ac.uk on Fri Apr 28 17:35:43 2017
+====================================================================================================================================
+ApplicationMgr       INFO Successfully loaded modules : AthenaServices
+ApplicationMgr       INFO Application Manager Configured successfully
+ApplicationMgr       INFO Updating Gaudi::PluginService::SetDebug(level) to level=0
+StatusCodeSvc        INFO initialize
+ChronoStatSvc        INFO  Number of skipped events for MemStat-1
+AthAlgSeq            INFO Member list: AthEventCounter, CP::CalibratedMuonsProvider, CP::CalibratedEgammaProvider/ElectronCalib, CP::CalibratedEgammaProvider/PhotonCalib, MyAlg/MyMETAlg
+AthEventCounter      INFO initialize ==> Frequency:  'Frequency':1000
+ToolSvc.MuonCal...   INFO Initialising...
+ElectronCalib        INFO Initialising...
+ToolSvc.AutoCon...   INFO Initialization
+ToolSvc.AutoCon...WARNING no decorrelation model specified, assuming full model
+eg_resolution        INFO Initialize eg_resolution
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 102 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(el_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (el_rawcl_Es1 + el_rawcl_Es2 + el_rawcl_Es3)/cosh(el_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:8
+EgammaMVATool        INFO Using layer correction
+EgammaMVATool        INFO 9 variables for electrons
+MVATreeElectron      INFO creating tree for 9 variables: el_cl_E,el_cl_eta,el_cl_etaCalo,el_cl_phiCalo,el_rawcl_Es0,el_rawcl_Es1,el_rawcl_Es2,el_rawcl_Es3,el_rawcl_calibHitsShowerDepth
+egammaMVACalib       INFO Variable that defines particleType not set. Using default formula: ph_Rconv > 0. && ph_Rconv < 800.
+egammaMVACalib       INFO Accessing calibration from egammaMVACalib/v1
+egammaMVACalib       INFO Reading weights from egammaMVACalib/v1
+egammaMVACalib       INFO 204 readers created
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 eta bin(s) -- ( 0 < abs(ph_cl_eta) < 2.47
+egammaMVACalib       INFO egammaMVACalib::printReadersInfo 100 energy bin(s) -- ( 0  < (ph_rawcl_Es1 + ph_rawcl_Es2 + ph_rawcl_Es3)/cosh(ph_cl_eta) < 50000GeV
+egammaMVACalib       INFO Number of variables:12
+EgammaMVATool        INFO configuration does not contain list of variables, try to guess:
+EgammaMVATool        INFO 17 variables for photons
+EgammaMVATool        INFO   ph_Rconv
+EgammaMVATool        INFO   ph_cl_E
+EgammaMVATool        INFO   ph_cl_eta
+EgammaMVATool        INFO   ph_cl_etaCalo
+EgammaMVATool        INFO   ph_cl_phiCalo
+EgammaMVATool        INFO   ph_convtrk1nPixHits
+EgammaMVATool        INFO   ph_convtrk1nSCTHits
+EgammaMVATool        INFO   ph_convtrk2nPixHits
+EgammaMVATool        INFO   ph_convtrk2nSCTHits
+EgammaMVATool        INFO   ph_pt1conv
+EgammaMVATool        INFO   ph_pt2conv
+EgammaMVATool        INFO   ph_ptconv
+EgammaMVATool        INFO   ph_rawcl_Es0
+EgammaMVATool        INFO   ph_rawcl_Es1
+EgammaMVATool        INFO   ph_rawcl_Es2
+EgammaMVATool        INFO   ph_rawcl_Es3
+EgammaMVATool        INFO   ph_rawcl_calibHitsShowerDepth
+MVATreePhoton        INFO creating tree for 17 variables: ph_Rconv,ph_cl_E,ph_cl_eta,ph_cl_etaCalo,ph_cl_phiCalo,ph_convtrk1nPixHits,ph_convtrk1nSCTHits,ph_convtrk2nPixHits,ph_convtrk2nSCTHits,ph_pt1conv,ph_pt2conv,ph_ptconv,ph_rawcl_Es0,ph_rawcl_Es1,ph_rawcl_Es2,ph_rawcl_Es3,ph_rawcl_calibHitsShowerDepth
+egammaLayerReca...   INFO using scale 2012_alt_with_layer2
+egammaLayerReca...   INFO using scale ps_HV1
+egammaLayerReca...   INFO using scale layer2_alt_2012_v5
+egammaLayerReca...   INFO using scale ps_2012
+ToolSvc.AutoCon...   INFO ESModel: es2012c
+ToolSvc.AutoCon...   INFO ResolutionType: SigmaEff90
+ToolSvc.AutoCon...   INFO layer correction = 2
+ToolSvc.AutoCon...   INFO PS correction = 2
+ToolSvc.AutoCon...   INFO S12 correction = 2
+ToolSvc.AutoCon...   INFO layer2 recalibration = 2
+ToolSvc.AutoCon...   INFO intermodule correction = 1
+ToolSvc.AutoCon...   INFO phi uniformity correction = 1
+ToolSvc.AutoCon...   INFO gain correction = 1
+ToolSvc.AutoCon...   INFO smearing = 2
+ToolSvc.AutoCon...   INFO insitu scales = 2
+ToolSvc.AutoCon...   INFO ep combination = 0
+ToolSvc.AutoCon...   INFO use MVA calibration = 2
+ToolSvc.AutoCon...   INFO use temperature correction 2015 = 2
+ToolSvc.AutoCon...   INFO use uA2MeV correction 2015 1/2 week = 2
+PhotonCalib          INFO Initialising...
+MyMETAlg             INFO start initialize 
+THistSvc             INFO registered file [myHistoFile.root]... [ok]
+MyMETAlg             INFO Initializing MyMETAlg...
+MyMETAlg             INFO Retrieving tools...
+ToolSvc.METMaker     INFO Initializing ToolSvc.METMaker...
+ToolSvc.MuonSel...   INFO Initialising...
+ToolSvc.MuonSel...   INFO Maximum eta: 2.7
+ToolSvc.MuonSel...   INFO Muon quality: 1
+ToolSvc.MuonSel...   INFO Initialising tight working point histograms...
+ToolSvc.MuonSel...   INFO Reading muon tight working point histograms from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/MuonSelectorTools/PreRec2016_2016-04-13/muonSelection_tightWPHisto.root
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_lowPt_qOverPCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_mediumPt_rhoCuts
+ToolSvc.MuonSel...   INFO Successfully read tight working point histogram: tightWP_highPt_rhoCuts
+ToolSvc.EleSelTool   INFO operating point : MediumLHElectron
+ToolSvc.PhotonS...   INFO operating point : Tight
+ToolSvc.TauSele...   INFO Initializing TauSelectionTool
+ToolSvc.TauSele...   INFO Initializing TauOverlappingElectronLLHDecorator
+ToolSvc.TauSele...   INFO Loading ele OLR cut file TauAnalysisTools/00-02-35/Selection/eveto_cutvals.root
+ToolSvc.myJESTool    INFO Initializing ToolSvc.myJESTool...
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.myJESTool    INFO Initializing the xAOD Jet Calibration Tool for AntiKt4EMTopojets
+ToolSvc.myJESTool    INFO Reading global JES settings from: JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO resolved in: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationConfigs/JES_MC15cRecommendation_May2016.config
+ToolSvc.myJESTool    INFO Initializing pileup correction.
+ToolSvc.myJESTo...   INFO JetPileupCorrection: Starting scale: JetConstitScaleMomentum
+ToolSvc.myJESTo...   INFO Jet area pile up correction will be applied.
+ToolSvc.myJESTo...   INFO Reading residual jet-area pile-up correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MCBasedOffset_April2015.config
+ToolSvc.myJESTo...   INFO Description: Residual 2015 mu- and N_{PV}-dependent jet pileup corrections
+ToolSvc.myJESTool    INFO Initializing JES correction.
+ToolSvc.myJESTo...   INFO Reading absolute calibration factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_EM_LCW_JES_v1.config
+ToolSvc.myJESTo...   INFO Description: JES derived May 2015 with Jet Areas, for application to MC15
+ToolSvc.myJESTool    INFO Initializing GSC correction.
+ToolSvc.myJESTo...   INFO Initializing the Global Sequential Calibration tool
+ToolSvc.myJESTo...   INFO GSC Tool has been initialized with binning and eta fit factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/CalibrationFactors/MC15_GSC_factors_Aug2015.root
+ToolSvc.myJESTool    INFO Initializing Insitu correction.
+ToolSvc.myJESTo...   INFO Reading In-situ correction factors from: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-76/InsituCalibration/InsituCalibration_20_7_4EM_4LC_30Sep2016.root
+ToolSvc.myJESTo...   INFO Tool configured to calibrate data
+ToolSvc.myJESTo...   INFO In-situ correction to be applied: 20.7 Eta-Intercalibration and Absolute Insitu
+ToolSvc.myJESTool    INFO ===================================
+ToolSvc.TrigDec...   INFO Initializing Trig::TrigDecisionTool (standalone version even for athena)
+ToolSvc.xAODCon...   INFO Initialising...
+XMLDOMErrorMessanger Error Error at file "/home/paredes/TestArea/athenaMetTest2/PoolFileCatalog.xml", line 285, column 50
+   Message: ID value '9D3D46EF-B3E8-D548-9289-A70E4565E907' has already been used
+XMLDOMErrorMessanger Error Error at file "/home/paredes/TestArea/athenaMetTest2/PoolFileCatalog.xml", line 292, column 50
+   Message: ID value 'C2ECD734-E77C-4444-94C9-5BFB52A27AE5' has already been used
+XMLDOMErrorMessanger Error Error at file "/home/paredes/TestArea/athenaMetTest2/PoolFileCatalog.xml", line 299, column 50
+   Message: ID value '310CA89E-36EB-5D45-8EC8-6FC63732F512' has already been used
+XMLDOMErrorMessanger Error Error at file "/home/paredes/TestArea/athenaMetTest2/PoolFileCatalog.xml", line 306, column 50
+   Message: ID value '1F2C7770-3EEE-E44A-8AED-9D648DA9C075' has already been used
+ToolSvc.TrigDec...   INFO Initialized TDT
+ToolSvc.eleIsoTool   INFO Initialising...
+ToolSvc.eleIsoTool   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.eleIsoTool   INFO VersionInfo:2015_Sep_29_v2a
+ToolSvc.muonIso...   INFO Initialising...
+ToolSvc.muonIso...   INFO Reading input file IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/IsolationSelection/v2/MC15_Z_Jpsi_cutMap.root
+ToolSvc.muonIso...   INFO VersionInfo:2015_Sep_29_v2a
+ApplicationMgr       INFO Application Manager Initialized successfully
+ApplicationMgr       INFO Application Manager Started successfully
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10949, HLTPSK = 8100
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10949 and HLTPSK: 8100
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 13 jets, 0 are non-overlapping, 13 are soft
+ToolSvc.TrigDec...   INFO decision not set on first (?) assert. deciding how to unpack
+ToolSvc.TrigDec...   INFO SG contains xAOD decision, use DecisionUnpackerStandalone
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 2 are non-overlapping, 2 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET photons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 1 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 1 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 0 are non-overlapping, 6 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 0 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 1 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 1 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 14 jets, 5 are non-overlapping, 9 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 0 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET photons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 0 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 0 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 12 jets, 3 are non-overlapping, 9 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 2 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET photons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 19 jets, 2 are non-overlapping, 17 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 0 are non-overlapping, 6 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 2 are non-overlapping, 1 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 8 jets, 3 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 0 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 0 are non-overlapping, 7 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 17 jets, 1 are non-overlapping, 16 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 19 jets, 1 are non-overlapping, 18 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 2 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 0 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 1 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 0 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 0 are non-overlapping, 6 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 3 are non-overlapping, 1 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 0 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 11 jets, 0 are non-overlapping, 11 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET photons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 11 jets, 2 are non-overlapping, 9 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 2 MET electrons. 2 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 0 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 1 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 8 jets, 0 are non-overlapping, 8 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 9 jets, 0 are non-overlapping, 9 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 9 jets, 1 are non-overlapping, 8 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 1 are non-overlapping, 2 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 0 are non-overlapping, 7 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 0 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 13 jets, 0 are non-overlapping, 13 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 1 MET electrons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 8 jets, 4 are non-overlapping, 4 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 3 are non-overlapping, 1 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET photons. 1 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 1 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 13 jets, 1 are non-overlapping, 12 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 0 are non-overlapping, 7 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 2 jets, 0 are non-overlapping, 2 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 6 jets, 0 are non-overlapping, 6 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 1 are non-overlapping, 6 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 4 jets, 1 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 9 jets, 6 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 3 jets, 0 are non-overlapping, 3 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 5 jets, 0 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 2 are non-overlapping, 5 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET taus. 0 are non-overlapping.
+MyMETAlg            DEBUG Of 7 jets, 0 are non-overlapping, 7 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg            DEBUG Successfully retrieved muon collection
+MyMETAlg            DEBUG Selected 0 MET electrons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 0 MET photons. 0 are non-overlapping.
+MyMETAlg            DEBUG Selected 1 MET taus. 1 are non-overlapping.
+MyMETAlg            DEBUG Of 16 jets, 1 are non-overlapping, 15 are soft
+MyMETAlg            DEBUG Successfully retrieved jet collection
+MyMETAlg            DEBUG Successfully retrieved electron collection
+MyMETAlg            DEBUG Successfully retrieved photon collection
+MyMETAlg            DEBUG Successfully retrieved tau collection
+MyMETAlg          WARNING DEBUG message limit (500) reached for MyMETAlg. Suppressing further output.
+AthEventCounter      INFO execute ==> seen events: 1000
+AthEventCounter      INFO execute ==> seen events: 2000
+AthEventCounter      INFO execute ==> seen events: 3000
+AthEventCounter      INFO execute ==> seen events: 4000
+AthEventCounter      INFO execute ==> seen events: 5000
+AthEventCounter      INFO execute ==> seen events: 6000
+AthEventCounter      INFO execute ==> seen events: 7000
+AthEventCounter      INFO execute ==> seen events: 8000
+AthEventCounter      INFO execute ==> seen events: 9000
+AthEventCounter      INFO execute ==> seen events: 10000
+AthEventCounter      INFO execute ==> seen events: 11000
+AthEventCounter      INFO execute ==> seen events: 12000
+AthEventCounter      INFO execute ==> seen events: 13000
+AthEventCounter      INFO execute ==> seen events: 14000
+AthEventCounter      INFO execute ==> seen events: 15000
+AthEventCounter      INFO execute ==> seen events: 16000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 17000
+AthEventCounter      INFO execute ==> seen events: 18000
+AthEventCounter      INFO execute ==> seen events: 19000
+AthEventCounter      INFO execute ==> seen events: 20000
+AthEventCounter      INFO execute ==> seen events: 21000
+AthEventCounter      INFO execute ==> seen events: 22000
+AthEventCounter      INFO execute ==> seen events: 23000
+AthEventCounter      INFO execute ==> seen events: 24000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10942, HLTPSK = 8093
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10942 and HLTPSK: 8093
+AthEventCounter      INFO execute ==> seen events: 25000
+AthEventCounter      INFO execute ==> seen events: 26000
+AthEventCounter      INFO execute ==> seen events: 27000
+AthEventCounter      INFO execute ==> seen events: 28000
+AthEventCounter      INFO execute ==> seen events: 29000
+AthEventCounter      INFO execute ==> seen events: 30000
+AthEventCounter      INFO execute ==> seen events: 31000
+AthEventCounter      INFO execute ==> seen events: 32000
+AthEventCounter      INFO execute ==> seen events: 33000
+AthEventCounter      INFO execute ==> seen events: 34000
+AthEventCounter      INFO execute ==> seen events: 35000
+AthEventCounter      INFO execute ==> seen events: 36000
+AthEventCounter      INFO execute ==> seen events: 37000
+AthEventCounter      INFO execute ==> seen events: 38000
+AthEventCounter      INFO execute ==> seen events: 39000
+AthEventCounter      INFO execute ==> seen events: 40000
+AthEventCounter      INFO execute ==> seen events: 41000
+AthEventCounter      INFO execute ==> seen events: 42000
+AthEventCounter      INFO execute ==> seen events: 43000
+AthEventCounter      INFO execute ==> seen events: 44000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 45000
+AthEventCounter      INFO execute ==> seen events: 46000
+AthEventCounter      INFO execute ==> seen events: 47000
+AthEventCounter      INFO execute ==> seen events: 48000
+AthEventCounter      INFO execute ==> seen events: 49000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 50000
+AthEventCounter      INFO execute ==> seen events: 51000
+AthEventCounter      INFO execute ==> seen events: 52000
+AthEventCounter      INFO execute ==> seen events: 53000
+AthEventCounter      INFO execute ==> seen events: 54000
+AthEventCounter      INFO execute ==> seen events: 55000
+AthEventCounter      INFO execute ==> seen events: 56000
+AthEventCounter      INFO execute ==> seen events: 57000
+AthEventCounter      INFO execute ==> seen events: 58000
+AthEventCounter      INFO execute ==> seen events: 59000
+AthEventCounter      INFO execute ==> seen events: 60000
+AthEventCounter      INFO execute ==> seen events: 61000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10946, HLTPSK = 8097
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10946 and HLTPSK: 8097
+AthEventCounter      INFO execute ==> seen events: 62000
+AthEventCounter      INFO execute ==> seen events: 63000
+AthEventCounter      INFO execute ==> seen events: 64000
+AthEventCounter      INFO execute ==> seen events: 65000
+AthEventCounter      INFO execute ==> seen events: 66000
+AthEventCounter      INFO execute ==> seen events: 67000
+AthEventCounter      INFO execute ==> seen events: 68000
+AthEventCounter      INFO execute ==> seen events: 69000
+AthEventCounter      INFO execute ==> seen events: 70000
+AthEventCounter      INFO execute ==> seen events: 71000
+AthEventCounter      INFO execute ==> seen events: 72000
+AthEventCounter      INFO execute ==> seen events: 73000
+AthEventCounter      INFO execute ==> seen events: 74000
+AthEventCounter      INFO execute ==> seen events: 75000
+AthEventCounter      INFO execute ==> seen events: 76000
+AthEventCounter      INFO execute ==> seen events: 77000
+AthEventCounter      INFO execute ==> seen events: 78000
+AthEventCounter      INFO execute ==> seen events: 79000
+AthEventCounter      INFO execute ==> seen events: 80000
+AthEventCounter      INFO execute ==> seen events: 81000
+AthEventCounter      INFO execute ==> seen events: 82000
+AthEventCounter      INFO execute ==> seen events: 83000
+AthEventCounter      INFO execute ==> seen events: 84000
+AthEventCounter      INFO execute ==> seen events: 85000
+AthEventCounter      INFO execute ==> seen events: 86000
+AthEventCounter      INFO execute ==> seen events: 87000
+AthEventCounter      INFO execute ==> seen events: 88000
+AthEventCounter      INFO execute ==> seen events: 89000
+AthEventCounter      INFO execute ==> seen events: 90000
+AthEventCounter      INFO execute ==> seen events: 91000
+AthEventCounter      INFO execute ==> seen events: 92000
+AthEventCounter      INFO execute ==> seen events: 93000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10947, HLTPSK = 8098
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10947 and HLTPSK: 8098
+AthEventCounter      INFO execute ==> seen events: 94000
+AthEventCounter      INFO execute ==> seen events: 95000
+AthEventCounter      INFO execute ==> seen events: 96000
+AthEventCounter      INFO execute ==> seen events: 97000
+AthEventCounter      INFO execute ==> seen events: 98000
+AthEventCounter      INFO execute ==> seen events: 99000
+AthEventCounter      INFO execute ==> seen events: 100000
+AthEventCounter      INFO execute ==> seen events: 101000
+AthEventCounter      INFO execute ==> seen events: 102000
+AthEventCounter      INFO execute ==> seen events: 103000
+AthEventCounter      INFO execute ==> seen events: 104000
+AthEventCounter      INFO execute ==> seen events: 105000
+AthEventCounter      INFO execute ==> seen events: 106000
+AthEventCounter      INFO execute ==> seen events: 107000
+AthEventCounter      INFO execute ==> seen events: 108000
+AthEventCounter      INFO execute ==> seen events: 109000
+AthEventCounter      INFO execute ==> seen events: 110000
+AthEventCounter      INFO execute ==> seen events: 111000
+AthEventCounter      INFO execute ==> seen events: 112000
+AthEventCounter      INFO execute ==> seen events: 113000
+AthEventCounter      INFO execute ==> seen events: 114000
+AthEventCounter      INFO execute ==> seen events: 115000
+AthEventCounter      INFO execute ==> seen events: 116000
+AthEventCounter      INFO execute ==> seen events: 117000
+AthEventCounter      INFO execute ==> seen events: 118000
+AthEventCounter      INFO execute ==> seen events: 119000
+AthEventCounter      INFO execute ==> seen events: 120000
+AthEventCounter      INFO execute ==> seen events: 121000
+AthEventCounter      INFO execute ==> seen events: 122000
+AthEventCounter      INFO execute ==> seen events: 123000
+AthEventCounter      INFO execute ==> seen events: 124000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10947, HLTPSK = 8098
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10947 and HLTPSK: 8098
+AthEventCounter      INFO execute ==> seen events: 125000
+AthEventCounter      INFO execute ==> seen events: 126000
+AthEventCounter      INFO execute ==> seen events: 127000
+AthEventCounter      INFO execute ==> seen events: 128000
+AthEventCounter      INFO execute ==> seen events: 129000
+AthEventCounter      INFO execute ==> seen events: 130000
+AthEventCounter      INFO execute ==> seen events: 131000
+AthEventCounter      INFO execute ==> seen events: 132000
+AthEventCounter      INFO execute ==> seen events: 133000
+AthEventCounter      INFO execute ==> seen events: 134000
+AthEventCounter      INFO execute ==> seen events: 135000
+AthEventCounter      INFO execute ==> seen events: 136000
+AthEventCounter      INFO execute ==> seen events: 137000
+AthEventCounter      INFO execute ==> seen events: 138000
+AthEventCounter      INFO execute ==> seen events: 139000
+AthEventCounter      INFO execute ==> seen events: 140000
+AthEventCounter      INFO execute ==> seen events: 141000
+AthEventCounter      INFO execute ==> seen events: 142000
+AthEventCounter      INFO execute ==> seen events: 143000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 144000
+AthEventCounter      INFO execute ==> seen events: 145000
+AthEventCounter      INFO execute ==> seen events: 146000
+AthEventCounter      INFO execute ==> seen events: 147000
+AthEventCounter      INFO execute ==> seen events: 148000
+AthEventCounter      INFO execute ==> seen events: 149000
+AthEventCounter      INFO execute ==> seen events: 150000
+AthEventCounter      INFO execute ==> seen events: 151000
+AthEventCounter      INFO execute ==> seen events: 152000
+AthEventCounter      INFO execute ==> seen events: 153000
+AthEventCounter      INFO execute ==> seen events: 154000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10943, HLTPSK = 8094
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10943 and HLTPSK: 8094
+AthEventCounter      INFO execute ==> seen events: 155000
+AthEventCounter      INFO execute ==> seen events: 156000
+AthEventCounter      INFO execute ==> seen events: 157000
+AthEventCounter      INFO execute ==> seen events: 158000
+AthEventCounter      INFO execute ==> seen events: 159000
+AthEventCounter      INFO execute ==> seen events: 160000
+AthEventCounter      INFO execute ==> seen events: 161000
+AthEventCounter      INFO execute ==> seen events: 162000
+AthEventCounter      INFO execute ==> seen events: 163000
+AthEventCounter      INFO execute ==> seen events: 164000
+AthEventCounter      INFO execute ==> seen events: 165000
+AthEventCounter      INFO execute ==> seen events: 166000
+AthEventCounter      INFO execute ==> seen events: 167000
+AthEventCounter      INFO execute ==> seen events: 168000
+AthEventCounter      INFO execute ==> seen events: 169000
+AthEventCounter      INFO execute ==> seen events: 170000
+AthEventCounter      INFO execute ==> seen events: 171000
+AthEventCounter      INFO execute ==> seen events: 172000
+AthEventCounter      INFO execute ==> seen events: 173000
+AthEventCounter      INFO execute ==> seen events: 174000
+AthEventCounter      INFO execute ==> seen events: 175000
+AthEventCounter      INFO execute ==> seen events: 176000
+AthEventCounter      INFO execute ==> seen events: 177000
+AthEventCounter      INFO execute ==> seen events: 178000
+AthEventCounter      INFO execute ==> seen events: 179000
+AthEventCounter      INFO execute ==> seen events: 180000
+AthEventCounter      INFO execute ==> seen events: 181000
+AthEventCounter      INFO execute ==> seen events: 182000
+AthEventCounter      INFO execute ==> seen events: 183000
+AthEventCounter      INFO execute ==> seen events: 184000
+AthEventCounter      INFO execute ==> seen events: 185000
+AthEventCounter      INFO execute ==> seen events: 186000
+AthEventCounter      INFO execute ==> seen events: 187000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 188000
+AthEventCounter      INFO execute ==> seen events: 189000
+AthEventCounter      INFO execute ==> seen events: 190000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10898, HLTPSK = 8092
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10898 and HLTPSK: 8092
+AthEventCounter      INFO execute ==> seen events: 191000
+AthEventCounter      INFO execute ==> seen events: 192000
+AthEventCounter      INFO execute ==> seen events: 193000
+AthEventCounter      INFO execute ==> seen events: 194000
+AthEventCounter      INFO execute ==> seen events: 195000
+AthEventCounter      INFO execute ==> seen events: 196000
+AthEventCounter      INFO execute ==> seen events: 197000
+AthEventCounter      INFO execute ==> seen events: 198000
+AthEventCounter      INFO execute ==> seen events: 199000
+AthEventCounter      INFO execute ==> seen events: 200000
+AthEventCounter      INFO execute ==> seen events: 201000
+AthEventCounter      INFO execute ==> seen events: 202000
+AthEventCounter      INFO execute ==> seen events: 203000
+AthEventCounter      INFO execute ==> seen events: 204000
+AthEventCounter      INFO execute ==> seen events: 205000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 206000
+AthEventCounter      INFO execute ==> seen events: 207000
+AthEventCounter      INFO execute ==> seen events: 208000
+AthEventCounter      INFO execute ==> seen events: 209000
+AthEventCounter      INFO execute ==> seen events: 210000
+AthEventCounter      INFO execute ==> seen events: 211000
+AthEventCounter      INFO execute ==> seen events: 212000
+AthEventCounter      INFO execute ==> seen events: 213000
+AthEventCounter      INFO execute ==> seen events: 214000
+AthEventCounter      INFO execute ==> seen events: 215000
+AthEventCounter      INFO execute ==> seen events: 216000
+AthEventCounter      INFO execute ==> seen events: 217000
+AthEventCounter      INFO execute ==> seen events: 218000
+AthEventCounter      INFO execute ==> seen events: 219000
+AthEventCounter      INFO execute ==> seen events: 220000
+AthEventCounter      INFO execute ==> seen events: 221000
+AthEventCounter      INFO execute ==> seen events: 222000
+AthEventCounter      INFO execute ==> seen events: 223000
+AthEventCounter      INFO execute ==> seen events: 224000
+AthEventCounter      INFO execute ==> seen events: 225000
+AthEventCounter      INFO execute ==> seen events: 226000
+AthEventCounter      INFO execute ==> seen events: 227000
+AthEventCounter      INFO execute ==> seen events: 228000
+AthEventCounter      INFO execute ==> seen events: 229000
+AthEventCounter      INFO execute ==> seen events: 230000
+AthEventCounter      INFO execute ==> seen events: 231000
+AthEventCounter      INFO execute ==> seen events: 232000
+AthEventCounter      INFO execute ==> seen events: 233000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10942, HLTPSK = 8093
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10942 and HLTPSK: 8093
+AthEventCounter      INFO execute ==> seen events: 234000
+AthEventCounter      INFO execute ==> seen events: 235000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 236000
+AthEventCounter      INFO execute ==> seen events: 237000
+AthEventCounter      INFO execute ==> seen events: 238000
+AthEventCounter      INFO execute ==> seen events: 239000
+AthEventCounter      INFO execute ==> seen events: 240000
+AthEventCounter      INFO execute ==> seen events: 241000
+AthEventCounter      INFO execute ==> seen events: 242000
+AthEventCounter      INFO execute ==> seen events: 243000
+AthEventCounter      INFO execute ==> seen events: 244000
+AthEventCounter      INFO execute ==> seen events: 245000
+AthEventCounter      INFO execute ==> seen events: 246000
+AthEventCounter      INFO execute ==> seen events: 247000
+AthEventCounter      INFO execute ==> seen events: 248000
+AthEventCounter      INFO execute ==> seen events: 249000
+AthEventCounter      INFO execute ==> seen events: 250000
+AthEventCounter      INFO execute ==> seen events: 251000
+AthEventCounter      INFO execute ==> seen events: 252000
+AthEventCounter      INFO execute ==> seen events: 253000
+AthEventCounter      INFO execute ==> seen events: 254000
+AthEventCounter      INFO execute ==> seen events: 255000
+AthEventCounter      INFO execute ==> seen events: 256000
+AthEventCounter      INFO execute ==> seen events: 257000
+AthEventCounter      INFO execute ==> seen events: 258000
+AthEventCounter      INFO execute ==> seen events: 259000
+AthEventCounter      INFO execute ==> seen events: 260000
+AthEventCounter      INFO execute ==> seen events: 261000
+AthEventCounter      INFO execute ==> seen events: 262000
+AthEventCounter      INFO execute ==> seen events: 263000
+AthEventCounter      INFO execute ==> seen events: 264000
+AthEventCounter      INFO execute ==> seen events: 265000
+AthEventCounter      INFO execute ==> seen events: 266000
+AthEventCounter      INFO execute ==> seen events: 267000
+AthEventCounter      INFO execute ==> seen events: 268000
+AthEventCounter      INFO execute ==> seen events: 269000
+AthEventCounter      INFO execute ==> seen events: 270000
+AthEventCounter      INFO execute ==> seen events: 271000
+AthEventCounter      INFO execute ==> seen events: 272000
+AthEventCounter      INFO execute ==> seen events: 273000
+AthEventCounter      INFO execute ==> seen events: 274000
+AthEventCounter      INFO execute ==> seen events: 275000
+AthEventCounter      INFO execute ==> seen events: 276000
+AthEventCounter      INFO execute ==> seen events: 277000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10949, HLTPSK = 8100
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10949 and HLTPSK: 8100
+AthEventCounter      INFO execute ==> seen events: 278000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 279000
+AthEventCounter      INFO execute ==> seen events: 280000
+AthEventCounter      INFO execute ==> seen events: 281000
+AthEventCounter      INFO execute ==> seen events: 282000
+AthEventCounter      INFO execute ==> seen events: 283000
+AthEventCounter      INFO execute ==> seen events: 284000
+AthEventCounter      INFO execute ==> seen events: 285000
+AthEventCounter      INFO execute ==> seen events: 286000
+AthEventCounter      INFO execute ==> seen events: 287000
+AthEventCounter      INFO execute ==> seen events: 288000
+AthEventCounter      INFO execute ==> seen events: 289000
+AthEventCounter      INFO execute ==> seen events: 290000
+AthEventCounter      INFO execute ==> seen events: 291000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 292000
+AthEventCounter      INFO execute ==> seen events: 293000
+AthEventCounter      INFO execute ==> seen events: 294000
+AthEventCounter      INFO execute ==> seen events: 295000
+AthEventCounter      INFO execute ==> seen events: 296000
+AthEventCounter      INFO execute ==> seen events: 297000
+AthEventCounter      INFO execute ==> seen events: 298000
+AthEventCounter      INFO execute ==> seen events: 299000
+AthEventCounter      INFO execute ==> seen events: 300000
+AthEventCounter      INFO execute ==> seen events: 301000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10949, HLTPSK = 8100
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10949 and HLTPSK: 8100
+AthEventCounter      INFO execute ==> seen events: 302000
+AthEventCounter      INFO execute ==> seen events: 303000
+AthEventCounter      INFO execute ==> seen events: 304000
+AthEventCounter      INFO execute ==> seen events: 305000
+AthEventCounter      INFO execute ==> seen events: 306000
+AthEventCounter      INFO execute ==> seen events: 307000
+AthEventCounter      INFO execute ==> seen events: 308000
+AthEventCounter      INFO execute ==> seen events: 309000
+AthEventCounter      INFO execute ==> seen events: 310000
+AthEventCounter      INFO execute ==> seen events: 311000
+AthEventCounter      INFO execute ==> seen events: 312000
+AthEventCounter      INFO execute ==> seen events: 313000
+AthEventCounter      INFO execute ==> seen events: 314000
+AthEventCounter      INFO execute ==> seen events: 315000
+AthEventCounter      INFO execute ==> seen events: 316000
+AthEventCounter      INFO execute ==> seen events: 317000
+AthEventCounter      INFO execute ==> seen events: 318000
+AthEventCounter      INFO execute ==> seen events: 319000
+AthEventCounter      INFO execute ==> seen events: 320000
+AthEventCounter      INFO execute ==> seen events: 321000
+AthEventCounter      INFO execute ==> seen events: 322000
+AthEventCounter      INFO execute ==> seen events: 323000
+AthEventCounter      INFO execute ==> seen events: 324000
+AthEventCounter      INFO execute ==> seen events: 325000
+AthEventCounter      INFO execute ==> seen events: 326000
+AthEventCounter      INFO execute ==> seen events: 327000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10947, HLTPSK = 8098
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10947 and HLTPSK: 8098
+AthEventCounter      INFO execute ==> seen events: 328000
+AthEventCounter      INFO execute ==> seen events: 329000
+AthEventCounter      INFO execute ==> seen events: 330000
+AthEventCounter      INFO execute ==> seen events: 331000
+AthEventCounter      INFO execute ==> seen events: 332000
+AthEventCounter      INFO execute ==> seen events: 333000
+AthEventCounter      INFO execute ==> seen events: 334000
+AthEventCounter      INFO execute ==> seen events: 335000
+AthEventCounter      INFO execute ==> seen events: 336000
+AthEventCounter      INFO execute ==> seen events: 337000
+AthEventCounter      INFO execute ==> seen events: 338000
+AthEventCounter      INFO execute ==> seen events: 339000
+AthEventCounter      INFO execute ==> seen events: 340000
+AthEventCounter      INFO execute ==> seen events: 341000
+AthEventCounter      INFO execute ==> seen events: 342000
+AthEventCounter      INFO execute ==> seen events: 343000
+AthEventCounter      INFO execute ==> seen events: 344000
+AthEventCounter      INFO execute ==> seen events: 345000
+AthEventCounter      INFO execute ==> seen events: 346000
+AthEventCounter      INFO execute ==> seen events: 347000
+AthEventCounter      INFO execute ==> seen events: 348000
+AthEventCounter      INFO execute ==> seen events: 349000
+AthEventCounter      INFO execute ==> seen events: 350000
+AthEventCounter      INFO execute ==> seen events: 351000
+AthEventCounter      INFO execute ==> seen events: 352000
+AthEventCounter      INFO execute ==> seen events: 353000
+AthEventCounter      INFO execute ==> seen events: 354000
+AthEventCounter      INFO execute ==> seen events: 355000
+AthEventCounter      INFO execute ==> seen events: 356000
+AthEventCounter      INFO execute ==> seen events: 357000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10949, HLTPSK = 8100
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10949 and HLTPSK: 8100
+AthEventCounter      INFO execute ==> seen events: 358000
+AthEventCounter      INFO execute ==> seen events: 359000
+AthEventCounter      INFO execute ==> seen events: 360000
+AthEventCounter      INFO execute ==> seen events: 361000
+AthEventCounter      INFO execute ==> seen events: 362000
+AthEventCounter      INFO execute ==> seen events: 363000
+AthEventCounter      INFO execute ==> seen events: 364000
+AthEventCounter      INFO execute ==> seen events: 365000
+AthEventCounter      INFO execute ==> seen events: 366000
+AthEventCounter      INFO execute ==> seen events: 367000
+AthEventCounter      INFO execute ==> seen events: 368000
+AthEventCounter      INFO execute ==> seen events: 369000
+AthEventCounter      INFO execute ==> seen events: 370000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 371000
+AthEventCounter      INFO execute ==> seen events: 372000
+AthEventCounter      INFO execute ==> seen events: 373000
+AthEventCounter      INFO execute ==> seen events: 374000
+AthEventCounter      INFO execute ==> seen events: 375000
+AthEventCounter      INFO execute ==> seen events: 376000
+AthEventCounter      INFO execute ==> seen events: 377000
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 378000
+AthEventCounter      INFO execute ==> seen events: 379000
+AthEventCounter      INFO execute ==> seen events: 380000
+AthEventCounter      INFO execute ==> seen events: 381000
+AthEventCounter      INFO execute ==> seen events: 382000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10898, HLTPSK = 8092
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10898 and HLTPSK: 8092
+AthEventCounter      INFO execute ==> seen events: 383000
+AthEventCounter      INFO execute ==> seen events: 384000
+AthEventCounter      INFO execute ==> seen events: 385000
+AthEventCounter      INFO execute ==> seen events: 386000
+AthEventCounter      INFO execute ==> seen events: 387000
+AthEventCounter      INFO execute ==> seen events: 388000
+AthEventCounter      INFO execute ==> seen events: 389000
+AthEventCounter      INFO execute ==> seen events: 390000
+AthEventCounter      INFO execute ==> seen events: 391000
+AthEventCounter      INFO execute ==> seen events: 392000
+AthEventCounter      INFO execute ==> seen events: 393000
+AthEventCounter      INFO execute ==> seen events: 394000
+AthEventCounter      INFO execute ==> seen events: 395000
+AthEventCounter      INFO execute ==> seen events: 396000
+AthEventCounter      INFO execute ==> seen events: 397000
+AthEventCounter      INFO execute ==> seen events: 398000
+AthEventCounter      INFO execute ==> seen events: 399000
+AthEventCounter      INFO execute ==> seen events: 400000
+AthEventCounter      INFO execute ==> seen events: 401000
+AthEventCounter      INFO execute ==> seen events: 402000
+AthEventCounter      INFO execute ==> seen events: 403000
+AthEventCounter      INFO execute ==> seen events: 404000
+AthEventCounter      INFO execute ==> seen events: 405000
+AthEventCounter      INFO execute ==> seen events: 406000
+AthEventCounter      INFO execute ==> seen events: 407000
+AthEventCounter      INFO execute ==> seen events: 408000
+AthEventCounter      INFO execute ==> seen events: 409000
+AthEventCounter      INFO execute ==> seen events: 410000
+AthEventCounter      INFO execute ==> seen events: 411000
+AthEventCounter      INFO execute ==> seen events: 412000
+AthEventCounter      INFO execute ==> seen events: 413000
+AthEventCounter      INFO execute ==> seen events: 414000
+AthEventCounter      INFO execute ==> seen events: 415000
+AthEventCounter      INFO execute ==> seen events: 416000
+AthEventCounter      INFO execute ==> seen events: 417000
+AthEventCounter      INFO execute ==> seen events: 418000
+AthEventCounter      INFO execute ==> seen events: 419000
+AthEventCounter      INFO execute ==> seen events: 420000
+AthEventCounter      INFO execute ==> seen events: 421000
+AthEventCounter      INFO execute ==> seen events: 422000
+AthEventCounter      INFO execute ==> seen events: 423000
+AthEventCounter      INFO execute ==> seen events: 424000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10943, HLTPSK = 8094
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10943 and HLTPSK: 8094
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+AthEventCounter      INFO execute ==> seen events: 425000
+AthEventCounter      INFO execute ==> seen events: 426000
+AthEventCounter      INFO execute ==> seen events: 427000
+AthEventCounter      INFO execute ==> seen events: 428000
+AthEventCounter      INFO execute ==> seen events: 429000
+AthEventCounter      INFO execute ==> seen events: 430000
+AthEventCounter      INFO execute ==> seen events: 431000
+AthEventCounter      INFO execute ==> seen events: 432000
+AthEventCounter      INFO execute ==> seen events: 433000
+AthEventCounter      INFO execute ==> seen events: 434000
+AthEventCounter      INFO execute ==> seen events: 435000
+AthEventCounter      INFO execute ==> seen events: 436000
+AthEventCounter      INFO execute ==> seen events: 437000
+AthEventCounter      INFO execute ==> seen events: 438000
+AthEventCounter      INFO execute ==> seen events: 439000
+AthEventCounter      INFO execute ==> seen events: 440000
+AthEventCounter      INFO execute ==> seen events: 441000
+AthEventCounter      INFO execute ==> seen events: 442000
+AthEventCounter      INFO execute ==> seen events: 443000
+AthEventCounter      INFO execute ==> seen events: 444000
+AthEventCounter      INFO execute ==> seen events: 445000
+AthEventCounter      INFO execute ==> seen events: 446000
+AthEventCounter      INFO execute ==> seen events: 447000
+AthEventCounter      INFO execute ==> seen events: 448000
+AthEventCounter      INFO execute ==> seen events: 449000
+AthEventCounter      INFO execute ==> seen events: 450000
+AthEventCounter      INFO execute ==> seen events: 451000
+AthEventCounter      INFO execute ==> seen events: 452000
+AthEventCounter      INFO execute ==> seen events: 453000
+AthEventCounter      INFO execute ==> seen events: 454000
+AthEventCounter      INFO execute ==> seen events: 455000
+AthEventCounter      INFO execute ==> seen events: 456000
+AthEventCounter      INFO execute ==> seen events: 457000
+AthEventCounter      INFO execute ==> seen events: 458000
+AthEventCounter      INFO execute ==> seen events: 459000
+AthEventCounter      INFO execute ==> seen events: 460000
+AthEventCounter      INFO execute ==> seen events: 461000
+AthEventCounter      INFO execute ==> seen events: 462000
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+AthEventCounter      INFO execute ==> seen events: 463000
+AthEventCounter      INFO execute ==> seen events: 464000
+AthEventCounter      INFO execute ==> seen events: 465000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10947, HLTPSK = 8098
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10947 and HLTPSK: 8098
+AthEventCounter      INFO execute ==> seen events: 466000
+AthEventCounter      INFO execute ==> seen events: 467000
+AthEventCounter      INFO execute ==> seen events: 468000
+AthEventCounter      INFO execute ==> seen events: 469000
+AthEventCounter      INFO execute ==> seen events: 470000
+AthEventCounter      INFO execute ==> seen events: 471000
+AthEventCounter      INFO execute ==> seen events: 472000
+AthEventCounter      INFO execute ==> seen events: 473000
+AthEventCounter      INFO execute ==> seen events: 474000
+AthEventCounter      INFO execute ==> seen events: 475000
+AthEventCounter      INFO execute ==> seen events: 476000
+AthEventCounter      INFO execute ==> seen events: 477000
+AthEventCounter      INFO execute ==> seen events: 478000
+AthEventCounter      INFO execute ==> seen events: 479000
+AthEventCounter      INFO execute ==> seen events: 480000
+AthEventCounter      INFO execute ==> seen events: 481000
+AthEventCounter      INFO execute ==> seen events: 482000
+AthEventCounter      INFO execute ==> seen events: 483000
+AthEventCounter      INFO execute ==> seen events: 484000
+AthEventCounter      INFO execute ==> seen events: 485000
+AthEventCounter      INFO execute ==> seen events: 486000
+AthEventCounter      INFO execute ==> seen events: 487000
+AthEventCounter      INFO execute ==> seen events: 488000
+AthEventCounter      INFO execute ==> seen events: 489000
+AthEventCounter      INFO execute ==> seen events: 490000
+AthEventCounter      INFO execute ==> seen events: 491000
+AthEventCounter      INFO execute ==> seen events: 492000
+AthEventCounter      INFO execute ==> seen events: 493000
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10952, HLTPSK = 8103
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10952 and HLTPSK: 8103
+AthEventCounter      INFO execute ==> seen events: 494000
+AthEventCounter      INFO execute ==> seen events: 495000
+AthEventCounter      INFO execute ==> seen events: 496000
+AthEventCounter      INFO execute ==> seen events: 497000
+AthEventCounter      INFO execute ==> seen events: 498000
+AthEventCounter   WARNING INFO message limit (500) reached for AthEventCounter. Suppressing further output.
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10952, HLTPSK = 8103
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10952 and HLTPSK: 8103
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10951, HLTPSK = 8102
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10951 and HLTPSK: 8102
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10945, HLTPSK = 8096
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10945 and HLTPSK: 8096
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10944, HLTPSK = 8095
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10944 and HLTPSK: 8095
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10946, HLTPSK = 8097
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10946 and HLTPSK: 8097
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10950, HLTPSK = 8101
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10950 and HLTPSK: 8101
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10898, HLTPSK = 8092
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10898 and HLTPSK: 8092
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+TVector3::PseudoRapidity:0: RuntimeWarning: transvers momentum = 0! return +/- 10e10
+Error in <TROOT::TVector2::Phi_mpi_pi>: function called with NaN
+egammaMVACalib    WARNING getMVAEnergy Shift not applied (too small or negative value?)
+ToolSvc.xAODCon...   INFO Loaded configuration:
+ToolSvc.xAODCon...   INFO   SMK = 2415, L1PSK = 10943, HLTPSK = 8094
+ToolSvc.TrigDec...   INFO updating config with SMK: 2415 and L1PSK: 10943 and HLTPSK: 8094
+ApplicationMgr       INFO Application Manager Stopped successfully
+AthEventCounter      INFO finalize ==> total events: 760880
+MyMETAlg             INFO Finalizing MyMETAlg...
+AthAlgSeq            INFO Finalizing AthAlgSeq...
+MyMETAlg            DEBUG Calling destructor
+ToolSvc              INFO Removing all tools created by ToolSvc
+ToolSvc.TrigDec...   INFO TDT finalized and removed from instance list
+ToolSvc.myJESTool    INFO Finalizing ToolSvc.myJESTool...
+ToolSvc.METMaker     INFO Finalizing ToolSvc.METMaker...
+*****Chrono*****     INFO ****************************************************************************************************
+*****Chrono*****     INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+*****Chrono*****     INFO ****************************************************************************************************
+AthenaSealSvc::...   INFO Time User   : Tot=   11 [ms]                                             #=  1
+ChronoStatSvc        INFO Time User   : Tot=  103[min]                                             #=  1
+*****Chrono*****     INFO ****************************************************************************************************
+ChronoStatSvc.f...   INFO  Service finalized successfully 
+ApplicationMgr       INFO Application Manager Finalized successfully
+ApplicationMgr       INFO Application Manager Terminated successfully
+Listing sources of suppressed message: 
+=====================================================
+ Message Source              |   Level |    Count
+-----------------------------+---------+-------------
+ AthEventCounter             |    INFO |      761
+ MyMETAlg                    |   DEBUG |  6847920
+=====================================================
+Py:Athena            INFO leaving with code 0: "successful run"

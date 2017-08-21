@@ -1,0 +1,1377 @@
+2017-03-08 12:13:03|5210|pUtil.py    | current dir: /scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:13:03|5210|pilot.py    | Pilot options:................................................
+2017-03-08 12:13:03|5210|pilot.py    | appdir: 
+2017-03-08 12:13:03|5210|pilot.py    | debugLevel: 0
+2017-03-08 12:13:03|5210|pilot.py    | jobrec: False
+2017-03-08 12:13:03|5210|pilot.py    | jobRequestFlag: True
+2017-03-08 12:13:03|5210|pilot.py    | jobSchedulerId: BNL-gridui20-jhover
+2017-03-08 12:13:03|5210|pilot.py    | maxjobrec: 20
+2017-03-08 12:13:03|5210|pilot.py    | maxNumberOfRecoveryAttempts: 15
+2017-03-08 12:13:03|5210|pilot.py    | pilotId: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+2017-03-08 12:13:03|5210|pilot.py    | pshttpurl: https://pandaserver.cern.ch
+2017-03-08 12:13:03|5210|pilot.py    | psport: 25443
+2017-03-08 12:13:03|5210|pilot.py    | queuename: ANALY_SLAC-lsf
+2017-03-08 12:13:03|5210|pilot.py    | rmwkdir: None
+2017-03-08 12:13:03|5210|pilot.py    | sitename: ANALY_SLAC
+2017-03-08 12:13:03|5210|pilot.py    | stageinretry: 2
+2017-03-08 12:13:03|5210|pilot.py    | stageoutretry: 2
+2017-03-08 12:13:03|5210|pilot.py    | uflag: user
+2017-03-08 12:13:03|5210|pilot.py    | workdir: /scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:13:03|5210|pilot.py    | logFileDir: 
+2017-03-08 12:13:03|5210|pilot.py    | ..............................................................
+2017-03-08 12:13:03|5210|ATLASExperim| envsetup=
+2017-03-08 12:13:03|5210|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:03|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:04|5210|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:04|5210|ATLASExperim| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+2017-03-08 12:13:04|5210|ATLASExperim| ec=0 output=308747
+2017-03-08 12:13:04|5210|ATLASExperim| Voms proxy verified (308747s)
+2017-03-08 12:13:04|5210|ATLASExperim| Voms proxy verified using arcproxy
+2017-03-08 12:13:04|5210|pilot.py    | Collecting WN info from: /scratch
+2017-03-08 12:13:04|5210|pilot.py    | Got max memory limit: 9000 MB (from queuedata)
+2017-03-08 12:13:04|5210|pilot.py    | Executing command: ulimit -a
+2017-03-08 12:13:04|5210|pilot.py    | 
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 192883
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 192883
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2017-03-08 12:13:04|5210|pilot.py    | Local space limit: 5368709120 B
+2017-03-08 12:13:04|5210|pilot.py    | Remaining local disk space: 381740384256 B
+2017-03-08 12:13:04|5210|pilot.py    | Pilot will attempt single job download for a maximum of 180 seconds
+2017-03-08 12:13:04|5210|pUtil.py    | Max input size = 35000 MB (pilot default)
+2017-03-08 12:13:04|5210|pilot.py    | Available WN disk space: 364056 MB
+2017-03-08 12:13:04|5210|pilot.py    | Sending disk space 35000 MB to dispatcher
+2017-03-08 12:13:04|5210|pilot.py    | Node name: kiso0027
+2017-03-08 12:13:04|5210|pilot.py    | No country group selected
+2017-03-08 12:13:04|5210|pilot.py    | No working group selected
+2017-03-08 12:13:04|5210|pilot.py    | prodSourceLabel: user
+2017-03-08 12:13:04|5210|pilot.py    | Looking for a primary job (contacting server at https://pandaserver.cern.ch:25443/server/panda)
+2017-03-08 12:13:04|5210|pUtil.py    | Will not send attemptNr for cmd=getJob
+2017-03-08 12:13:04|5210|pUtil.py    | toServer: cmd = getJob
+2017-03-08 12:13:04|5210|pUtil.py    | toServer: len(data) = 9
+2017-03-08 12:13:04|5210|pUtil.py    | data = {'node': 'kiso0027', 'mem': 9000, 'getProxyKey': 'False', 'computingElement': 'ANALY_SLAC-lsf', 'diskSpace': 35000, 'siteName': 'ANALY_SLAC', 'workingGroup': '', 'cpu': 2659.8870000000002, 'prodSourceLabel': 'user'}
+2017-03-08 12:13:04|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/curl_getJob.config https://pandaserver.cern.ch:25443/server/panda/getJob
+2017-03-08 12:13:05|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:13:05|5210|pUtil.py    | Dispatcher response: [('jobsetID', '18'), ('logGUID', '674881c2-50c8-43f1-9495-546633c08a22'), ('cmtConfig', 'x86_64-slc6-gcc49-opt'), ('prodDBlocks', 'data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00,NULL'), ('dispatchDBlockTokenForOut', 'NULL,NULL,NULL'), ('destinationDBlockToken', 'NULL,NULL,NULL'), ('destinationSE', 'NULL'), ('realDatasets', 'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM/,user.saparede.test.tON.selectWandZevts.0803newDS_EXT0/,user.saparede.test.tON.selectWandZevts.0803newDS.log/'), ('prodUserID', '/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy'), ('GUID', 'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0,b2bb2ce7-ebb5-44fd-8baa-c009cf348059'), ('realDatasetsIn', 'data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/,panda.0308105652.430739.lib._10916444'), ('nSent', '0'), ('cloud', 'US'), ('StatusCode', '0'), ('homepackage', 'AnalysisTransforms-AthAnalysisBase_2.4.25'), ('inFiles', 'DAOD_JETM11.10014747._000007.pool.root.1,panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'), ('processingType', 'panda-client-0.5.78-jedi-athena'), ('currentPriority', '1000'), ('fsize', '2294757,6159609'), ('fileDestinationSE', 'ANALY_SLAC,ANALY_SLAC,ANALY_SLAC'), ('scopeOut', 'user.saparede,user.saparede'), ('minRamCount', '1900'), ('jobDefinitionID', '19'), ('maxWalltime', 'NULL'), ('scopeLog', 'user.saparede'), ('transformation', 'http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12'), ('maxDiskCount', '300'), ('coreCount', '1'), ('prodDBlockToken', 'NULL,NULL'), ('transferType', 'NULL'), ('destinationDblock', 'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194,user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195,user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196'), ('dispatchDBlockToken', 'NULL,NULL'), ('jobPars', '-l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "[\'DAOD_JETM11.10014747._000007.pool.root.1\']" -o "{\'IROOT\': [(\'myEfffile.root\', \'user.saparede.10916444.EXT0._000003.myEfffile.root\')], \'THIST\': [(\'MYSTREAM\', \'user.saparede.10916444.MYSTREAM._000003.root\')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"'), ('attemptNr', '1'), ('swRelease', 'NULL'), ('nucleus', 'NULL'), ('maxCpuCount', '0'), ('outFiles', 'user.saparede.10916444.MYSTREAM._000003.root,user.saparede.10916444.EXT0._000003.myEfffile.root,user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz'), ('ddmEndPointOut', 'SLACXRD_USERDISK,SLACXRD_USERDISK,SLACXRD_USERDISK'), ('scopeIn', 'data15_13TeV,panda'), ('PandaID', '3267651254'), ('sourceSite', 'NULL'), ('dispatchDblock', 'NULL,panda.0308105652.430739.lib._10916444'), ('prodSourceLabel', 'user'), ('checksum', 'ad:85bc4972,ad:0e8d0236'), ('jobName', 'user.saparede.test.tON.selectWandZevts.0803newDS/.3267651254'), ('ddmEndPointIn', 'SLACXRD_USERDISK,SLACXRD_USERDISK'), ('taskID', '10916444'), ('logFile', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz')]
+2017-03-08 12:13:05|5210|pUtil.py    | writeToFile not present in job def
+2017-03-08 12:13:05|5210|pUtil.py    | Wrote string "0" to file: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/STATUSCODE
+2017-03-08 12:13:05|5210|pilot.py    | Attempt number from server: 1
+2017-03-08 12:13:05|5210|pilot.py    | Job recovery is still switched off after job download
+2017-03-08 12:13:05|5210|pilot.py    | Received nSent: 0
+2017-03-08 12:13:05|5210|pilot.py    | Job definition stored (for later backup) in file pandaJobData.out
+2017-03-08 12:13:05|5210|pilot.py    | Will only process jobs in multi-job mode that belong to taskID 10916444
+2017-03-08 12:13:05|5210|pilot.py    | prodSourceLabel already set in job def data: user
+2017-03-08 12:13:05|5210|SiteInformat| called updateQueuedataFromJobParameters with: -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"
+2017-03-08 12:13:05|5210|Job.py      | Normal job (not an eventService job)
+2017-03-08 12:13:05|5210|Job.py      | jobsetID=18
+2017-03-08 12:13:05|5210|Job.py      | outfList = ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz']
+2017-03-08 12:13:05|5210|Job.py      | outfdbList = ['user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196']
+2017-03-08 12:13:05|5210|Job.py      | destinationDBlockToken = ['NULL', 'NULL', 'NULL']
+2017-03-08 12:13:05|5210|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL', 'NULL']
+2017-03-08 12:13:05|5210|Job.py      | logFileDblock = user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196
+2017-03-08 12:13:05|5210|Job.py      | Updated ddmEndPointOut=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:05|5210|Job.py      | Updated ddmEndPointLog=['SLACXRD_USERDISK']
+2017-03-08 12:13:05|5210|pUtil.py    | Will not send attemptNr for cmd=getStatus
+2017-03-08 12:13:05|5210|pUtil.py    | toServer: cmd = getStatus
+2017-03-08 12:13:05|5210|pUtil.py    | toServer: len(data) = 1
+2017-03-08 12:13:05|5210|pUtil.py    | data = {'ids': '3267651254'}
+2017-03-08 12:13:05|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/curl_getStatus.config https://pandaserver.cern.ch:25443/server/panda/getStatus
+2017-03-08 12:13:06|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:13:06|5210|pUtil.py    | Dispatcher response: [('status', 'sent'), ('attemptNr', '1'), ('StatusCode', '0')]
+2017-03-08 12:13:06|5210|pUtil.py    | response: {'status': 'sent', 'attemptNr': '1', 'StatusCode': '0'}
+2017-03-08 12:13:06|5210|pilot.py    | Got logGUID from server: 674881c2-50c8-43f1-9495-546633c08a22
+2017-03-08 12:13:06|5210|pilot.py    | New job has prodSourceLabel=user
+2017-03-08 12:13:06|5210|pilot.py    | no user proxy in data
+2017-03-08 12:13:06|5210|pilot.py    | Increased job counter to 1
+2017-03-08 12:13:06|5210|pilot.py    | Task ID set to: 10916444
+2017-03-08 12:13:07|5210|pilot.py    | Using job definition id: 19
+2017-03-08 12:13:07|5210|ATLASExperim| Using core count values: 1 (job definition), None (schedconfig)
+2017-03-08 12:13:07|5210|pilot.py    | postGetJobActions: OK
+2017-03-08 12:13:07|5210|Monitor.py  | (1b) Executing command: stat /scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:13:07|5210|Monitor.py  | 
+  File: `/scratch/Panda_Pilot_5210_1488975182'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 811h/2065d	Inode: 8781825     Links: 2
+Access: (0770/drwxrwx---)  Uid: (1102872/osgatlas01)   Gid: ( 2222/      OG)
+Access: 2017-03-08 04:13:03.317373458 -0800
+Modify: 2017-03-08 04:13:07.018388570 -0800
+Change: 2017-03-08 04:13:07.018388570 -0800
+2017-03-08 12:13:07|5210|Monitor.py  | Pilot TCP server will use port: 8994
+2017-03-08 12:13:07|5210|Monitor.py  | 
+
+Entered multi-job loop. Current work dir: /scratch/Panda_Pilot_5210_1488975182
+
+2017-03-08 12:13:07|5210|PilotTCPServ| ('PilotTCPServer',) starts
+2017-03-08 12:13:07|5210|pUtil.py    | PanDA Pilot, version PICARD 67.6
+2017-03-08 12:13:07|5210|pUtil.py    | Version tag = PR
+2017-03-08 12:13:07|5210|pUtil.py    | PilotId = http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out, jobSchedulerId = BNL-gridui20-jhover
+2017-03-08 12:13:07|5210|pUtil.py    | Current time: 2017-03-08T04:13:07-0800
+2017-03-08 12:13:07|5210|pUtil.py    | Run by Python 2.6.6 (r266:84292, Aug  9 2016, 06:11:56) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+2017-03-08 12:13:07|5210|pUtil.py    | 64 bit OS
+2017-03-08 12:13:07|5210|pUtil.py    | Pilot init dir: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977
+2017-03-08 12:13:07|5210|pUtil.py    | All output written to file: /scratch/Panda_Pilot_5210_1488975182/pilotlog.txt
+2017-03-08 12:13:07|5210|pUtil.py    | Pilot executed by: osgatlas01
+2017-03-08 12:13:07|5210|Monitor.py  | Entering main pilot loop: multi job enabled (number of processed jobs: 1)
+2017-03-08 12:13:07|5210|Monitor.py  | Collecting WN info from: /scratch/Panda_Pilot_5210_1488975182 (again)
+2017-03-08 12:13:07|5210|Monitor.py  | Got max memory limit: 9000 MB (from queuedata)
+2017-03-08 12:13:07|5210|processes.py| Executing command: grep memory /proc/5210/cgroup
+2017-03-08 12:13:07|5210|processes.py| 4:memory:/lsf/slac/job.211595.5075.1488975169
+2017-03-08 12:13:07|5210|processes.py| Extracted path = /lsf/slac/job.211595.5075.1488975169
+2017-03-08 12:13:07|5210|processes.py| Path to CGROUPS memory info: /cgroup/memory/lsf/slac/job.211595.5075.1488975169/memory.max_usage_in_bytes
+2017-03-08 12:13:07|5210|Monitor.py  | cgroups max_memory = 51695616
+
+2017-03-08 12:13:07|5210|Monitor.py  | Executing command: ulimit -a
+2017-03-08 12:13:07|5210|Monitor.py  | 
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 192883
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 192883
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2017-03-08 12:13:07|5210|ATLASExperim| envsetup=
+2017-03-08 12:13:07|5210|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:07|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:07|5210|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:07|5210|ATLASExperim| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+2017-03-08 12:13:07|5210|ATLASExperim| ec=0 output=308744
+2017-03-08 12:13:07|5210|ATLASExperim| Voms proxy verified (308744s)
+2017-03-08 12:13:07|5210|ATLASExperim| Voms proxy verified using arcproxy
+2017-03-08 12:13:07|5210|Monitor.py  | Local space limit: 5368709120 B
+2017-03-08 12:13:07|5210|Monitor.py  | Remaining local disk space: 381734092800 B
+2017-03-08 12:13:07|5210|Monitor.py  | Verifying that pilot TCP server is still alive...
+2017-03-08 12:13:07|5210|Monitor.py  | ...Pilot TCP server is still running
+2017-03-08 12:13:07|5210|UpdateHandle| Connected from ('127.0.0.1', 41404)
+2017-03-08 12:13:07|5210|ATLASSiteInf| Extracting appdir (ATLAS: current value=)
+2017-03-08 12:13:07|5210|UpdateHandle| --- TCPServer: Message received from child is : [""]
+2017-03-08 12:13:07|5210|UpdateHandle| Debug: jobdict keys: []
+2017-03-08 12:13:07|5210|UpdateHandle| Debug: jobinfo: {}
+2017-03-08 12:13:07|5210|UpdateHandle| Debug: job not found.
+2017-03-08 12:13:07|5210|UpdateHandle| Debug: jobdict keys: []
+2017-03-08 12:13:07|5210|UpdateHandle| Debug: jobinfo: {}
+2017-03-08 12:13:07|5210|ATLASSiteInf| Set site.appdir to /cvmfs/atlas.cern.ch/repo/sw
+2017-03-08 12:13:07|5210|ATLASSiteInf| Software directory /cvmfs/atlas.cern.ch/repo/sw exists
+2017-03-08 12:13:07|5210|SiteInformat| Successfully changed appdir to: /cvmfs/atlas.cern.ch/repo/sw
+2017-03-08 12:13:07|5210|JobRecovery.| Successfully updated job state file with state: startup
+2017-03-08 12:13:07|5210|pUtil.py    | initdir is /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977 
+2017-03-08 12:13:07|5210|pUtil.py    | workdir is /scratch/Panda_Pilot_5210_1488975182 
+2017-03-08 12:13:07|5210|pUtil.py    | Copying: ['RunJobNormal.py', 'wrapperexceptions.py', 'wrapper.py', 'wrapperutils.py', 'AMSTaiwanExperiment.py', 'AMSTaiwanSiteInformation.py', 'ArgoJob.py', 'aria2cSiteMover.py', 'ATLASEventService.py', 'ATLASExperiment.py', 'ATLASSiteInformation.py', 'BalsamJob.py', 'BNLdCacheSiteMover.py', 'build.py', 'CastorSiteMover.py', 'castorSvcClassSiteMover.py', 'ChirpSiteMover.py', 'Cleaner.py', 'CMSExperiment.py', 'CMSSiteInformation.py', 'configSiteMover.py', 'Configuration.py', 'curlSiteMover.py', 'CustomEncoder.py', 'dataPilot.py', 'DBReleaseHandler.py', 'dCacheLFCSiteMover.py', 'dCacheSiteMover.py', 'DeferredStageout.py', 'Diagnosis.py', 'environment.py', 'ErrorDiagnosis.py', 'EventRanges.py', 'EventServiceFactory.py', 'EventService.py', 'ExperimentFactory.py', 'Experiment.py', 'FAXSiteMover.py', 'FAXTools.py', 'FileHandling.py', 'FileStateClient.py', 'FileState.py', 'futil.py', 'GetJob.py', 'GFAL2SiteMover.py', 'glexec_aux.py', 'glexec_utils.py', 'globusPilot.py', 'GSIftpSiteMover.py', '__init__.py', 'JEMstub.py', 'JobInfoXML.py', 'JobLog.py', 'Job.py', 'JobRecovery.py', 'JobState.py', 'lcgcp2SiteMover.py', 'lcgcpSiteMover.py', 'LocalSiteMover.py', 'Logger.py', 'MessageInterface.py', 'Monitor.py', 'Mover.py', 'mvSiteMover.py', 'myproxyUtils.py', 'Node.py', 'NordugridATLASExperiment.py', 'NordugridATLASSiteInformation.py', 'objectstoreSiteMover.py', 'OtherExperiment.py', 'OtherSiteInformation.py', 'OtherSiteMover.py', 'PandaServerClient.py', 'PilotErrors.py', 'pilot.py', 'PilotTCPServer.py', 'PilotUtils.py', 'PilotYamplServer.py', 'processes.py', 'ProxyGuard.py', 'pUtil.py', 'rfcpLFCSiteMover.py', 'RunJobAnselm.py', 'RunJobArgo.py', 'RunJobEdison.py', 'RunJobEvent.py', 'RunJobFactory.py', 'RunJobHopper.py', 'RunJobHpcarcEvent.py', 'RunJobHpcEvent.py', 'RunJobHPC.py', 'RunJobMira.py', 'RunJob.py', 'RunJobTitan.py', 'RunJobUtilities.py', 'S3ObjectstoreHttpSiteMover.py', 'S3ObjectstoreSiteMover.py', 'S3SiteMover.py', 'SiteInformationFactory.py', 'SiteInformation.py', 'SiteMoverFarm.py', 'SiteMover.py', 'Site.py', 'StoppableThread.py', 'stormSiteMover.py', 'SysLog.py', 'ThreadPool.py', 'timed_command.py', 'TimerCommand.py', 'UpdateHandler.py', 'VmPeak.py', 'WatchDog.py', 'xrdcpSiteMover.py', 'xrootdObjectstoreSiteMover.py', 'xrootdSiteMover.py', 'PILOTVERSION', 'saga', 'radical', 'HPC', 'movers']
+2017-03-08 12:13:08|5210|pUtil.py    | Pilot modules have been copied to /scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:13:08|5210|Monitor.py  | Current time :2017-03-08T04:13:08-0800
+2017-03-08 12:13:08|5210|Monitor.py  | The site this pilot runs on: ANALY_SLAC
+2017-03-08 12:13:08|5210|Monitor.py  | Pilot executing on host: kiso0027
+2017-03-08 12:13:08|5210|Monitor.py  | The workdir this pilot runs on:/scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:13:08|5210|Monitor.py  | New job has prodSourceLabel: user
+2017-03-08 12:13:08|5210|Monitor.py  | env = -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"
+2017-03-08 12:13:08|5210|Monitor.py  | Using looping job limit: 10800 s
+2017-03-08 12:13:08|5210|Monitor.py  | maxCpuCount: 0 s
+2017-03-08 12:13:08|5210|Monitor.py  | Pilot executing job for user: /C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy
+2017-03-08 12:13:08|5210|Monitor.py  | Created job workdir at /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:08|5210|Monitor.py  | Creating file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PILOT_INITDIR with content /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977
+2017-03-08 12:13:08|5210|pUtil.py    | Wrote string "/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977" to file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PILOT_INITDIR
+2017-03-08 12:13:08|5210|ATLASExperim| Creating job setup script with stage-in and payload execution commands: job_setup.sh
+2017-03-08 12:13:08|5210|Experiment.p| Updated /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/job_setup.sh: #!/bin/bash
+# job_setup.sh 08 Mar 2017 12:13:08
+
+export VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+if [ -f $VO_ATLAS_SW_DIR/local/setup.sh ]; then
+  source $VO_ATLAS_SW_DIR/local/setup.sh
+fi
+2017-03-08 12:13:08|5210|FileState.py| File does not exist: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle (will be created)
+2017-03-08 12:13:08|5210|FileState.py| Resetting file list: ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz']
+2017-03-08 12:13:08|5210|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:13:08|5210|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:13:08|5210|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:13:08|5210|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	not_created	not_registered
+2017-03-08 12:13:08|5210|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	not_created	not_registered
+2017-03-08 12:13:08|5210|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:13:08|5210|FileState.py| File does not exist: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle (will be created)
+2017-03-08 12:13:08|5210|FileState.py| Resetting file list: ['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+2017-03-08 12:13:08|5210|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:08|5210|FileState.py| File name  /  File state  /  Transfer mode
+2017-03-08 12:13:08|5210|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:13:08|5210|FileState.py| 1. DAOD_JETM11.10014747._000007.pool.root.1	not_transferred	copy_to_scratch
+2017-03-08 12:13:08|5210|FileState.py| 2. panda.0308105652.430739.lib._10916444.8727237564.lib.tgz	not_transferred	copy_to_scratch
+2017-03-08 12:13:08|5210|pUtil.py    | LFN length verified for file user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:13:08|5210|pUtil.py    | LFN length verified for file user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:13:08|5210|pUtil.py    | LFN length verified for file user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz
+2017-03-08 12:13:08|5210|Monitor.py  | LFN length(s) verified, within allowed limit
+2017-03-08 12:13:08|5210|Job.py      | Dumping job specifics
+2017-03-08 12:13:08|5210|Job.py      | 
+PandaID=3267651254
+Release=NULL
+homePackage=AnalysisTransforms-AthAnalysisBase_2.4.25
+trfName=http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12
+inputFiles=['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+realDatasetsIn=['data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/', 'panda.0308105652.430739.lib._10916444']
+filesizeIn=['2294757', '6159609']
+checksumIn=['ad:85bc4972', 'ad:0e8d0236']
+prodDBlocks=['data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00', 'NULL']
+prodDBlockToken=['NULL', 'NULL']
+prodDBlockTokenForOutput=['']
+dispatchDblock=['NULL', 'panda.0308105652.430739.lib._10916444']
+dispatchDBlockToken=['NULL', 'NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL', 'NULL']
+outputFiles=['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz']
+destinationDblock=['user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195']
+logFile=user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz
+logFileDblock=user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196
+jobPars=-l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"
+The job state=['starting', 0, 0]
+Job workdir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+TarFileGuid=674881c2-50c8-43f1-9495-546633c08a22
+outFilesGuids=[]
+destinationSE=NULL
+fileDestinationSE=ANALY_SLAC,ANALY_SLAC,ANALY_SLAC
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=US
+taskID=10916444
+prodUserID=/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy
+debug=False
+transferType=NULL
+scopeIn=['data15_13TeV', 'panda']
+scopeOut=['user.saparede', 'user.saparede']
+scopeLog=['user.saparede']
+2017-03-08 12:13:08|5210|Job.py      | ddmEndPointIn=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:08|5210|Job.py      | ddmEndPointOut=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:08|5210|Job.py      | ddmEndPointLog=['SLACXRD_USERDISK']
+2017-03-08 12:13:08|5210|Job.py      | cloneJob=
+2017-03-08 12:13:08|5210|Job.py      | allowNoOutput=[]
+2017-03-08 12:13:08|5210|Job.py      | siteworkdir=None
+2017-03-08 12:13:08|5210|Job.py      | workdir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:08|5210|Job.py      | datadir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_data
+2017-03-08 12:13:08|5210|Job.py      | newDirNM=
+2017-03-08 12:13:08|5210|PandaServerC| Updating job status in updatePandaServer(): PandaId=3267651254, result=['starting', 0, 0], time=2017-03-08T04:13:08-0800
+2017-03-08 12:13:08|5210|PandaServerC| Checking if new site movers workflow is enabled: use_newmover=False
+2017-03-08 12:13:08|5210|PandaServerC| Batch system: LSF
+2017-03-08 12:13:08|5210|PandaServerC| Batch system job ID: 211595
+2017-03-08 12:13:08|5210|PandaServerC| Will send batchID: 211595 and pilotID: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6
+2017-03-08 12:13:08|5210|PandaServerC| pilotId: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+2017-03-08 12:13:08|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:08|5210|PandaServerC| Benchmark dictionary=None
+2017-03-08 12:13:08|5210|PandaServerC| Job metrics="coreCount=1"
+2017-03-08 12:13:08|5210|PandaServerC| jobSubStatus: None
+2017-03-08 12:13:08|5210|FileHandling| Pilot error report does not exist: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/pilot_error_report.json (should only exist if there actually was an error)
+2017-03-08 12:13:08|5210|PandaServerC| Did not find any reported high priority errors
+2017-03-08 12:13:08|5210|PandaServerC| Payload/TRF did not report the number of read events
+2017-03-08 12:13:08|5210|ATLASExperim| File does not exist: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:13:08|5210|ATLASExperim| File does not exist either: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/memory_monitor_summary.json
+2017-03-08 12:13:08|5210|ATLASExperim| File does not exist either: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_output.txt
+2017-03-08 12:13:08|5210|ATLASExperim| summary_dictionary={}
+2017-03-08 12:13:08|5210|ATLASExperim| Memory summary dictionary not yet available
+2017-03-08 12:13:08|5210|PandaServerC| getXML called
+2017-03-08 12:13:08|5210|PandaServerC| Stdout tail will not be sent (debug=False)
+2017-03-08 12:13:08|5210|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_5210_1488975182/jobState-3267651254.pickle
+2017-03-08 12:13:08|5210|PandaServerC| Trying alternative location: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:08|5210|PandaServerC| Did not find /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:08|5210|PandaServerC| WARNING: metadata file does not exist: /scratch/Panda_Pilot_5210_1488975182/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:13:08|5210|PandaServerC| Looking for it in the pilot init dir..
+2017-03-08 12:13:08|5210|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+2017-03-08 12:13:08|5210|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+2017-03-08 12:13:08|5210|pUtil.py    | toServer: cmd = updateJob
+2017-03-08 12:13:08|5210|pUtil.py    | toServer: len(data) = 15
+2017-03-08 12:13:08|5210|pUtil.py    | data = {'node': 'kiso0027', 'xml': '', 'workdir': '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_SLAC', 'timestamp': '2017-03-08T04:13:08-0800', 'coreCount': '1', 'attemptNr': 1, 'jobId': '3267651254', 'batchID': '211595', 'state': 'starting', 'schedulerID': 'BNL-gridui20-jhover', 'cpuConsumptionTime': 0, 'pilotID': 'http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz 12288 KB'}
+2017-03-08 12:13:08|5210|pUtil.py    | Job state 'starting' is an allowed job state value
+2017-03-08 12:13:08|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /scratch/Panda_Pilot_5210_1488975182/curl_updateJob_3267651254.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+2017-03-08 12:13:10|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:13:10|5210|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+2017-03-08 12:13:10|5210|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+2017-03-08 12:13:10|5210|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+2017-03-08 12:13:10|5210|PandaServerC| jobDispatcher acknowledged with 0
+2017-03-08 12:13:10|5210|Monitor.py  | Successfully updated panda server at 2017-03-08T04:13:10-0800
+2017-03-08 12:13:10|5614|Monitor.py  | Starting child process in dir: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:10|5210|pUtil.py    | Wrote string "5614" to file: /scratch/Panda_Pilot_5210_1488975182/PROCESSID
+2017-03-08 12:13:10|5210|Monitor.py  | Parent process 5614 has set job state: running
+2017-03-08 12:13:10|5614|Experiment.p| Selected subprocess: RunJob
+2017-03-08 12:13:10|5210|PandaServerC| Updating job status in updatePandaServer(): PandaId=3267651254, result=['running', 0, 0], time=2017-03-08T04:13:10-0800
+2017-03-08 12:13:10|5614|Monitor.py  | About to launch child process: RunJob
+2017-03-08 12:13:10|5614|Experiment.p| Will set up subprocess arguments for type: RunJob
+2017-03-08 12:13:10|5210|PandaServerC| Checking if new site movers workflow is enabled: use_newmover=False
+2017-03-08 12:13:10|5614|Experiment.p| Will use arguments: ['/usr/bin/python', 'RunJob.py', '-a', '/cvmfs/atlas.cern.ch/repo/sw', '-b', 'ANALY_SLAC-lsf', '-d', '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', '-g', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-i', '674881c2-50c8-43f1-9495-546633c08a22', '-k', '/scratch/Panda_Pilot_5210_1488975182/pilotlog.txt', '-l', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-m', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-o', '/scratch/Panda_Pilot_5210_1488975182', '-p', '8994', '-s', 'ANALY_SLAC', '-t', 'True', '-x', '2', '-E', '2', '-F', 'ATLAS', '-H', '', '-W', 'https://pandaserver.cern.ch:25443/server/panda']
+2017-03-08 12:13:10|5210|PandaServerC| Batch system: LSF
+2017-03-08 12:13:10|5614|Monitor.py  | jobargs=['/usr/bin/python', 'RunJob.py', '-a', '/cvmfs/atlas.cern.ch/repo/sw', '-b', 'ANALY_SLAC-lsf', '-d', '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', '-g', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-i', '674881c2-50c8-43f1-9495-546633c08a22', '-k', '/scratch/Panda_Pilot_5210_1488975182/pilotlog.txt', '-l', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-m', '/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977', '-o', '/scratch/Panda_Pilot_5210_1488975182', '-p', '8994', '-s', 'ANALY_SLAC', '-t', 'True', '-x', '2', '-E', '2', '-F', 'ATLAS', '-H', '', '-W', 'https://pandaserver.cern.ch:25443/server/panda']
+2017-03-08 12:13:10|5210|PandaServerC| Batch system job ID: 211595
+2017-03-08 12:13:10|5614|pUtil.py    | initdir is /scratch/Panda_Pilot_5210_1488975182 
+2017-03-08 12:13:10|5210|PandaServerC| Will send batchID: 211595 and pilotID: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6
+2017-03-08 12:13:10|5614|pUtil.py    | workdir is /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188 
+2017-03-08 12:13:10|5210|PandaServerC| pilotId: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+2017-03-08 12:13:10|5614|pUtil.py    | Copying: ['RunJobNormal.py', 'wrapperexceptions.py', 'wrapper.py', 'wrapperutils.py', 'AMSTaiwanExperiment.py', 'AMSTaiwanSiteInformation.py', 'ArgoJob.py', 'aria2cSiteMover.py', 'ATLASEventService.py', 'ATLASExperiment.py', 'ATLASSiteInformation.py', 'BalsamJob.py', 'BNLdCacheSiteMover.py', 'build.py', 'CastorSiteMover.py', 'castorSvcClassSiteMover.py', 'ChirpSiteMover.py', 'Cleaner.py', 'CMSExperiment.py', 'CMSSiteInformation.py', 'configSiteMover.py', 'Configuration.py', 'curlSiteMover.py', 'CustomEncoder.py', 'dataPilot.py', 'DBReleaseHandler.py', 'dCacheLFCSiteMover.py', 'dCacheSiteMover.py', 'DeferredStageout.py', 'Diagnosis.py', 'environment.py', 'ErrorDiagnosis.py', 'EventRanges.py', 'EventServiceFactory.py', 'EventService.py', 'ExperimentFactory.py', 'Experiment.py', 'FAXSiteMover.py', 'FAXTools.py', 'FileHandling.py', 'FileStateClient.py', 'FileState.py', 'futil.py', 'GetJob.py', 'GFAL2SiteMover.py', 'glexec_aux.py', 'glexec_utils.py', 'globusPilot.py', 'GSIftpSiteMover.py', '__init__.py', 'JEMstub.py', 'JobInfoXML.py', 'JobLog.py', 'Job.py', 'JobRecovery.py', 'JobState.py', 'lcgcp2SiteMover.py', 'lcgcpSiteMover.py', 'LocalSiteMover.py', 'Logger.py', 'MessageInterface.py', 'Monitor.py', 'Mover.py', 'mvSiteMover.py', 'myproxyUtils.py', 'Node.py', 'NordugridATLASExperiment.py', 'NordugridATLASSiteInformation.py', 'objectstoreSiteMover.py', 'OtherExperiment.py', 'OtherSiteInformation.py', 'OtherSiteMover.py', 'PandaServerClient.py', 'PilotErrors.py', 'pilot.py', 'PilotTCPServer.py', 'PilotUtils.py', 'PilotYamplServer.py', 'processes.py', 'ProxyGuard.py', 'pUtil.py', 'rfcpLFCSiteMover.py', 'RunJobAnselm.py', 'RunJobArgo.py', 'RunJobEdison.py', 'RunJobEvent.py', 'RunJobFactory.py', 'RunJobHopper.py', 'RunJobHpcarcEvent.py', 'RunJobHpcEvent.py', 'RunJobHPC.py', 'RunJobMira.py', 'RunJob.py', 'RunJobTitan.py', 'RunJobUtilities.py', 'S3ObjectstoreHttpSiteMover.py', 'S3ObjectstoreSiteMover.py', 'S3SiteMover.py', 'SiteInformationFactory.py', 'SiteInformation.py', 'SiteMoverFarm.py', 'SiteMover.py', 'Site.py', 'StoppableThread.py', 'stormSiteMover.py', 'SysLog.py', 'ThreadPool.py', 'timed_command.py', 'TimerCommand.py', 'UpdateHandler.py', 'VmPeak.py', 'WatchDog.py', 'xrdcpSiteMover.py', 'xrootdObjectstoreSiteMover.py', 'xrootdSiteMover.py', 'PILOTVERSION', 'saga', 'radical', 'HPC', 'movers']
+2017-03-08 12:13:10|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:10|5210|PandaServerC| Benchmark dictionary=None
+2017-03-08 12:13:10|5210|PandaServerC| Job metrics="coreCount=1"
+2017-03-08 12:13:10|5210|PandaServerC| jobSubStatus: None
+2017-03-08 12:13:10|5210|FileHandling| Pilot error report does not exist: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/pilot_error_report.json (should only exist if there actually was an error)
+2017-03-08 12:13:10|5210|PandaServerC| Did not find any reported high priority errors
+2017-03-08 12:13:10|5210|PandaServerC| Payload/TRF did not report the number of read events
+2017-03-08 12:13:10|5210|ATLASExperim| File does not exist: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:13:10|5210|ATLASExperim| File does not exist either: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/memory_monitor_summary.json
+2017-03-08 12:13:10|5210|ATLASExperim| File does not exist either: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_output.txt
+2017-03-08 12:13:10|5210|ATLASExperim| summary_dictionary={}
+2017-03-08 12:13:10|5210|ATLASExperim| Memory summary dictionary not yet available
+2017-03-08 12:13:10|5210|PandaServerC| getXML called
+2017-03-08 12:13:10|5210|PandaServerC| Stdout tail will not be sent (debug=False)
+2017-03-08 12:13:10|5210|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_5210_1488975182/jobState-3267651254.pickle
+2017-03-08 12:13:10|5210|PandaServerC| Trying alternative location: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:10|5210|PandaServerC| Did not find /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:10|5210|PandaServerC| WARNING: metadata file does not exist: /scratch/Panda_Pilot_5210_1488975182/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:13:10|5210|PandaServerC| Looking for it in the pilot init dir..
+2017-03-08 12:13:10|5614|pUtil.py    | Pilot modules have been copied to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:10|5210|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+2017-03-08 12:13:10|5614|ATLASExperim| ATHENA_PROC_NUMBER is not set, will not update coreCount in job definition
+2017-03-08 12:13:10|5210|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+2017-03-08 12:13:10|5614|Monitor.py  | Copying job definition (pandaJobData.out) to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:10|5210|pUtil.py    | toServer: cmd = updateJob
+2017-03-08 12:13:10|5614|Monitor.py  | Copying job definition (pandaJobData.out) to /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/pandaJobData_1.out
+2017-03-08 12:13:10|5210|pUtil.py    | toServer: len(data) = 15
+2017-03-08 12:13:10|5210|pUtil.py    | data = {'node': 'kiso0027', 'xml': '', 'workdir': '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_SLAC', 'timestamp': '2017-03-08T04:13:10-0800', 'coreCount': '1', 'attemptNr': 1, 'jobId': '3267651254', 'batchID': '211595', 'state': 'running', 'schedulerID': 'BNL-gridui20-jhover', 'cpuConsumptionTime': 0, 'pilotID': 'http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz 12288 KB'}
+2017-03-08 12:13:10|5614|pUtil.py    | current dir: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:10|5210|pUtil.py    | Job state 'running' is an allowed job state value
+2017-03-08 12:13:10|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /scratch/Panda_Pilot_5210_1488975182/curl_updateJob_3267651254.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+2017-03-08 12:13:11|5614|Node.py     | corecount not an integer in queuedata
+2017-03-08 12:13:11|5614|Node.py     | Will not set ATHENA_PROC_NUMBER
+2017-03-08 12:13:11|5614|Node.py     | Collecting machine features
+2017-03-08 12:13:11|5614|Node.py     | $MACHINEFEATURES not defined locally
+2017-03-08 12:13:11|5614|Node.py     | $JOBFEATURES not defined locally
+2017-03-08 12:13:11|5614|Node.py     | Executing command: hostname -i
+2017-03-08 12:13:11|5614|Node.py     | IP number of worker node: 134.79.240.72
+2017-03-08 12:13:11|5614|RunJob.py   | Current job workdir is: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:11|5614|RunJob.py   | Site workdir is: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:11|5614|RunJob.py   | RunJob will serve experiment: ATLAS
+2017-03-08 12:13:11|5614|Job.py      | Normal job (not an eventService job)
+2017-03-08 12:13:11|5614|Job.py      | jobsetID=18
+2017-03-08 12:13:11|5614|Job.py      | outfList = ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz']
+2017-03-08 12:13:11|5614|Job.py      | outfdbList = ['user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195', 'user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196']
+2017-03-08 12:13:11|5614|Job.py      | destinationDBlockToken = ['NULL', 'NULL', 'NULL']
+2017-03-08 12:13:11|5614|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL', 'NULL']
+2017-03-08 12:13:11|5614|Job.py      | logFileDblock = user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196
+2017-03-08 12:13:11|5614|Job.py      | Updated ddmEndPointOut=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:11|5614|Job.py      | Updated ddmEndPointLog=['SLACXRD_USERDISK']
+2017-03-08 12:13:11|5614|RunJob.py   | User analysis job
+2017-03-08 12:13:11|5614|RunJob.py   | runJob received a job with prodSourceLabel=user
+2017-03-08 12:13:11|5614|JobRecovery.| Successfully updated job state file with state: setup
+2017-03-08 12:13:11|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:13:11|5210|UpdateHandle| Connected from ('127.0.0.1', 41410)
+2017-03-08 12:13:11|5614|RunJobUtilit| filesAltStageOut not set
+2017-03-08 12:13:11|5614|RunJobUtilit| filesNormalStageOut not set
+2017-03-08 12:13:11|5614|RunJobUtilit| About to send TCP message to main pilot thread of length = 329
+2017-03-08 12:13:11|5614|RunJobUtilit| (Sent)
+2017-03-08 12:13:11|5210|UpdateHandle| --- TCPServer: Message received from child is : ["jobState=setup", "coreCount=1", "pid=5614", "timeStageIn=0", "dbTime=", "timeExe=0", "cpuConversionFactor=0", "vmPeakMax=0", "cpuUnit=None", "vmPeakMean=0", "pilotErrorDiag=None", "status=setup", "timeStageOut=0", "RSSMean=0", "nEvents=0", "timeSetup=0", "JEM=NO", "nEventsW=0", "cmtconfig=x86_64-slc6-gcc49-opt", "pilotecode=0", "cpuTime=0", "jobid=3267651254", "pgrp=5614", "dbData=", "transecode=0", ""]
+2017-03-08 12:13:11|5210|UpdateHandle| Debug: jobdict keys: ['prod']
+2017-03-08 12:13:11|5210|UpdateHandle| Debug: jobinfo: {'jobState': 'setup', 'coreCount': '1', 'pid': '5614', 'timeStageIn': '0', 'dbTime': '', 'timeExe': '0', 'cpuConversionFactor': '0', 'vmPeakMax': '0', 'cpuUnit': 'None', 'vmPeakMean': '0', 'pilotErrorDiag': 'None', 'status': 'setup', 'timeStageOut': '0', 'RSSMean': '0', 'pilotecode': '0', 'timeSetup': '0', 'JEM': 'NO', 'nEventsW': '0', 'cmtconfig': 'x86_64-slc6-gcc49-opt', 'nEvents': '0', 'cpuTime': '0', 'jobid': '3267651254', 'pgrp': '5614', 'dbData': '', 'transecode': '0'}
+2017-03-08 12:13:11|5210|UpdateHandle| Process groups: 5075 (pilot), 5614 (sub process)
+2017-03-08 12:13:11|5210|pUtil.py    | Decoding: None
+2017-03-08 12:13:11|5210|pUtil.py    | Empty URL encoded string (Nothing to decode)
+2017-03-08 12:13:11|5614|RunJobUtilit| (Received)
+2017-03-08 12:13:11|5614|RunJobUtilit| Successfully sent and received TCP message
+2017-03-08 12:13:11|5614|RunJobUtilit| Successfully updated local pilot TCP server at 2017-03-08T04:13:11-0800 (Trial 1/2)
+2017-03-08 12:13:11|5614|RunJob.py   | Number of transformations to process: 1
+2017-03-08 12:13:11|5614|RunJobUtilit| Multi-trf verification succeeded (single job)
+2017-03-08 12:13:11|5614|RunJob.py   | Current job workdir is /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:11|5614|RunJob.py   | Preparing setup 1/1
+2017-03-08 12:13:11|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:13:11|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:11|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:11|5614|pUtil.py    | Detected unset (NULL) release/homepackage string
+2017-03-08 12:13:11|5614|ATLASExperim| Got a plain appdir from queuedata: /cvmfs/atlas.cern.ch/repo/sw
+2017-03-08 12:13:11|5614|ATLASExperim| Local software path: swbase = /cvmfs/atlas.cern.ch/repo/sw/software
+2017-03-08 12:13:11|5614|ATLASExperim| Generic job
+2017-03-08 12:13:11|5614|ATLASExperim| Warning: $SITEROOT unknown at this stage (3)
+2017-03-08 12:13:11|5614|ATLASExperim| Will use $SITEROOT:  (3)
+2017-03-08 12:13:11|5614|pUtil.py    | Detected unset (NULL) release/homepackage string
+2017-03-08 12:13:11|5614|ATLASExperim| Using /usr/bin/python
+2017-03-08 12:13:11|5614|Experiment.p| trfName = runAthena-00-00-12
+2017-03-08 12:13:11|5614|Experiment.p| getValidBaseURLs will return: ['http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://pandaserver.cern.ch', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+2017-03-08 12:13:11|5614|Experiment.p| Verified the trf base URL: http://pandaserver.cern.ch
+2017-03-08 12:13:11|5614|Experiment.p| getValidBaseURLs will return: ['http://pandaserver.cern.ch', 'http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+2017-03-08 12:13:11|5614|Experiment.p| Attempting to download trf: http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12
+2017-03-08 12:13:11|5614|Experiment.p| Executing command [Trial 1/3]: wget http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12
+2017-03-08 12:13:11|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:13:11|5210|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+2017-03-08 12:13:11|5210|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+2017-03-08 12:13:11|5210|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+2017-03-08 12:13:11|5210|PandaServerC| jobDispatcher acknowledged with 0
+2017-03-08 12:13:11|5210|Monitor.py  | Successfully updated panda server at 2017-03-08T04:13:11-0800
+2017-03-08 12:13:11|5210|Monitor.py  | --- Main pilot monitoring loop (job id 3267651254, state:setup (setup), iteration 1)
+2017-03-08 12:13:11|5210|Monitor.py  | (athena_stdout.txt has not been created yet)
+2017-03-08 12:13:11|5210|pUtil.py    | Returning tail stdout dictionary with 1 entries
+2017-03-08 12:13:11|5210|Monitor.py  | onlyUpdateStateChangedJobs: True, lastState: starting, currentState: setup
+2017-03-08 12:13:11|5210|Monitor.py  | no stdout_path: 'path-3267651254'
+2017-03-08 12:13:11|5210|PandaServerC| Updating job status in updatePandaServer(): PandaId=3267651254, result=['setup', 0, 0], time=2017-03-08T04:13:11-0800
+2017-03-08 12:13:11|5210|PandaServerC| Checking if new site movers workflow is enabled: use_newmover=False
+2017-03-08 12:13:11|5210|PandaServerC| Batch system: LSF
+2017-03-08 12:13:11|5210|PandaServerC| Batch system job ID: 211595
+2017-03-08 12:13:11|5210|PandaServerC| Will send batchID: 211595 and pilotID: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6
+2017-03-08 12:13:11|5210|PandaServerC| pilotId: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+2017-03-08 12:13:11|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:11|5210|PandaServerC| Benchmark dictionary=None
+2017-03-08 12:13:11|5210|PandaServerC| Job metrics="coreCount=1"
+2017-03-08 12:13:11|5210|PandaServerC| jobSubStatus: None
+2017-03-08 12:13:11|5210|FileHandling| Pilot error report does not exist: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/pilot_error_report.json (should only exist if there actually was an error)
+2017-03-08 12:13:11|5210|PandaServerC| Did not find any reported high priority errors
+2017-03-08 12:13:11|5210|PandaServerC| Payload/TRF did not report the number of read events
+2017-03-08 12:13:11|5210|ATLASExperim| File does not exist: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:13:11|5210|ATLASExperim| File does not exist either: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/memory_monitor_summary.json
+2017-03-08 12:13:11|5210|ATLASExperim| File does not exist either: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_output.txt
+2017-03-08 12:13:11|5210|ATLASExperim| summary_dictionary={}
+2017-03-08 12:13:11|5210|ATLASExperim| Memory summary dictionary not yet available
+2017-03-08 12:13:11|5210|PandaServerC| getXML called
+2017-03-08 12:13:11|5210|PandaServerC| Stdout tail will not be sent (debug=False)
+2017-03-08 12:13:11|5210|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_5210_1488975182/jobState-3267651254.pickle
+2017-03-08 12:13:11|5210|PandaServerC| Trying alternative location: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:11|5210|PandaServerC| Did not find /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:13:11|5210|PandaServerC| WARNING: metadata file does not exist: /scratch/Panda_Pilot_5210_1488975182/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:13:11|5210|PandaServerC| Looking for it in the pilot init dir..
+2017-03-08 12:13:11|5210|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+2017-03-08 12:13:11|5210|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+2017-03-08 12:13:11|5210|pUtil.py    | toServer: cmd = updateJob
+2017-03-08 12:13:11|5210|pUtil.py    | toServer: len(data) = 15
+2017-03-08 12:13:11|5210|pUtil.py    | data = {'node': 'kiso0027', 'xml': '', 'workdir': '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_SLAC', 'timestamp': '2017-03-08T04:13:11-0800', 'coreCount': '1', 'attemptNr': 1, 'jobId': '3267651254', 'batchID': '211595', 'state': 'setup', 'schedulerID': 'BNL-gridui20-jhover', 'cpuConsumptionTime': '0', 'pilotID': 'http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz 12288 KB'}
+2017-03-08 12:13:11|5210|pUtil.py    | !!WARNING!!3333!! Job state 'setup' is not an allowed server job state value, job can fail
+2017-03-08 12:13:11|5210|pUtil.py    | Switched to running state for server update
+2017-03-08 12:13:11|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /scratch/Panda_Pilot_5210_1488975182/curl_updateJob_3267651254.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+2017-03-08 12:13:12|5614|Experiment.p| wget command returned: --2017-03-08 04:13:11--  http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12
+Resolving pandaserver.cern.ch... 188.184.140.203, 128.142.144.62, 128.142.153.89, ...
+Connecting to pandaserver.cern.ch|188.184.140.203|:25085... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 91998 (90K) [text/plain]
+Saving to: "runAthena-00-00-12"
+
+     0K .......... .......... .......... .......... .......... 55%  114K 0s
+    50K .......... .......... .......... .........            100%  262K=0.6s
+
+2017-03-08 04:13:12 (152 KB/s) - "runAthena-00-00-12" saved [91998/91998]
+
+2017-03-08 12:13:12|5614|Experiment.p| Successfully downloaded trf
+2017-03-08 12:13:12|5614|Experiment.p| Changing permission of runAthena-00-00-12 to 0755
+2017-03-08 12:13:12|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:12|5614|Experiment.p| Forced usePFCTurl (reset old/newPrefix)
+2017-03-08 12:13:12|5614|Experiment.p| No setup file in copysetup
+2017-03-08 12:13:12|5614|ATLASExperim| reset old/newPrefix (forced TURL mode (1))
+2017-03-08 12:13:12|5614|ATLASExperim| Added multi-core support to cmd2: export MAKEFLAGS="-j1 QUICK=1 -l1";
+2017-03-08 12:13:12|5614|ATLASExperim| cmd2 = export MAKEFLAGS="-j1 QUICK=1 -l1";
+2017-03-08 12:13:12|5614|ATLASExperim| cacheDir = AthAnalysisBase
+2017-03-08 12:13:12|5614|ATLASExperim| cacheVer = 2.4.25
+2017-03-08 12:13:12|5614|ATLASExperim| cacheDir = AthAnalysisBase
+2017-03-08 12:13:12|5614|ATLASExperim| cacheVer = 2.4.25
+2017-03-08 12:13:12|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:12|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:12|5614|ATLASExperim| Updated run command for special homePackage: export MAKEFLAGS="-j1 QUICK=1 -l1";export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase;source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh --quiet;source $AtlasSetup/scripts/asetup.sh AthAnalysisBase,2.4.25 --cmtconfig=x86_64-slc6-gcc49-opt;./runAthena-00-00-12 -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py" --usePFCTurl --directIn --inputGUIDs "['CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0']"
+2017-03-08 12:13:12|5614|ATLASExperim| 
+Command to run the job is: 
+export PANDA_RESOURCE="ANALY_SLAC";export ROOT_TTREECACHE_SIZE=1;export FRONTIER_ID="[10916444_3267651254]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="panda-client-0.5.78-jedi-athena";export RUCIO_ACCOUNT="pilot";export ROOTCORE_NCPUS=1;export MAKEFLAGS="-j1 QUICK=1 -l1";export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase;source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh --quiet;source $AtlasSetup/scripts/asetup.sh AthAnalysisBase,2.4.25 --cmtconfig=x86_64-slc6-gcc49-opt;./runAthena-00-00-12 -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py" --usePFCTurl --directIn --inputGUIDs "['CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0']"
+2017-03-08 12:13:12|5614|RunJob.py   | Total setup time: 1 s
+2017-03-08 12:13:12|5614|RunJob.py   | Setup has finished successfully
+2017-03-08 12:13:12|5614|Job.py      | Dumping job specifics
+2017-03-08 12:13:12|5614|Job.py      | 
+PandaID=3267651254
+Release=NULL
+homePackage=AnalysisTransforms-AthAnalysisBase_2.4.25
+trfName=http://pandaserver.cern.ch:25085/trf/user/runAthena-00-00-12
+inputFiles=['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+realDatasetsIn=['data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/', 'panda.0308105652.430739.lib._10916444']
+filesizeIn=['2294757', '6159609']
+checksumIn=['ad:85bc4972', 'ad:0e8d0236']
+prodDBlocks=['data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00', 'NULL']
+prodDBlockToken=['NULL', 'NULL']
+prodDBlockTokenForOutput=['']
+dispatchDblock=['NULL', 'panda.0308105652.430739.lib._10916444']
+dispatchDBlockToken=['NULL', 'NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL', 'NULL']
+outputFiles=['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root']
+destinationDblock=['user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195']
+logFile=user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz
+logFileDblock=user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196
+jobPars=-l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"
+The job state=['setup', 0, 0]
+Job workdir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+TarFileGuid=674881c2-50c8-43f1-9495-546633c08a22
+outFilesGuids=[]
+destinationSE=NULL
+fileDestinationSE=ANALY_SLAC,ANALY_SLAC,ANALY_SLAC
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=US
+taskID=10916444
+prodUserID=/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy
+debug=False
+transferType=NULL
+scopeIn=['data15_13TeV', 'panda']
+scopeOut=['user.saparede', 'user.saparede']
+scopeLog=['user.saparede']
+2017-03-08 12:13:12|5614|Job.py      | ddmEndPointIn=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:12|5614|Job.py      | ddmEndPointOut=['SLACXRD_USERDISK', 'SLACXRD_USERDISK']
+2017-03-08 12:13:12|5614|Job.py      | ddmEndPointLog=['SLACXRD_USERDISK']
+2017-03-08 12:13:12|5614|Job.py      | cloneJob=
+2017-03-08 12:13:12|5614|Job.py      | allowNoOutput=[]
+2017-03-08 12:13:12|5614|Job.py      | siteworkdir=None
+2017-03-08 12:13:12|5614|Job.py      | workdir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:13:12|5614|Job.py      | datadir=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_data
+2017-03-08 12:13:12|5614|Job.py      | newDirNM=
+2017-03-08 12:13:12|5614|RunJob.py   | Setting stage-in state until all input files have been copied
+2017-03-08 12:13:12|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:13:12|5614|RunJobUtilit| filesAltStageOut not set
+2017-03-08 12:13:12|5210|UpdateHandle| Connected from ('127.0.0.1', 41416)
+2017-03-08 12:13:12|5614|RunJobUtilit| filesNormalStageOut not set
+2017-03-08 12:13:12|5614|RunJobUtilit| About to send TCP message to main pilot thread of length = 327
+2017-03-08 12:13:12|5614|RunJobUtilit| (Sent)
+2017-03-08 12:13:12|5210|UpdateHandle| --- TCPServer: Message received from child is : ["jobState=setup", "coreCount=1", "pid=5614", "timeStageIn=0", "dbTime=", "timeExe=0", "cpuConversionFactor=0", "vmPeakMax=0", "cpuUnit=None", "vmPeakMean=0", "pilotErrorDiag=", "status=stagein", "timeStageOut=0", "RSSMean=0", "nEvents=0", "timeSetup=1", "JEM=NO", "nEventsW=0", "cmtconfig=x86_64-slc6-gcc49-opt", "pilotecode=0", "cpuTime=0", "jobid=3267651254", "pgrp=5614", "dbData=", "transecode=0", ""]
+2017-03-08 12:13:12|5210|UpdateHandle| Debug: jobdict keys: ['prod']
+2017-03-08 12:13:12|5210|UpdateHandle| Debug: jobinfo: {'jobState': 'setup', 'coreCount': '1', 'pid': '5614', 'timeStageIn': '0', 'dbTime': '', 'timeExe': '0', 'cpuConversionFactor': '0', 'vmPeakMax': '0', 'cpuUnit': 'None', 'vmPeakMean': '0', 'pilotErrorDiag': '', 'status': 'stagein', 'timeStageOut': '0', 'RSSMean': '0', 'pilotecode': '0', 'timeSetup': '1', 'JEM': 'NO', 'nEventsW': '0', 'cmtconfig': 'x86_64-slc6-gcc49-opt', 'nEvents': '0', 'cpuTime': '0', 'jobid': '3267651254', 'pgrp': '5614', 'dbData': '', 'transecode': '0'}
+2017-03-08 12:13:12|5210|UpdateHandle| Process groups: 5075 (pilot), 5614 (sub process)
+2017-03-08 12:13:12|5210|pUtil.py    | Decoding: 
+2017-03-08 12:13:12|5210|pUtil.py    | Empty URL encoded string (Nothing to decode)
+2017-03-08 12:13:12|5614|RunJobUtilit| (Received)
+2017-03-08 12:13:12|5614|RunJobUtilit| Successfully sent and received TCP message
+2017-03-08 12:13:12|5614|RunJobUtilit| Successfully updated local pilot TCP server at 2017-03-08T04:13:12-0800 (Trial 1/2)
+2017-03-08 12:13:12|5614|JobRecovery.| Successfully updated job state file with state: stagein
+2017-03-08 12:13:12|5614|RunJobUtilit| Input file(s): (2 in total)
+2017-03-08 12:13:12|5614|pUtil.py    | 1. DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:12|5614|pUtil.py    | 2. panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:12|5614|RunJob.py   | Preparing for get command
+2017-03-08 12:13:12|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:12|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:12|5614|SiteInformat| Direct access mode: Copy tool will not be used for stage-in of root files
+2017-03-08 12:13:12|5614|Mover.py    | Created dictionary: {'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz': 'NULL', 'DAOD_JETM11.10014747._000007.pool.root.1': 'NULL'}
+2017-03-08 12:13:12|5614|Mover.py    | Created dictionary: {'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz': 'panda', 'DAOD_JETM11.10014747._000007.pool.root.1': 'data15_13TeV'}
+2017-03-08 12:13:12|5614|DBReleaseHan| Local DBRelease path verified: /cvmfs/atlas.cern.ch/repo/sw/database/DBRelease (will attempt to skip DBRelease stage-in)
+2017-03-08 12:13:12|5614|Mover.py    | Calling get function with dsname=panda.0308105652.430739.lib._10916444, dsdict={'panda.0308105652.430739.lib._10916444': ['panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'], 'data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/': ['DAOD_JETM11.10014747._000007.pool.root.1']}
+2017-03-08 12:13:12|5614|Mover.py    | Mover get data started
+2017-03-08 12:13:12|5614|Mover.py    | No DBRelease info found in job parameters
+2017-03-08 12:13:12|5614|Mover.py    | Job parameters did not specify a DBRelease version (can not verify local availability)
+2017-03-08 12:13:12|5614|Mover.py    | Number of locally available DBRelease files = 0 (2 files in total), continue with stage-in
+2017-03-08 12:13:12|5614|Mover.py    | Using job definition id: 19
+2017-03-08 12:13:12|5614|Mover.py    | Trying to add additional info to tracing report
+2017-03-08 12:13:12|5614|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'panda.0308105652.430739.lib._10916444', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'kiso0027.slac.stanford.edu', 'remoteSite': 'ANALY_SLAC', 'filename': None, 'version': None, 'filesize': None, 'taskid': '10916444', 'ip': '134.79.240.72', 'stateReason': None, 'usrdn': '/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', 'usr': '3ff8122d8b489e23e823070fac2cfab1', 'eventVersion': 'pilot3', 'localSite': 'ANALY_SLAC', 'validateStart': None, 'url': None, 'uuid': 'e8fbd6c232bb60dc85aa2f10ede74adc', 'timeStart': 1488975192.423727, 'relativeStart': None, 'appid': '3267651254', 'clientState': 'INIT_REPORT'}
+2017-03-08 12:13:12|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:12|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:12|5614|SiteMoverFar| Looking for site mover lsm, setup:, ar:(), kw:{}
+2017-03-08 12:13:12|5614|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: )
+2017-03-08 12:13:12|5614|Mover.py    | Preparing to build paths for input files
+2017-03-08 12:13:12|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:12|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:12|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:12|5614|Mover.py    | Guids:
+2017-03-08 12:13:12|5614|pUtil.py    | 1. CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:12|5614|pUtil.py    | 2. b2bb2ce7-ebb5-44fd-8baa-c009cf348059
+2017-03-08 12:13:12|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:12|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:12|5614|Mover.py    | Will do replica lookups in a file catalog
+2017-03-08 12:13:12|5614|ATLASExperim| Using file catalog: <rucio default>
+2017-03-08 12:13:12|5614|Mover.py    | Will extend file catalog host list
+2017-03-08 12:13:12|5614|Mover.py    | (No additional hosts)
+2017-03-08 12:13:12|5614|Mover.py    | File catalog host list: ['<rucio default>']
+2017-03-08 12:13:12|5614|Mover.py    | Attempting replica lookup from host <rucio default> (#1/1)
+2017-03-08 12:13:12|5614|Mover.py    | copyprefixin is not set, trying to use copyprefix instead
+2017-03-08 12:13:12|5614|Mover.py    | Read copyprefix: ^srm://osgserv04.slac.stanford.edu
+2017-03-08 12:13:12|5614|Mover.py    | SE list:
+2017-03-08 12:13:12|5614|pUtil.py    | 1. token:ATLASUSERDISK:srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:13:12|5614|Mover.py    | SE list has been stripped to:
+2017-03-08 12:13:12|5614|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu
+2017-03-08 12:13:12|5614|ATLASExperim| Using alternative file catalog lookups
+2017-03-08 12:13:12|5614|Mover.py    | lfn_dict={'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': 'DAOD_JETM11.10014747._000007.pool.root.1', 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059': 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'}
+2017-03-08 12:13:12|5614|Mover.py    | scope_dict={'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz': 'panda', 'DAOD_JETM11.10014747._000007.pool.root.1': 'data15_13TeV'}
+2017-03-08 12:13:12|5614|Mover.py    | file_dictionary={'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': 'data15_13TeV:DAOD_JETM11.10014747._000007.pool.root.1', 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059': 'panda:panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'}
+2017-03-08 12:13:12|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:13:12|5210|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+2017-03-08 12:13:12|5210|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+2017-03-08 12:13:12|5210|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+2017-03-08 12:13:12|5210|PandaServerC| jobDispatcher acknowledged with 0
+2017-03-08 12:13:12|5210|Monitor.py  | Successfully updated panda server at 2017-03-08T04:13:12-0800
+2017-03-08 12:13:12|5210|Monitor.py  | Debug: job prod state: running
+2017-03-08 12:13:13|5614|Mover.py    | rucio_replica_dictionary={'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': {'fsize': 2294757, 'lfn': u'data15_13TeV:DAOD_JETM11.10014747._000007.pool.root.1', 'surls': [u'srm://head01.aglt2.org:8443/srm/managerv2?SFN=/pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'srm://storm-fe.cr.cnaf.infn.it:8444/srm/managerv2?SFN=/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1'], 'checksum': u'ad:85bc4972'}, 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059': {'fsize': 6159609, 'lfn': u'panda:panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', 'surls': [u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'], 'checksum': u'ad:0e8d0236'}}
+2017-03-08 12:13:13|5614|Mover.py    | rucio_surl_dictionary={u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz': {u'rse': u'SLACXRD_USERDISK', u'volatile': False, u'type': u'DISK'}, u'srm://head01.aglt2.org:8443/srm/managerv2?SFN=/pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1': {u'rse': u'AGLT2_DATADISK', u'volatile': False, u'type': u'DISK'}, u'srm://storm-fe.cr.cnaf.infn.it:8444/srm/managerv2?SFN=/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1': {u'rse': u'INFN-T1_DATADISK', u'volatile': False, u'type': u'DISK'}, u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1': {u'rse': u'SLACXRD_DATADISK', u'volatile': False, u'type': u'DISK'}}
+2017-03-08 12:13:13|5614|Mover.py    | surl_guid_dictionary={'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': [u'srm://head01.aglt2.org:8443/srm/managerv2?SFN=/pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'srm://storm-fe.cr.cnaf.infn.it:8444/srm/managerv2?SFN=/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1'], 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059': [u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']}
+2017-03-08 12:13:13|5614|Mover.py    | Verifying SURLs
+2017-03-08 12:13:13|5614|Mover.py    | GUID=CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0 has a valid (set) SURL list
+2017-03-08 12:13:13|5614|Mover.py    | GUID=b2bb2ce7-ebb5-44fd-8baa-c009cf348059 has a valid (set) SURL list
+2017-03-08 12:13:13|5614|Mover.py    | Copyprefix lists: ['dummy'], ['srm://osgserv04.slac.stanford.edu']
+2017-03-08 12:13:13|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:13|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:13|5614|Mover.py    | Processing guid CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:13|5614|Mover.py    | No space token matching
+2017-03-08 12:13:13|5614|Mover.py    | Sorted replica list:
+2017-03-08 12:13:13|5614|Mover.py    | 1. srm://head01.aglt2.org:8443/srm/managerv2?SFN=/pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 (size: 2294757 checksum: ad:85bc4972 type=DISK)
+2017-03-08 12:13:13|5614|Mover.py    | 2. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 (size: 2294757 checksum: ad:85bc4972 type=DISK)
+2017-03-08 12:13:13|5614|Mover.py    | 3. srm://storm-fe.cr.cnaf.infn.it:8444/srm/managerv2?SFN=/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 (size: 2294757 checksum: ad:85bc4972 type=DISK)
+2017-03-08 12:13:13|5614|Mover.py    | Checking replica srm://head01.aglt2.org:8443/srm/managerv2?SFN=/pnfs/aglt2.org/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 for guid CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:13|5614|Mover.py    | Checking list of SEs
+2017-03-08 12:13:13|5614|Mover.py    | Could not find any matching se, try to use copyprefix instead
+2017-03-08 12:13:13|5614|Mover.py    | Found no matched replicas using copyprefix
+2017-03-08 12:13:13|5614|Mover.py    | Checking replica srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 for guid CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:13|5614|Mover.py    | Checking list of SEs
+2017-03-08 12:13:13|5614|Mover.py    | Found matched replica: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 at srm://osgserv04.slac.stanford.edu
+2017-03-08 12:13:13|5614|Mover.py    | Checking replica srm://storm-fe.cr.cnaf.infn.it:8444/srm/managerv2?SFN=/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 for guid CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:13|5614|Mover.py    | Checking list of SEs
+2017-03-08 12:13:13|5614|Mover.py    | Could not find any matching se, try to use copyprefix instead
+2017-03-08 12:13:13|5614|Mover.py    | Found no matched replicas using copyprefix
+2017-03-08 12:13:13|5614|Mover.py    | Matched replica list:
+2017-03-08 12:13:13|5614|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:13|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:13|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:13|5614|Mover.py    | Will use primary replica: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:13|5614|Mover.py    | Creating initial replica dictionary
+2017-03-08 12:13:13|5614|Mover.py    | Successfully dumped replica dictionary to file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/matched_replicas.json for guid: CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0
+2017-03-08 12:13:13|5614|Mover.py    | Processing guid b2bb2ce7-ebb5-44fd-8baa-c009cf348059
+2017-03-08 12:13:13|5614|Mover.py    | No space token matching
+2017-03-08 12:13:13|5614|Mover.py    | Sorted replica list:
+2017-03-08 12:13:13|5614|Mover.py    | 1. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz (size: 6159609 checksum: ad:0e8d0236 type=DISK)
+2017-03-08 12:13:13|5614|Mover.py    | Checking replica srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz for guid b2bb2ce7-ebb5-44fd-8baa-c009cf348059
+2017-03-08 12:13:13|5614|Mover.py    | Checking list of SEs
+2017-03-08 12:13:13|5614|Mover.py    | Found matched replica: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz at srm://osgserv04.slac.stanford.edu
+2017-03-08 12:13:13|5614|Mover.py    | Matched replica list:
+2017-03-08 12:13:13|5614|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:13|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:13:13|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:13:13|5614|Mover.py    | Will use primary replica: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:13|5614|Mover.py    | Successfully dumped replica dictionary to file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/matched_replicas.json for guid: b2bb2ce7-ebb5-44fd-8baa-c009cf348059
+2017-03-08 12:13:13|5614|Mover.py    | Copytool dictionary already contains an entry for SURL=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1, copytool=lsm
+2017-03-08 12:13:13|5614|Mover.py    | Found all replicas, aborting loop over catalog hosts
+2017-03-08 12:13:13|5614|Mover.py    | file_dict = {'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059': u'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz'}
+2017-03-08 12:13:13|5614|Mover.py    | Creating Pool File Catalog
+2017-03-08 12:13:13|5614|pUtil.py    | <?xml version="1.0" ?>
+<!-- Edited By the PanDA Pilot -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1"/>
+    </physical>
+    <logical/>
+  </File>
+  <File ID="b2bb2ce7-ebb5-44fd-8baa-c009cf348059">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>
+
+2017-03-08 12:13:13|5614|pUtil.py    | Writing XML to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PoolFileCatalog.xml
+2017-03-08 12:13:13|5614|pUtil.py    | Created PFC XML
+2017-03-08 12:13:13|5614|Mover.py    | Using XML source LFC
+2017-03-08 12:13:13|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:13|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:13|5614|SiteInformat| Direct access mode: Copy tool will not be used for stage-in of root files
+2017-03-08 12:13:13|5614|Mover.py    | Reset old/newPrefix (forced TURL mode)
+2017-03-08 12:13:13|5614|Mover.py    | Use copytool = False
+2017-03-08 12:13:13|5614|Mover.py    | Use direct I/O = True
+2017-03-08 12:13:13|5614|Mover.py    | Direct I/O type = WAN
+2017-03-08 12:13:13|5614|Mover.py    | oldPrefix =  (should be empty if TURL based PFC is required)
+2017-03-08 12:13:13|5614|Mover.py    | newPrefix =  (should be empty if TURL based PFC is required)
+2017-03-08 12:13:13|5614|Mover.py    | TURL based PFC required
+2017-03-08 12:13:13|5614|Mover.py    | Performing automatic configuration
+2017-03-08 12:13:13|5614|Mover.py    | Built a thinner file dictionary with 2 file(s)
+2017-03-08 12:13:13|5614|Mover.py    | Will create a PFC with TURL(s) for the following file(s)
+2017-03-08 12:13:13|5614|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:13|5614|pUtil.py    | 2. srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:13|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:13|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:13|5614|SiteInformat| Direct access mode: Copy tool will not be used for stage-in of root files
+2017-03-08 12:13:13|5614|Mover.py    | Copyprefix lists: ['dummy'], ['srm://osgserv04.slac.stanford.edu']
+2017-03-08 12:13:13|5614|Mover.py    | Will use oldPrefix=srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas and newPrefix=root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd for SURL to TURL conversion
+2017-03-08 12:13:13|5614|Mover.py    | Prefix dictionary = {'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz': ['srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'], 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1': ['srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd']}
+2017-03-08 12:13:13|5614|Mover.py    | oldPrefix=srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas
+2017-03-08 12:13:13|5614|Mover.py    | newPrefix=root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd
+2017-03-08 12:13:13|5614|Mover.py    | File DAOD_JETM11.10014747._000007.pool.root.1 belongs to dataset/container data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/
+2017-03-08 12:13:13|5614|Mover.py    | Identified LFN=DAOD_JETM11.10014747._000007.pool.root.1, dataset=data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/, scope=data15_13TeV
+2017-03-08 12:13:13|5614|Mover.py    | Prefices overwritten for surl=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1, oldPrefix=srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas, newPrefix=root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd
+2017-03-08 12:13:13|5614|Mover.py    | Confirmed double / in TURL using pattern [A-Za-z]+\:[\S]+//: root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//
+2017-03-08 12:13:13|5614|Mover.py    | Converted SURL: srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 to TURL: root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:13|5614|Mover.py    | No need to convert SURLs with lcg-getturls, got a populated TURL dictionary already (1 item(s))
+2017-03-08 12:13:13|5614|Mover.py    | getTURL returned dictionary: {'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1'}
+2017-03-08 12:13:13|5614|pUtil.py    | <?xml version="1.0" ?>
+<!-- Edited By the PanDA Pilot -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0">
+    <physical>
+      <pfn filetype="ROOT_All" name="root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd//atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1"/>
+    </physical>
+    <logical>
+      <lfn name="DAOD_JETM11.10014747._000007.pool.root.1"/>
+    </logical>
+  </File>
+</POOLFILECATALOG>
+
+2017-03-08 12:13:13|5614|pUtil.py    | Writing XML to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PoolFileCatalogTURL.xml
+2017-03-08 12:13:13|5614|pUtil.py    | Created PFC XML
+2017-03-08 12:13:13|5614|Mover.py    | PFC created with TURLs
+2017-03-08 12:13:13|5614|pUtil.py    | !!WARNING!!2343!! Found no @input filename in jobPars: -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py"
+2017-03-08 12:13:13|5614|Mover.py    | !!WARNING!!5465!! LFN to TURL replacement in @input file failed - Direct I/O will fail
+2017-03-08 12:13:13|5614|Mover.py    | Files will be transferred one by one
+2017-03-08 12:13:13|5614|Mover.py    | Will process 2 file(s)
+2017-03-08 12:13:13|5614|Mover.py    | Extracted (guid, gpfn, size, checksum, filetype, copytool, os_bucket_id) = (CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0, srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1, 2294757, 85bc4972, DISK, lsm, -1)
+2017-03-08 12:13:13|5614|Mover.py    | File DAOD_JETM11.10014747._000007.pool.root.1 belongs to dataset/container data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/
+2017-03-08 12:13:13|5614|Mover.py    | File DAOD_JETM11.10014747._000007.pool.root.1 belongs to dataset/container data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00
+2017-03-08 12:13:13|5614|Mover.py    | file scope: data15_13TeV
+2017-03-08 12:13:13|5614|Mover.py    | RSE: SLACXRD_DATADISK
+2017-03-08 12:13:13|5614|Mover.py    | (Not a DBRelease file)
+2017-03-08 12:13:13|5614|Mover.py    | Mover is preparing to copy file 1/2 (lfn: DAOD_JETM11.10014747._000007.pool.root.1 guid: CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0 dsname: data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/)
+2017-03-08 12:13:13|5614|LocalSiteMov| self setup: 
+2017-03-08 12:13:13|5614|Mover.py    | Copying srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1 to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188 (file catalog checksum: "85bc4972", fsize: 2294757) using lsm ()
+2017-03-08 12:13:13|5614|Mover.py    | No special file access
+2017-03-08 12:13:13|5614|Mover.py    | Get attempt 1/2
+2017-03-08 12:13:13|5614|LocalSiteMov| transferType=NULL
+2017-03-08 12:13:13|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:13|5614|SiteInformat| Direct access mode: Copy tool will not be used for stage-in of root files
+2017-03-08 12:13:13|5614|SiteInformat| Found root file according to file name (will not be transferred in direct reading mode)
+2017-03-08 12:13:13|5614|LocalSiteMov| output={'report': {'relativeStart': None, 'clientState': 'FOUND_ROOT', 'transferStart': None}, 'transfer_mode': 'remote_io', 'errorLog': None}
+2017-03-08 12:13:13|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:13|5614|FileState.py| updateState: filename=DAOD_JETM11.10014747._000007.pool.root.1
+2017-03-08 12:13:13|5614|FileState.py| updateState: mode=transfer_mode
+2017-03-08 12:13:13|5614|FileState.py| updateState: state=remote_io
+2017-03-08 12:13:13|5614|LocalSiteMov| updated file state for lfn=DAOD_JETM11.10014747._000007.pool.root.1, workDir=/scratch/Panda_Pilot_5210_1488975182, jobId=3267651254, state=remote_io
+2017-03-08 12:13:13|5614|FileHandling| Wrote dictionary to file tracing_report.json
+2017-03-08 12:13:13|5614|SiteMover.py| Wrote tracing report to file tracing_report.json (cwd=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188)
+2017-03-08 12:13:13|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'get_sm_a', u'suspicious': u'0', u'timeEnd': 1488975193.690901, u'dataset': u'data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00', u'catStart': 1488975193.669611, u'guid': u'CCB0DCA63793CF4FBEBEC46E7D187BF0', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_DATADISK', u'filename': u'DAOD_JETM11.10014747._000007.pool.root.1', u'version': None, u'filesize': u'2294757', u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': None, u'scope': u'data15_13TeV', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_DATADISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975192.423727, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'FOUND_ROOT'}
+2017-03-08 12:13:13|5614|SiteMover.py| Tracing server: https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:13:13|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'get_sm_a', u'suspicious': u'0', u'timeEnd': 1488975193.690901, u'dataset': u'data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00', u'catStart': 1488975193.669611, u'guid': u'CCB0DCA63793CF4FBEBEC46E7D187BF0', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_DATADISK', u'filename': u'DAOD_JETM11.10014747._000007.pool.root.1', u'version': None, u'filesize': u'2294757', u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': None, u'scope': u'data15_13TeV', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_DATADISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975192.423727, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'FOUND_ROOT'}
+2017-03-08 12:13:13|5614|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy -v -k -d "{\"protocol\": \"local\", \"transferStart\": null, \"eventType\": \"get_sm_a\", \"suspicious\": \"0\", \"timeEnd\": 1488975193.690901, \"dataset\": \"data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00\", \"catStart\": 1488975193.669611, \"guid\": \"CCB0DCA63793CF4FBEBEC46E7D187BF0\", \"duid\": null, \"hostname\": \"kiso0027.slac.stanford.edu\", \"remoteSite\": \"SLACXRD_DATADISK\", \"filename\": \"DAOD_JETM11.10014747._000007.pool.root.1\", \"version\": null, \"filesize\": \"2294757\", \"taskid\": \"10916444\", \"ip\": \"134.79.240.72\", \"stateReason\": null, \"scope\": \"data15_13TeV\", \"usr\": \"3ff8122d8b489e23e823070fac2cfab1\", \"eventVersion\": \"pilot3\", \"localSite\": \"SLACXRD_DATADISK\", \"usrdn\": \"/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy\", \"validateStart\": null, \"url\": \"srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasdatadisk/rucio/data15_13TeV/4b/52/DAOD_JETM11.10014747._000007.pool.root.1\", \"uuid\": \"e8fbd6c232bb60dc85aa2f10ede74adc\", \"timeStart\": 1488975192.423727, \"relativeStart\": null, \"appid\": \"3267651254\", \"clientState\": \"FOUND_ROOT\"}" https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:13:14|5614|SiteMover.py| Tracing report sent
+2017-03-08 12:13:14|5614|Mover.py    | Site mover skipped stage-in in favor of direct i/o
+2017-03-08 12:13:14|5614|Mover.py    | File transfer finished correctly
+2017-03-08 12:13:14|5614|Mover.py    | Extracted (guid, gpfn, size, checksum, filetype, copytool, os_bucket_id) = (b2bb2ce7-ebb5-44fd-8baa-c009cf348059, srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz, 6159609, 0e8d0236, DISK, lsm, -1)
+2017-03-08 12:13:14|5614|Mover.py    | File panda.0308105652.430739.lib._10916444.8727237564.lib.tgz belongs to dataset/container panda.0308105652.430739.lib._10916444
+2017-03-08 12:13:14|5614|Mover.py    | File panda.0308105652.430739.lib._10916444.8727237564.lib.tgz belongs to dataset/container NULL
+2017-03-08 12:13:14|5614|Mover.py    | file scope: panda
+2017-03-08 12:13:14|5614|Mover.py    | RSE: SLACXRD_USERDISK
+2017-03-08 12:13:14|5614|Mover.py    | (Not a DBRelease file)
+2017-03-08 12:13:14|5614|Mover.py    | Mover is preparing to copy file 2/2 (lfn: panda.0308105652.430739.lib._10916444.8727237564.lib.tgz guid: b2bb2ce7-ebb5-44fd-8baa-c009cf348059 dsname: panda.0308105652.430739.lib._10916444)
+2017-03-08 12:13:14|5614|LocalSiteMov| self setup: 
+2017-03-08 12:13:14|5614|Mover.py    | Copying srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188 (file catalog checksum: "0e8d0236", fsize: 6159609) using lsm ()
+2017-03-08 12:13:14|5614|Mover.py    | No special file access
+2017-03-08 12:13:14|5614|Mover.py    | Get attempt 1/2
+2017-03-08 12:13:14|5614|LocalSiteMov| transferType=NULL
+2017-03-08 12:13:14|5614|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlrdr1.slac.stanford.edu:1094//atlas/xrootd'}
+2017-03-08 12:13:14|5614|SiteInformat| Direct access mode: Copy tool will not be used for stage-in of root files
+2017-03-08 12:13:14|5614|SiteInformat| Direct access mode has been switched off for this file (will be transferred with the copy tool)
+2017-03-08 12:13:14|5614|LocalSiteMov| output={'report': {'clientState': None}, 'transfer_mode': 'copy_to_scratch', 'errorLog': None}
+2017-03-08 12:13:14|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:14|5614|FileState.py| updateState: filename=panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:14|5614|FileState.py| updateState: mode=transfer_mode
+2017-03-08 12:13:14|5614|FileState.py| updateState: state=copy_to_scratch
+2017-03-08 12:13:14|5614|LocalSiteMov| updated file state for lfn=panda.0308105652.430739.lib._10916444.8727237564.lib.tgz, workDir=/scratch/Panda_Pilot_5210_1488975182, jobId=3267651254, state=copy_to_scratch
+2017-03-08 12:13:14|5614|LocalSiteMov| self setup: 
+2017-03-08 12:13:14|5614|LocalSiteMov| to verify site setup:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; 
+2017-03-08 12:13:14|5614|LocalSiteMov| Will verify:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:14|5614|LocalSiteMov| Nothing to verify in setup:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; (either empty string or no source command)
+2017-03-08 12:13:14|5614|LocalSiteMov| Execute command:   export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; which lsm-get
+2017-03-08 12:13:14|5614|LocalSiteMov| Status: 0, Output: /nfs/slac/g/grid/osg/app/atlas_app/local/lsm/lsm-get
+2017-03-08 12:13:14|5614|ATLASExperim| envsetup= export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:14|5614|ATLASExperim| envsetup= export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:14|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:14|5614|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:13:14|5614|ATLASExperim| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+2017-03-08 12:13:14|5614|ATLASExperim| ec=0 output=308737
+2017-03-08 12:13:14|5614|ATLASExperim| Voms proxy verified (308737s)
+2017-03-08 12:13:14|5614|ATLASExperim| Voms proxy verified using arcproxy
+2017-03-08 12:13:14|5614|LocalSiteMov| site setup verifying: status: 0, output: None
+2017-03-08 12:13:14|5614|LocalSiteMov| Found SFN part in file path: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:14|5614|LocalSiteMov| StageIn files started.
+2017-03-08 12:13:14|5614|LocalSiteMov| Executing command:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; lsm-get  --size 6159609 --checksum adler32:0e8d0236 --guid None srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:15|5614|LocalSiteMov| Command finished after 0.360000 s: 
+2017-03-08 12:13:15|5614|LocalSiteMov| Stagein succeeded
+2017-03-08 12:13:15|5614|LocalSiteMov| Verify file Staging: source: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz, sourceSize: 6159609, sourceChecksum: 0e8d0236, destFile: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:15|5614|LocalSiteMov| Getting destination file(/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz) information.
+2017-03-08 12:13:15|5614|LocalSiteMov| Getting local File(/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz) info.
+2017-03-08 12:13:15|5614|LocalSiteMov| Executing getsize() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:15|5614|LocalSiteMov| Got file size: 6159609
+2017-03-08 12:13:15|5614|LocalSiteMov| Executing adler32() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:15|5614|LocalSiteMov| Got adler32 checksum: 0e8d0236
+2017-03-08 12:13:15|5614|LocalSiteMov| Destination file information: file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz, size: 6159609, checksum: 0e8d0236
+2017-03-08 12:13:15|5614|LocalSiteMov| Verify staging done.
+2017-03-08 12:13:15|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:15|5614|FileState.py| updateState: filename=panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:15|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:13:15|5614|FileState.py| updateState: state=transferred
+2017-03-08 12:13:15|5614|FileHandling| Wrote dictionary to file tracing_report.json
+2017-03-08 12:13:15|5614|SiteMover.py| Wrote tracing report to file tracing_report.json (cwd=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188)
+2017-03-08 12:13:15|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'get_sm_a', u'suspicious': u'0', u'timeEnd': 1488975195.3094971, u'dataset': u'NULL', u'catStart': 1488975194.813288, u'guid': u'b2bb2ce7ebb544fd8baac009cf348059', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', u'version': None, u'filesize': u'6159609', u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': None, u'scope': u'panda', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': 1488975195.2748849, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975192.423727, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:13:15|5614|SiteMover.py| Tracing server: https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:13:15|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'get_sm_a', u'suspicious': u'0', u'timeEnd': 1488975195.3094971, u'dataset': u'NULL', u'catStart': 1488975194.813288, u'guid': u'b2bb2ce7ebb544fd8baac009cf348059', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', u'version': None, u'filesize': u'6159609', u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': None, u'scope': u'panda', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': 1488975195.2748849, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975192.423727, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:13:15|5614|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy -v -k -d "{\"protocol\": \"local\", \"transferStart\": null, \"eventType\": \"get_sm_a\", \"suspicious\": \"0\", \"timeEnd\": 1488975195.3094971, \"dataset\": \"NULL\", \"catStart\": 1488975194.813288, \"guid\": \"b2bb2ce7ebb544fd8baac009cf348059\", \"duid\": null, \"hostname\": \"kiso0027.slac.stanford.edu\", \"remoteSite\": \"SLACXRD_USERDISK\", \"filename\": \"panda.0308105652.430739.lib._10916444.8727237564.lib.tgz\", \"version\": null, \"filesize\": \"6159609\", \"taskid\": \"10916444\", \"ip\": \"134.79.240.72\", \"stateReason\": null, \"scope\": \"panda\", \"usr\": \"3ff8122d8b489e23e823070fac2cfab1\", \"eventVersion\": \"pilot3\", \"localSite\": \"SLACXRD_USERDISK\", \"usrdn\": \"/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy\", \"validateStart\": 1488975195.2748849, \"url\": \"srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/panda/5f/15/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz\", \"uuid\": \"e8fbd6c232bb60dc85aa2f10ede74adc\", \"timeStart\": 1488975192.423727, \"relativeStart\": null, \"appid\": \"3267651254\", \"clientState\": \"DONE\"}" https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:13:16|5614|SiteMover.py| Tracing report sent
+2017-03-08 12:13:16|5614|Mover.py    | File transfer finished correctly
+2017-03-08 12:13:16|5614|Mover.py    | Original filelist_fromxml = ['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+2017-03-08 12:13:16|5614|Mover.py    | Updated filelist_fromxml = ['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+2017-03-08 12:13:16|5614|Mover.py    | filelist_fromlfns = ['DAOD_JETM11.10014747._000007.pool.root.1', 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz']
+2017-03-08 12:13:16|5614|Mover.py    | Verified: PoolFileCatalog.xml contains at least as many files as the initial list
+2017-03-08 12:13:16|5614|Mover.py    | Renamed TURL based PFC from /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PoolFileCatalogTURL.xml to /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/PoolFileCatalog.xml
+2017-03-08 12:13:16|5614|Mover.py    | Number of identified root files     : 1
+2017-03-08 12:13:16|5614|Mover.py    | Number of transferred non-root files: 1
+2017-03-08 12:13:16|5614|Mover.py    | Get successful
+2017-03-08 12:13:16|5614|Mover.py    | Mover get_data finished
+2017-03-08 12:13:16|5614|Mover.py    | Will return exit code = 0, pilotErrorDiag = 
+2017-03-08 12:13:16|5614|Mover.py    | Get function finished with exit code 0
+2017-03-08 12:13:16|5614|Mover.py    | Input file(s):
+2017-03-08 12:13:16|5614|Mover.py    | File DAOD_JETM11.10014747._000007.pool.root.1 was not transferred
+2017-03-08 12:13:16|5614|Mover.py    | -rw-r--r-- 1 osgatlas01 OG 6159609 Mar  8 04:13 /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:13:16|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:16|5614|FileState.py| File name  /  File state  /  Transfer mode
+2017-03-08 12:13:16|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:13:16|5614|FileState.py| 1. DAOD_JETM11.10014747._000007.pool.root.1	not_transferred	remote_io
+2017-03-08 12:13:16|5614|FileState.py| 2. panda.0308105652.430739.lib._10916444.8727237564.lib.tgz	transferred	copy_to_scratch
+2017-03-08 12:13:16|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:16|5614|FileState.py| filename=panda.0308105652.430739.lib._10916444.8727237564.lib.tgz states=['transferred', 'copy_to_scratch']
+2017-03-08 12:13:16|5614|FileState.py| filename=DAOD_JETM11.10014747._000007.pool.root.1 states=['not_transferred', 'remote_io']
+2017-03-08 12:13:16|5614|FileState.py| Job does not have only copy-to-scratch transfers
+2017-03-08 12:13:16|5614|RunJobUtilit| Nothing to update in run command list related to copy-to-scratch
+2017-03-08 12:13:16|5614|RunJobUtilit| Dumping final input file states
+2017-03-08 12:13:16|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-input-3267651254.pickle
+2017-03-08 12:13:16|5614|FileState.py| File name  /  File state  /  Transfer mode
+2017-03-08 12:13:16|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:13:16|5614|FileState.py| 1. DAOD_JETM11.10014747._000007.pool.root.1	not_transferred	remote_io
+2017-03-08 12:13:16|5614|FileState.py| 2. panda.0308105652.430739.lib._10916444.8727237564.lib.tgz	transferred	copy_to_scratch
+2017-03-08 12:13:16|5614|RunJob.py   | Changing to running state since all input files have been staged
+2017-03-08 12:13:16|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:13:16|5210|UpdateHandle| Connected from ('127.0.0.1', 41428)
+2017-03-08 12:13:16|5614|RunJobUtilit| filesAltStageOut not set
+2017-03-08 12:13:16|5614|RunJobUtilit| filesNormalStageOut not set
+2017-03-08 12:13:16|5614|RunJobUtilit| About to send TCP message to main pilot thread of length = 371
+2017-03-08 12:13:16|5614|RunJobUtilit| (Sent)
+2017-03-08 12:13:16|5210|UpdateHandle| --- TCPServer: Message received from child is : ["jobState=stagein", "coreCount=1", "pid=5614", "bytesWithoutFAX=8454366", "timeStageIn=4", "dbTime=", "filesWithoutFAX=2", "timeExe=0", "cpuConversionFactor=0", "vmPeakMax=0", "cpuUnit=None", "vmPeakMean=0", "pilotErrorDiag=", "status=running", "timeStageOut=0", "RSSMean=0", "nEvents=0", "timeSetup=1", "JEM=NO", "nEventsW=0", "cmtconfig=x86_64-slc6-gcc49-opt", "pilotecode=0", "cpuTime=0", "jobid=3267651254", "pgrp=5614", "dbData=", "transecode=0", ""]
+2017-03-08 12:13:16|5210|UpdateHandle| Debug: jobdict keys: ['prod']
+2017-03-08 12:13:16|5210|UpdateHandle| Debug: jobinfo: {'jobState': 'stagein', 'coreCount': '1', 'pid': '5614', 'jobid': '3267651254', 'timeStageIn': '4', 'dbTime': '', 'filesWithoutFAX': '2', 'timeExe': '0', 'cpuConversionFactor': '0', 'vmPeakMax': '0', 'cpuUnit': 'None', 'vmPeakMean': '0', 'pilotErrorDiag': '', 'status': 'running', 'timeStageOut': '0', 'RSSMean': '0', 'pilotecode': '0', 'timeSetup': '1', 'JEM': 'NO', 'nEventsW': '0', 'cmtconfig': 'x86_64-slc6-gcc49-opt', 'nEvents': '0', 'cpuTime': '0', 'bytesWithoutFAX': '8454366', 'pgrp': '5614', 'dbData': '', 'transecode': '0'}
+2017-03-08 12:13:16|5210|UpdateHandle| Process groups: 5075 (pilot), 5614 (sub process)
+2017-03-08 12:13:16|5210|pUtil.py    | Decoding: 
+2017-03-08 12:13:16|5210|pUtil.py    | Empty URL encoded string (Nothing to decode)
+2017-03-08 12:13:16|5614|RunJobUtilit| (Received)
+2017-03-08 12:13:16|5614|RunJobUtilit| Successfully sent and received TCP message
+2017-03-08 12:13:16|5614|RunJobUtilit| Successfully updated local pilot TCP server at 2017-03-08T04:13:16-0800 (Trial 1/2)
+2017-03-08 12:13:16|5614|JobRecovery.| Successfully updated job state file with state: running
+2017-03-08 12:13:16|5614|RunJobUtilit| Note: ATLAS_CONDDB was not set by the pilot wrapper script
+2017-03-08 12:13:16|5614|RunJobUtilit| The pilot has set ATLAS_CONDDB to: osgserv02.slac.stanford.edu
+2017-03-08 12:13:16|5614|RunJobUtilit| Set PANDA_SITE_NAME = ANALY_SLAC
+2017-03-08 12:13:16|5614|RunJobUtilit| Set COPY_TOOL = lsm
+2017-03-08 12:13:16|5614|RunJob.py   | t0 = (1.4199999999999999, 0.23999999999999999, 0.22, 0.22, 4818825.3200000003)
+2017-03-08 12:13:16|5614|Experiment.p| Updated /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/job_setup.sh: export PANDA_RESOURCE="ANALY_SLAC";
+export ROOT_TTREECACHE_SIZE=1;
+export FRONTIER_ID="[10916444_3267651254]";
+export CMSSW_VERSION=$FRONTIER_ID;
+export RUCIO_APPID="panda-client-0.5.78-jedi-athena";
+export RUCIO_ACCOUNT="pilot";
+export ROOTCORE_NCPUS=1;
+export MAKEFLAGS="-j1 QUICK=1 -l1";
+export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase;
+source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh --quiet;
+source $AtlasSetup/scripts/asetup.sh AthAnalysisBase,2.4.25 --cmtconfig=x86_64-slc6-gcc49-opt;
+./runAthena-00-00-12 -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py" --usePFCTurl --directIn --inputGUIDs "['CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0']"
+2017-03-08 12:13:16|5614|RunJob.py   | Executing job command 1/1
+2017-03-08 12:13:16|5614|Experiment.p| Executing command: export PANDA_RESOURCE="ANALY_SLAC";export ROOT_TTREECACHE_SIZE=1;export FRONTIER_ID="[10916444_3267651254]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="panda-client-0.5.78-jedi-athena";export RUCIO_ACCOUNT="pilot";export ROOTCORE_NCPUS=1;export MAKEFLAGS="-j1 QUICK=1 -l1";export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase;source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh --quiet;source $AtlasSetup/scripts/asetup.sh AthAnalysisBase,2.4.25 --cmtconfig=x86_64-slc6-gcc49-opt;./runAthena-00-00-12 -l panda.0308105652.430739.lib._10916444.8727237564.lib.tgz --sourceURL https://aipanda078.cern.ch:25443 -r ./  -i "['DAOD_JETM11.10014747._000007.pool.root.1']" -o "{'IROOT': [('myEfffile.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root')], 'THIST': [('MYSTREAM', 'user.saparede.10916444.MYSTREAM._000003.root')]}"  -j "%20testMetMaker/share/MyAlgJobo.py" --usePFCTurl --directIn --inputGUIDs "['CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0']"
+2017-03-08 12:13:16|5614|Experiment.p| Subprocess is running
+2017-03-08 12:13:18|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:13:18|5614|ATLASExperim| 21.0.17 <= NULL
+2017-03-08 12:13:18|5614|ATLASExperim| Will use default (fallback) setup for MemoryMonitor since patched release number is needed for the setup, and none is available
+2017-03-08 12:13:18|5614|Experiment.p| Executing command: cd /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188;source /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/atlasLocalSetup.sh --quiet; source /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/current/AtlasSetup/scripts/asetup.sh AtlasOffline,21.0.17,notest; MemoryMonitor --pid 5670 --filename memory_monitor_output.txt --json-summary memory_monitor_summary.json --interval 60
+2017-03-08 12:13:18|5614|Experiment.p| Subprocess is running
+2017-03-08 12:13:18|5614|RunJob.py   | Process id of utility: 6490
+2017-03-08 12:13:58|5614|RunJob.py   | Terminated the utility subprocess
+2017-03-08 12:13:58|5614|RunJob.py   | Taking a short nap (10 s) to allow the utility to finish writing to the summary file
+2017-03-08 12:14:08|5614|RunJob.py   | Copied /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json to pilot init dir
+2017-03-08 12:14:08|5614|RunJob.py   | Tail:
+-rwx------  1 osgatlas01 OG   14982 Apr 28  2015 wrapperutils.py
+-rwx------  1 osgatlas01 OG   44677 Mar  7 22:21 xrdcpSiteMover.py
+-rw-------  1 osgatlas01 OG   29898 Mar  8 04:13 xrdcpSiteMover.pyc
+-rwx------  1 osgatlas01 OG   43993 Mar  7 22:21 xrootdObjectstoreSiteMover.py
+-rw-------  1 osgatlas01 OG   30001 Mar  8 04:13 xrootdObjectstoreSiteMover.pyc
+-rwx------  1 osgatlas01 OG   32474 Mar  7 22:21 xrootdSiteMover.py
+-rw-------  1 osgatlas01 OG   21254 Mar  8 04:13 xrootdSiteMover.pyc
+
+=== result ===
+execute script: Running athena was successful
+2017-03-08 12:14:08|5614|RunJob.py   | Job command 1/1 finished
+2017-03-08 12:14:08|5614|RunJob.py   | t1 = (1.4399999999999999, 0.25, 20.84, 5.1600000000000001, 4818877.5899999999)
+2017-03-08 12:14:08|5614|RunJob.py   | Job CPU usage: 20 s
+2017-03-08 12:14:08|5614|RunJob.py   | Job CPU conversion factor: 1.0000000000
+2017-03-08 12:14:08|5614|RunJob.py   | Original exit code: 0
+2017-03-08 12:14:08|5614|RunJob.py   | Exit code: 0 (returned from OS)
+2017-03-08 12:14:08|5614|RunJob.py   | Job report not found: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:14:08|5614|RunJob.py   | NOTE: For athena output, see files athena_stdout.txt, athena_stderr.txt
+2017-03-08 12:14:09|5614|pUtil.py    | Removed file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/panda.0308105652.430739.lib._10916444.8727237564.lib.tgz
+2017-03-08 12:14:09|5614|pUtil.py    | Removed 1/2 file(s)
+2017-03-08 12:14:09|5614|ErrorDiagnos| WARNING: File /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json does not exist
+2017-03-08 12:14:09|5614|ATLASExperim| Looking for number of processed events (pass -1: jobReport.json)
+2017-03-08 12:14:09|5614|FileHandling| !!WARNING!!1111!! File /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json does not exist
+2017-03-08 12:14:09|5614|FileHandling| Did not find the number of events in the job report
+2017-03-08 12:14:09|5614|ATLASExperim| Looking for number of processed events (pass 0: metadata.xml)
+2017-03-08 12:14:09|5614|ATLASExperim| /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata.xml does not exist
+2017-03-08 12:14:09|5614|ATLASExperim| Looking for number of processed events (pass 1: Athena summary file(s))
+2017-03-08 12:14:09|5614|ATLASExperim| Summary file: AthSummary.txt: Will be processed for errors and number of events
+2017-03-08 12:14:09|5614|ATLASExperim| Number of events: 114 (read)
+2017-03-08 12:14:09|5614|ATLASExperim| Number of events: 0 (written)
+2017-03-08 12:14:09|5614|FileHandling| !!WARNING!!1111!! File /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json does not exist
+2017-03-08 12:14:09|5614|ATLASExperim| Checking for memory errors in stderr
+2017-03-08 12:14:09|5614|ATLASExperim| Processing stderr file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/athena_stderr.txt
+2017-03-08 12:14:09|5614|ATLASExperim| Checking for memory errors in stdout..
+2017-03-08 12:14:09|5614|ATLASExperim| Processing stdout file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/athena_stdout.txt
+2017-03-08 12:14:09|5614|JobRecovery.| Successfully updated job state file with state: stageout
+2017-03-08 12:14:09|5614|FileHandling| Will not extract output files from jobReport for user job (and allowNoOut list is empty)
+2017-03-08 12:14:09|5614|RunJobUtilit| outf = user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|SiteMover.py| Mod time for file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root: 2017-03-08 04:13:54
+2017-03-08 12:14:09|5614|RunJobUtilit| Output file(s):
+2017-03-08 12:14:09|5614|RunJobUtilit| -rw------- 1 osgatlas01 OG 16019 Mar  8 04:13 /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|RunJobUtilit| outf = user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:09|5614|SiteMover.py| Mod time for file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root: 2017-03-08 04:13:54
+2017-03-08 12:14:09|5614|RunJobUtilit| Output file(s):
+2017-03-08 12:14:09|5614|RunJobUtilit| -rw------- 1 osgatlas01 OG 5918 Mar  8 04:13 /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:09|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:09|5614|FileState.py| updateState: filename=user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:09|5614|FileState.py| updateState: state=created
+2017-03-08 12:14:09|5614|FileState.py| updateState: filename=user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:09|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:09|5614|FileState.py| updateState: state=created
+2017-03-08 12:14:09|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:09|5614|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:14:09|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:14:09|5614|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	created	not_registered
+2017-03-08 12:14:09|5614|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	created	not_registered
+2017-03-08 12:14:09|5614|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:14:09|5614|RunJob.py   | Dataset dictionary has been verified
+2017-03-08 12:14:09|5614|RunJob.py   | Warning: Could not open the original /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata.xml file, but harmless, pass it
+2017-03-08 12:14:09|5614|RunJobUtilit| Pilot will get GUIDs for the output files from source: PoolFileCatalog.xml
+2017-03-08 12:14:09|5614|SiteMoverFar| Looking for site mover lsm, setup:, ar:(), kw:{}
+2017-03-08 12:14:09|5614|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: )
+2017-03-08 12:14:09|5614|pUtil.py    | setting ec=0 (-1)
+2017-03-08 12:14:09|5614|SiteMover.py| Executing getsize() for file: user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|SiteMover.py| Got file size: 16019
+2017-03-08 12:14:09|5614|SiteMover.py| Executing adler32() for file: user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|SiteMover.py| Got adler32 checksum: f8c6589e
+2017-03-08 12:14:09|5614|pUtil.py    | Adding 16019,f8c6589e for file user.saparede.10916444.MYSTREAM._000003.root using adler32
+2017-03-08 12:14:09|5614|SiteMover.py| Executing getsize() for file: user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:09|5614|SiteMover.py| Got file size: 5918
+2017-03-08 12:14:09|5614|SiteMover.py| Executing adler32() for file: user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:09|5614|SiteMover.py| Got adler32 checksum: 6157266d
+2017-03-08 12:14:09|5614|pUtil.py    | Adding 5918,6157266d for file user.saparede.10916444.EXT0._000003.myEfffile.root using adler32
+2017-03-08 12:14:09|5614|pUtil.py    | Nothing for prepareMetadata() to do (file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml.PAYLOAD does not exist)
+2017-03-08 12:14:09|5614|pUtil.py    | fnlist = ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root']
+2017-03-08 12:14:09|5614|pUtil.py    | fguids = [None, None]
+2017-03-08 12:14:09|5614|pUtil.py    | Could not locate file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:14:09|5614|pUtil.py    | Generated guid: 15d300f6-4bf1-4c5e-a708-174fb0655228
+2017-03-08 12:14:09|5614|pUtil.py    | Found guid for file: user.saparede.10916444.MYSTREAM._000003.root (15d300f6-4bf1-4c5e-a708-174fb0655228)
+2017-03-08 12:14:09|5614|pUtil.py    | Could not locate file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:14:09|5614|pUtil.py    | Generated guid: 69654fad-f2e3-4c82-b15e-54de27c97567
+2017-03-08 12:14:09|5614|pUtil.py    | Found guid for file: user.saparede.10916444.EXT0._000003.myEfffile.root (69654fad-f2e3-4c82-b15e-54de27c97567)
+2017-03-08 12:14:09|5614|pUtil.py    | Dumping file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml (size: 1273)
+2017-03-08 12:14:09|5614|pUtil.py    | <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+2017-03-08 12:14:09|5614|pUtil.py    | <!-- ATLAS file meta-data catalog -->
+2017-03-08 12:14:09|5614|pUtil.py    | <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+2017-03-08 12:14:09|5614|pUtil.py    | <POOLFILECATALOG>
+2017-03-08 12:14:09|5614|pUtil.py    |   <File ID="674881c2-50c8-43f1-9495-546633c08a22">
+2017-03-08 12:14:09|5614|pUtil.py    |     <logical>
+2017-03-08 12:14:09|5614|pUtil.py    |       <lfn name="user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     </logical>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="surl" att_value="674881c2-50c8-43f1-9495-546633c08a22-surltobeset"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="fsize" att_value=""/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="csumtypetobeset" att_value=""/>
+2017-03-08 12:14:09|5614|pUtil.py    |   </File>
+2017-03-08 12:14:09|5614|pUtil.py    |   <File ID="15d300f6-4bf1-4c5e-a708-174fb0655228">
+2017-03-08 12:14:09|5614|pUtil.py    |     <logical>
+2017-03-08 12:14:09|5614|pUtil.py    |       <lfn name="user.saparede.10916444.MYSTREAM._000003.root"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     </logical>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="surl" att_value="15d300f6-4bf1-4c5e-a708-174fb0655228-surltobeset"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="fsize" att_value="16019"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="adler32" att_value="f8c6589e"/>
+2017-03-08 12:14:09|5614|pUtil.py    |   </File>
+2017-03-08 12:14:09|5614|pUtil.py    |   <File ID="69654fad-f2e3-4c82-b15e-54de27c97567">
+2017-03-08 12:14:09|5614|pUtil.py    |     <logical>
+2017-03-08 12:14:09|5614|pUtil.py    |       <lfn name="user.saparede.10916444.EXT0._000003.myEfffile.root"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     </logical>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="surl" att_value="69654fad-f2e3-4c82-b15e-54de27c97567-surltobeset"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="fsize" att_value="5918"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     <metadata att_name="adler32" att_value="6157266d"/>
+2017-03-08 12:14:09|5614|pUtil.py    |   </File>
+2017-03-08 12:14:09|5614|pUtil.py    | </POOLFILECATALOG>
+2017-03-08 12:14:09|5614|pUtil.py    | Dumped 29 lines from file /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml
+2017-03-08 12:14:09|5614|RunJob.py   | ..............................................................................................................
+2017-03-08 12:14:09|5614|RunJob.py   | Created /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml with:
+2017-03-08 12:14:09|5614|RunJob.py   | .. log            : user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz (to be transferred)
+2017-03-08 12:14:09|5614|RunJob.py   | .. log guid       : 674881c2-50c8-43f1-9495-546633c08a22
+2017-03-08 12:14:09|5614|RunJob.py   | .. out files      : ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root']
+2017-03-08 12:14:09|5614|RunJob.py   | .. out file guids : ['15d300f6-4bf1-4c5e-a708-174fb0655228', '69654fad-f2e3-4c82-b15e-54de27c97567']
+2017-03-08 12:14:09|5614|RunJob.py   | .. fsize          : ['', '16019', '5918']
+2017-03-08 12:14:09|5614|RunJob.py   | .. checksum       : ['', 'f8c6589e', '6157266d']
+2017-03-08 12:14:09|5614|RunJob.py   | ..............................................................................................................
+2017-03-08 12:14:09|5614|RunJob.py   | Output file info dictionary created: {'user.saparede.10916444.EXT0._000003.myEfffile.root': ('5918', '6157266d'), 'user.saparede.10916444.MYSTREAM._000003.root': ('16019', 'f8c6589e')}
+2017-03-08 12:14:09|5614|RunJob.py   | Setting stage-out state until all output files have been copied
+2017-03-08 12:14:09|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:14:09|5614|RunJobUtilit| filesAltStageOut not set
+2017-03-08 12:14:09|5614|RunJobUtilit| filesNormalStageOut not set
+2017-03-08 12:14:09|5210|UpdateHandle| Connected from ('127.0.0.1', 41438)
+2017-03-08 12:14:09|5614|RunJobUtilit| About to send TCP message to main pilot thread of length = 376
+2017-03-08 12:14:09|5614|RunJobUtilit| (Sent)
+2017-03-08 12:14:09|5210|UpdateHandle| --- TCPServer: Message received from child is : ["jobState=stageout", "coreCount=1", "pid=5614", "bytesWithoutFAX=8454366", "timeStageIn=4", "dbTime=", "filesWithoutFAX=2", "timeExe=52", "cpuConversionFactor=1.0", "vmPeakMax=0", "cpuUnit=s", "vmPeakMean=0", "pilotErrorDiag=", "status=stageout", "timeStageOut=0", "RSSMean=0", "nEvents=114", "timeSetup=1", "JEM=NO", "nEventsW=0", "cmtconfig=x86_64-slc6-gcc49-opt", "pilotecode=0", "cpuTime=20", "jobid=3267651254", "pgrp=5614", "dbData=", "transecode=0", ""]
+2017-03-08 12:14:09|5210|UpdateHandle| Debug: jobdict keys: ['prod']
+2017-03-08 12:14:09|5210|UpdateHandle| Debug: jobinfo: {'jobState': 'stageout', 'coreCount': '1', 'pid': '5614', 'jobid': '3267651254', 'timeStageIn': '4', 'dbTime': '', 'filesWithoutFAX': '2', 'timeExe': '52', 'cpuConversionFactor': '1.0', 'vmPeakMax': '0', 'cpuUnit': 's', 'vmPeakMean': '0', 'pilotErrorDiag': '', 'status': 'stageout', 'timeStageOut': '0', 'RSSMean': '0', 'pilotecode': '0', 'timeSetup': '1', 'JEM': 'NO', 'nEventsW': '0', 'cmtconfig': 'x86_64-slc6-gcc49-opt', 'nEvents': '114', 'cpuTime': '20', 'bytesWithoutFAX': '8454366', 'pgrp': '5614', 'dbData': '', 'transecode': '0'}
+2017-03-08 12:14:09|5210|UpdateHandle| Process groups: 5075 (pilot), 5614 (sub process)
+2017-03-08 12:14:09|5210|pUtil.py    | Decoding: 
+2017-03-08 12:14:09|5210|pUtil.py    | Empty URL encoded string (Nothing to decode)
+2017-03-08 12:14:09|5614|RunJobUtilit| (Received)
+2017-03-08 12:14:09|5614|RunJobUtilit| Successfully sent and received TCP message
+2017-03-08 12:14:09|5614|RunJobUtilit| Successfully updated local pilot TCP server at 2017-03-08T04:14:09-0800 (Trial 1/2)
+2017-03-08 12:14:09|5614|pUtil.py    | fnlist = ['user.saparede.10916444.MYSTREAM._000003.root', 'user.saparede.10916444.EXT0._000003.myEfffile.root']
+2017-03-08 12:14:09|5614|pUtil.py    | fguids = ['15d300f6-4bf1-4c5e-a708-174fb0655228', '69654fad-f2e3-4c82-b15e-54de27c97567']
+2017-03-08 12:14:09|5614|pUtil.py    | Dumping file: OutPutFileCatalog.xml (size: 522)
+2017-03-08 12:14:09|5614|pUtil.py    | <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+2017-03-08 12:14:09|5614|pUtil.py    | <!-- Edited By POOL -->
+2017-03-08 12:14:09|5614|pUtil.py    | <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+2017-03-08 12:14:09|5614|pUtil.py    | <POOLFILECATALOG>
+2017-03-08 12:14:09|5614|pUtil.py    |   <File ID="15d300f6-4bf1-4c5e-a708-174fb0655228">
+2017-03-08 12:14:09|5614|pUtil.py    |     <physical>
+2017-03-08 12:14:09|5614|pUtil.py    |       <pfn filetype="ROOT_All" name="user.saparede.10916444.MYSTREAM._000003.root"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     </physical>
+2017-03-08 12:14:09|5614|pUtil.py    |   </File>
+2017-03-08 12:14:09|5614|pUtil.py    |   <File ID="69654fad-f2e3-4c82-b15e-54de27c97567">
+2017-03-08 12:14:09|5614|pUtil.py    |     <physical>
+2017-03-08 12:14:09|5614|pUtil.py    |       <pfn filetype="ROOT_All" name="user.saparede.10916444.EXT0._000003.myEfffile.root"/>
+2017-03-08 12:14:09|5614|pUtil.py    |     </physical>
+2017-03-08 12:14:09|5614|pUtil.py    |   </File>
+2017-03-08 12:14:09|5614|pUtil.py    | </POOLFILECATALOG>
+2017-03-08 12:14:09|5614|pUtil.py    | Dumped 15 lines from file OutPutFileCatalog.xml
+2017-03-08 12:14:09|5614|RunJob.py   | Using the newly-generated /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/OutPutFileCatalog.xml for put operation
+2017-03-08 12:14:09|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:14:09|5614|Mover.py    | Using job definition id: 19
+2017-03-08 12:14:09|5614|Mover.py    | Trying to add additional info to tracing report
+2017-03-08 12:14:09|5614|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'kiso0027.slac.stanford.edu', 'remoteSite': 'ANALY_SLAC', 'filename': None, 'version': None, 'filesize': None, 'taskid': '10916444', 'ip': '134.79.240.72', 'stateReason': None, 'usrdn': '/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', 'usr': '3ff8122d8b489e23e823070fac2cfab1', 'eventVersion': 'pilot3', 'localSite': 'ANALY_SLAC', 'validateStart': None, 'url': None, 'uuid': 'e8fbd6c232bb60dc85aa2f10ede74adc', 'timeStart': 1488975249.2404301, 'relativeStart': None, 'appid': '3267651254', 'clientState': 'INIT_REPORT'}
+2017-03-08 12:14:09|5614|Mover.py    | SE list: ['token:ATLASUSERDISK:srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=']
+2017-03-08 12:14:09|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:14:09|5614|Mover.py    | Got copytool lsm from queuedata file
+2017-03-08 12:14:09|5614|Mover.py    | copysetup is:  (file access verified)
+2017-03-08 12:14:09|5614|Mover.py    | Copy command: lsm
+2017-03-08 12:14:09|5614|Mover.py    | Setup: 
+2017-03-08 12:14:09|5614|Mover.py    | getDestinationDDMStorage() will return: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|Mover.py    | Got ddm_storage_path from queuedata file: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|Mover.py    | Put function using storage: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|SiteMoverFar| Looking for site mover lsm, setup:, ar:(), kw:{}
+2017-03-08 12:14:09|5614|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: )
+2017-03-08 12:14:09|5614|Mover.py    | Got site mover: <LocalSiteMover.LocalSiteMover object at 0x26e6ed0>
+2017-03-08 12:14:09|5614|Mover.py    | Initial space token list:
+2017-03-08 12:14:09|5614|pUtil.py    | 1. NULL
+2017-03-08 12:14:09|5614|pUtil.py    | 2. NULL
+2017-03-08 12:14:09|5614|pUtil.py    | 3. NULL
+2017-03-08 12:14:09|5614|Mover.py    | Found default space token in schedconfig.se: ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Replaced NULL value with default space token (ATLASUSERDISK) for output file 1
+2017-03-08 12:14:09|5614|Mover.py    | Replaced NULL value with default space token (ATLASUSERDISK) for output file 2
+2017-03-08 12:14:09|5614|Mover.py    | Replaced NULL value with default space token (ATLASUSERDISK) for log file
+2017-03-08 12:14:09|5614|Mover.py    | Verified space token: ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Verified space token: ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Verified space token: ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Proper space token list:
+2017-03-08 12:14:09|5614|pUtil.py    | 1. ATLASUSERDISK
+2017-03-08 12:14:09|5614|pUtil.py    | 2. ATLASUSERDISK
+2017-03-08 12:14:09|5614|pUtil.py    | 3. ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Preparing copy for /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root to srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio using lsm
+2017-03-08 12:14:09|5614|Mover.py    | Using scope 'user.saparede' for file number 0
+2017-03-08 12:14:09|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:09|5614|FileState.py| updateState: filename=user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:09|5614|FileState.py| updateState: state=not_transferred
+2017-03-08 12:14:09|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:09|5614|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:14:09|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:14:09|5614|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	created	not_registered
+2017-03-08 12:14:09|5614|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	not_transferred	not_registered
+2017-03-08 12:14:09|5614|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:14:09|5614|SiteMover.py| Updated dataset name (removed _sub0381246194): user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382
+2017-03-08 12:14:09|5614|Mover.py    | File user.saparede.10916444.MYSTREAM._000003.root will go to dataset user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382
+2017-03-08 12:14:09|5614|Mover.py    | Mover is preparing to copy file 1/2 to space token: ATLASUSERDISK
+2017-03-08 12:14:09|5614|Mover.py    | Extracted file size 16019 and checksum f8c6589e for file user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|Mover.py    | Number of stage-out tries: 2
+2017-03-08 12:14:09|5614|Mover.py    | Put attempt 1/2
+2017-03-08 12:14:09|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:14:09|5614|LocalSiteMov| put_data received prodSourceLabel=user
+2017-03-08 12:14:09|5614|SiteMover.py| Will use default SE endpoint
+2017-03-08 12:14:09|5614|SiteMover.py| Using SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:09|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|ATLASSiteInf| Going to store job output at: /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|ATLASSiteInf| LFC path = /grid/atlas/users/pathena
+2017-03-08 12:14:09|5614|SiteMover.py| LFC dir: /grid/atlas/users/pathena/user/saparede/test/user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382
+2017-03-08 12:14:09|5614|SiteMover.py| SE destination: /xrootd/atlas/atlasuserdisk/rucio/user/saparede/test
+2017-03-08 12:14:09|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|SiteMover.py| Extracted spacetoken=ATLASUSERDISK, se=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:09|5614|SiteMover.py| Full path will use SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:09|5614|SiteMover.py| Full path will use space token descriptor: ATLASUSERDISK
+2017-03-08 12:14:09|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|SiteMover.py| Full path will use source/destination: /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:09|5614|SiteMover.py| Full path will use path from scope: rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|ATLASSiteInf| SURL = srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|ATLASSiteInf| dst_gpfn = /xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|ATLASSiteInf| lfcdir = /grid/atlas/users/pathena/user/saparede/test/user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382
+2017-03-08 12:14:09|5614|LocalSiteMov| RSE: SLACXRD_USERDISK
+2017-03-08 12:14:09|5614|LocalSiteMov| self setup: 
+2017-03-08 12:14:09|5614|LocalSiteMov| to verify site setup:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; 
+2017-03-08 12:14:09|5614|LocalSiteMov| Will verify:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:14:09|5614|LocalSiteMov| Nothing to verify in setup:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; (either empty string or no source command)
+2017-03-08 12:14:09|5614|LocalSiteMov| Execute command:   export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; which lsm-get
+2017-03-08 12:14:09|5614|LocalSiteMov| Status: 0, Output: /nfs/slac/g/grid/osg/app/atlas_app/local/lsm/lsm-get
+2017-03-08 12:14:09|5614|ATLASExperim| envsetup= export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:14:09|5614|ATLASExperim| envsetup= export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:14:09|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:14:09|5614|ATLASExperim| envsetup=export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;
+2017-03-08 12:14:09|5614|ATLASExperim| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+2017-03-08 12:14:09|5614|ATLASExperim| ec=0 output=308682
+2017-03-08 12:14:09|5614|ATLASExperim| Voms proxy verified (308682s)
+2017-03-08 12:14:09|5614|ATLASExperim| Voms proxy verified using arcproxy
+2017-03-08 12:14:09|5614|LocalSiteMov| site setup verifying: status: 0, output: None
+2017-03-08 12:14:09|5614|LocalSiteMov| Getting local File(/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root) info.
+2017-03-08 12:14:09|5614|LocalSiteMov| Executing getsize() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|LocalSiteMov| Got file size: 16019
+2017-03-08 12:14:09|5614|LocalSiteMov| Executing adler32() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:09|5614|LocalSiteMov| Got adler32 checksum: f8c6589e
+2017-03-08 12:14:09|5614|LocalSiteMov| Executing command:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; lsm-put -t ATLASUSERDISK --size 16019 --checksum adler32:f8c6589e --guid 15d300f6-4bf1-4c5e-a708-174fb0655228 /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.MYSTREAM._000003.root srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:13|5210|Monitor.py  | --- Main pilot monitoring loop (job id 3267651254, state:stageout (running), iteration 2)
+2017-03-08 12:14:13|5210|ATLASExperim| Using path: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:14:13|5210|Monitor.py  | Max memory (maxPSS) used by the payload is within the allowed limit: 10940 B (2*maxRSS=8253440 B)
+2017-03-08 12:14:14|5210|Monitor.py  | Created soft link to athena_stdout.txt in sitedir: /scratch/Panda_Pilot_5210_1488975182/athena_stdout.txt
+2017-03-08 12:14:14|5210|pUtil.py    | Returning tail stdout dictionary with 1 entries
+2017-03-08 12:14:14|5210|Monitor.py  | onlyUpdateStateChangedJobs: True, lastState: running, currentState: stageout
+2017-03-08 12:14:14|5210|Monitor.py  | no stdout_path: 'path-3267651254'
+2017-03-08 12:14:14|5210|PandaServerC| Updating job status in updatePandaServer(): PandaId=3267651254, result=['running', 0, 0], time=2017-03-08T04:14:14-0800
+2017-03-08 12:14:14|5210|PandaServerC| Checking if new site movers workflow is enabled: use_newmover=False
+2017-03-08 12:14:14|5210|PandaServerC| Batch system: LSF
+2017-03-08 12:14:14|5210|PandaServerC| Batch system job ID: 211595
+2017-03-08 12:14:14|5210|PandaServerC| Will send batchID: 211595 and pilotID: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6
+2017-03-08 12:14:14|5210|PandaServerC| pilotId: http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out
+2017-03-08 12:14:14|5210|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:14:14|5210|PandaServerC| Benchmark dictionary=None
+2017-03-08 12:14:14|5210|PandaServerC| Job metrics="coreCount=1 nEvents=114"
+2017-03-08 12:14:14|5210|PandaServerC| jobSubStatus: None
+2017-03-08 12:14:14|5210|FileHandling| Pilot error report does not exist: /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/pilot_error_report.json (should only exist if there actually was an error)
+2017-03-08 12:14:14|5210|PandaServerC| Did not find any reported high priority errors
+2017-03-08 12:14:14|5210|PandaServerC| Total number of processed events: 114 (read)
+2017-03-08 12:14:14|5210|ATLASExperim| Using path: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:14:14|5210|ATLASExperim| summary_dictionary={'Max': {'maxRSS': 13976, 'maxSwap': 0, 'totRCHAR': 61335522, 'totRBYTES': 67510272, 'totWCHAR': 59335334, 'totWBYTES': 30007296, 'maxVMEM': 190184, 'maxPSS': 10940}, 'Avg': {'avgRSS': 13976, 'rateWCHAR': 988922, 'avgVMEM': 190184, 'avgPSS': 10940, 'rateRCHAR': 1022258, 'avgSwap': 0, 'rateRBYTES': 1125171, 'rateWBYTES': 500121}}
+2017-03-08 12:14:14|5210|ATLASExperim| Extracted standard info from memory monitor json
+2017-03-08 12:14:14|5210|ATLASExperim| totRCHAR,totWCHAR,totRBYTES,totWBYTES,rateRCHAR,rateWCHAR,rateRBYTES,rateWBYTES were extracted from memory monitor json
+2017-03-08 12:14:14|5210|PandaServerC| getXML called
+2017-03-08 12:14:14|5210|PandaServerC| Stdout tail will not be sent (debug=False)
+2017-03-08 12:14:14|5210|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_5210_1488975182/jobState-3267651254.pickle
+2017-03-08 12:14:14|5210|PandaServerC| Trying alternative location: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:14:14|5210|PandaServerC| Did not find /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/jobReport.json
+2017-03-08 12:14:14|5210|PandaServerC| WARNING: metadata file does not exist: /scratch/Panda_Pilot_5210_1488975182/metadata-3267651254.xml.PAYLOAD
+2017-03-08 12:14:14|5210|PandaServerC| Looking for it in the pilot init dir..
+2017-03-08 12:14:14|5210|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+2017-03-08 12:14:14|5210|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+2017-03-08 12:14:14|5210|pUtil.py    | toServer: cmd = updateJob
+2017-03-08 12:14:14|5210|pUtil.py    | toServer: len(data) = 32
+2017-03-08 12:14:14|5210|pUtil.py    | data = {'node': 'kiso0027', 'avgRSS': 13976, 'workdir': '/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188', 'rateWBYTES': 500121, 'totRCHAR': 61335522, 'totRBYTES': 67510272, 'siteName': 'ANALY_SLAC', 'timestamp': '2017-03-08T04:14:14-0800', 'avgVMEM': 190184, 'coreCount': '1', 'totWCHAR': 59335334, 'rateRCHAR': 1022258, 'attemptNr': 1, 'jobId': '3267651254', 'batchID': '211595', 'rateWCHAR': 988922, 'nEvents': 114, 'rateRBYTES': 1125171, 'cpuConsumptionTime': '20', 'pilotID': 'http://gridui20.usatlas.bnl.gov:25880/2017-03-08/ANALY_SLAC-htcondor/13414259.1.out|NEWMOVER-OFF|LSF|PR|PICARD 67.6', 'avgPSS': 10940, 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz 12288 KB', 'maxVMEM': 190184, 'xml': '', 'totWBYTES': 30007296, 'maxSWAP': 0, 'jobMetrics': 'coreCount=1 nEvents=114', 'avgSWAP': 0, 'maxRSS': 13976, 'state': 'running', 'schedulerID': 'BNL-gridui20-jhover', 'maxPSS': 10940}
+2017-03-08 12:14:14|5210|pUtil.py    | Job state 'running' is an allowed job state value
+2017-03-08 12:14:14|5210|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy --config /scratch/Panda_Pilot_5210_1488975182/curl_updateJob_3267651254.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+2017-03-08 12:14:14|5614|LocalSiteMov| Command finished after 5.300000 s
+2017-03-08 12:14:14|5614|LocalSiteMov| ec = 0, output = 
+2017-03-08 12:14:14|5614|FileHandling| Wrote dictionary to file tracing_report.json
+2017-03-08 12:14:14|5614|SiteMover.py| Wrote tracing report to file tracing_report.json (cwd=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188)
+2017-03-08 12:14:14|5614|Mover.py    | Stage-out returned: s=0, r_gpfn=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root, r_fsize=16019, r_fchecksum=f8c6589e, r_farch=, pilotErrorDiag=
+2017-03-08 12:14:14|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'put_sm_a', u'suspicious': u'0', u'timeEnd': 1488975254.864984, u'dataset': u'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', u'catStart': 1488975249.298502, u'guid': u'15d300f64bf14c5ea708174fb0655228', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'user.saparede.10916444.MYSTREAM._000003.root', u'version': None, u'filesize': None, u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': '', u'scope': u'user.saparede', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975249.2404301, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:14:14|5614|SiteMover.py| Tracing server: https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:14:14|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'put_sm_a', u'suspicious': u'0', u'timeEnd': 1488975254.864984, u'dataset': u'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', u'catStart': 1488975249.298502, u'guid': u'15d300f64bf14c5ea708174fb0655228', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'user.saparede.10916444.MYSTREAM._000003.root', u'version': None, u'filesize': None, u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': '', u'scope': u'user.saparede', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975249.2404301, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:14:14|5614|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy -v -k -d "{\"protocol\": \"local\", \"transferStart\": null, \"eventType\": \"put_sm_a\", \"suspicious\": \"0\", \"timeEnd\": 1488975254.864984, \"dataset\": \"user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194\", \"catStart\": 1488975249.298502, \"guid\": \"15d300f64bf14c5ea708174fb0655228\", \"duid\": null, \"hostname\": \"kiso0027.slac.stanford.edu\", \"remoteSite\": \"SLACXRD_USERDISK\", \"filename\": \"user.saparede.10916444.MYSTREAM._000003.root\", \"version\": null, \"filesize\": null, \"taskid\": \"10916444\", \"ip\": \"134.79.240.72\", \"stateReason\": \"\", \"scope\": \"user.saparede\", \"usr\": \"3ff8122d8b489e23e823070fac2cfab1\", \"eventVersion\": \"pilot3\", \"localSite\": \"SLACXRD_USERDISK\", \"usrdn\": \"/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy\", \"validateStart\": null, \"url\": \"srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root\", \"uuid\": \"e8fbd6c232bb60dc85aa2f10ede74adc\", \"timeStart\": 1488975249.2404301, \"relativeStart\": null, \"appid\": \"3267651254\", \"clientState\": \"DONE\"}" https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:14:15|5210|pUtil.py    | Elapsed seconds: 1
+2017-03-08 12:14:15|5210|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+2017-03-08 12:14:15|5210|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+2017-03-08 12:14:15|5210|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+2017-03-08 12:14:15|5210|PandaServerC| jobDispatcher acknowledged with 0
+2017-03-08 12:14:15|5210|Monitor.py  | Successfully updated panda server at 2017-03-08T04:14:15-0800
+2017-03-08 12:14:15|5210|Monitor.py  | Debug: job prod state: running
+2017-03-08 12:14:15|5614|SiteMover.py| Tracing report sent
+2017-03-08 12:14:15|5614|SiteMover.py| Adding GUID (15d300f6-4bf1-4c5e-a708-174fb0655228) and SURL (srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/6e/bc/user.saparede.10916444.MYSTREAM._000003.root) to dictionary
+2017-03-08 12:14:15|5614|SiteMover.py| SURL dictionary does not exist: /scratch/Panda_Pilot_5210_1488975182/surlDictionary-3267651254.json (will be created)
+2017-03-08 12:14:15|5614|SiteMover.py| Successfully updated SURL dictionary (which currectly has 1 key(s))
+2017-03-08 12:14:15|5614|Mover.py    | Skipped chirp transfer
+2017-03-08 12:14:15|5614|Mover.py    | Return code: 0
+2017-03-08 12:14:15|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:15|5614|FileState.py| updateState: filename=user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:15|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:15|5614|FileState.py| updateState: state=transferred
+2017-03-08 12:14:15|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:15|5614|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:14:15|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:14:15|5614|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	created	not_registered
+2017-03-08 12:14:15|5614|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	transferred	not_registered
+2017-03-08 12:14:15|5614|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:14:15|5614|Mover.py    | No file catalog registration by the pilot
+2017-03-08 12:14:15|5614|Mover.py    | Preparing copy for /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root to srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio using lsm
+2017-03-08 12:14:15|5614|Mover.py    | Using scope 'user.saparede' for file number 1
+2017-03-08 12:14:15|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:15|5614|FileState.py| updateState: filename=user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:15|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:15|5614|FileState.py| updateState: state=not_transferred
+2017-03-08 12:14:15|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:15|5614|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:14:15|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:14:15|5614|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	not_transferred	not_registered
+2017-03-08 12:14:15|5614|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	transferred	not_registered
+2017-03-08 12:14:15|5614|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:14:15|5614|SiteMover.py| Updated dataset name (removed _sub0381246195): user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383
+2017-03-08 12:14:15|5614|Mover.py    | File user.saparede.10916444.EXT0._000003.myEfffile.root will go to dataset user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383
+2017-03-08 12:14:15|5614|Mover.py    | Mover is preparing to copy file 2/2 to space token: ATLASUSERDISK
+2017-03-08 12:14:15|5614|Mover.py    | Extracted file size 5918 and checksum 6157266d for file user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:15|5614|Mover.py    | Number of stage-out tries: 2
+2017-03-08 12:14:15|5614|Mover.py    | Put attempt 1/2
+2017-03-08 12:14:15|5614|pUtil.py    | getSiteInformation: got experiment=ATLAS
+2017-03-08 12:14:15|5614|LocalSiteMov| put_data received prodSourceLabel=user
+2017-03-08 12:14:15|5614|SiteMover.py| Will use default SE endpoint
+2017-03-08 12:14:15|5614|SiteMover.py| Using SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:15|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:15|5614|ATLASSiteInf| Going to store job output at: /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:15|5614|ATLASSiteInf| LFC path = /grid/atlas/users/pathena
+2017-03-08 12:14:15|5614|SiteMover.py| LFC dir: /grid/atlas/users/pathena/user/saparede/test/user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383
+2017-03-08 12:14:15|5614|SiteMover.py| SE destination: /xrootd/atlas/atlasuserdisk/rucio/user/saparede/test
+2017-03-08 12:14:15|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:15|5614|SiteMover.py| Extracted spacetoken=ATLASUSERDISK, se=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:15|5614|SiteMover.py| Full path will use SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+2017-03-08 12:14:15|5614|SiteMover.py| Full path will use space token descriptor: ATLASUSERDISK
+2017-03-08 12:14:15|5614|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:15|5614|SiteMover.py| Full path will use source/destination: /xrootd/atlas/atlasuserdisk/rucio
+2017-03-08 12:14:15|5614|SiteMover.py| Full path will use path from scope: rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:15|5614|ATLASSiteInf| SURL = srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:15|5614|ATLASSiteInf| dst_gpfn = /xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:15|5614|ATLASSiteInf| lfcdir = /grid/atlas/users/pathena/user/saparede/test/user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383
+2017-03-08 12:14:16|5614|LocalSiteMov| RSE: SLACXRD_USERDISK
+2017-03-08 12:14:16|5614|LocalSiteMov| Getting local File(/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root) info.
+2017-03-08 12:14:16|5614|LocalSiteMov| Executing getsize() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:16|5614|LocalSiteMov| Got file size: 5918
+2017-03-08 12:14:16|5614|LocalSiteMov| Executing adler32() for file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:16|5614|LocalSiteMov| Got adler32 checksum: 6157266d
+2017-03-08 12:14:16|5614|LocalSiteMov| Executing command:  export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy; lsm-put -t ATLASUSERDISK --size 5918 --checksum adler32:6157266d --guid 69654fad-f2e3-4c82-b15e-54de27c97567 /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/user.saparede.10916444.EXT0._000003.myEfffile.root srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:21|5614|LocalSiteMov| Command finished after 5.290000 s
+2017-03-08 12:14:21|5614|LocalSiteMov| ec = 0, output = 
+2017-03-08 12:14:21|5614|FileHandling| Wrote dictionary to file tracing_report.json
+2017-03-08 12:14:21|5614|SiteMover.py| Wrote tracing report to file tracing_report.json (cwd=/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188)
+2017-03-08 12:14:21|5614|Mover.py    | Stage-out returned: s=0, r_gpfn=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root, r_fsize=5918, r_fchecksum=6157266d, r_farch=, pilotErrorDiag=
+2017-03-08 12:14:21|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'put_sm_a', u'suspicious': u'0', u'timeEnd': 1488975261.5067079, u'dataset': u'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195', u'catStart': 1488975255.9329081, u'guid': u'69654fadf2e34c82b15e54de27c97567', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'user.saparede.10916444.EXT0._000003.myEfffile.root', u'version': None, u'filesize': None, u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': '', u'scope': u'user.saparede', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975249.2404301, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:14:21|5614|SiteMover.py| Tracing server: https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:14:21|5614|SiteMover.py| Sending tracing report: {u'protocol': u'local', u'transferStart': None, u'eventType': u'put_sm_a', u'suspicious': u'0', u'timeEnd': 1488975261.5067079, u'dataset': u'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195', u'catStart': 1488975255.9329081, u'guid': u'69654fadf2e34c82b15e54de27c97567', u'duid': None, u'hostname': u'kiso0027.slac.stanford.edu', u'remoteSite': u'SLACXRD_USERDISK', u'filename': u'user.saparede.10916444.EXT0._000003.myEfffile.root', u'version': None, u'filesize': None, u'taskid': u'10916444', u'ip': u'134.79.240.72', u'stateReason': '', u'scope': u'user.saparede', u'usr': u'3ff8122d8b489e23e823070fac2cfab1', u'eventVersion': u'pilot3', u'localSite': u'SLACXRD_USERDISK', u'usrdn': u'/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy', u'validateStart': None, u'url': 'srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root', u'uuid': u'e8fbd6c232bb60dc85aa2f10ede74adc', u'timeStart': 1488975249.2404301, u'relativeStart': None, u'appid': u'3267651254', u'clientState': u'DONE'}
+2017-03-08 12:14:21|5614|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/home_bl_osgserv06.slac.stanford.edu_9619_osgserv06.slac.stanford.edu#15718349.0#1488974977/bl_100fb119c4eb.proxy -v -k -d "{\"protocol\": \"local\", \"transferStart\": null, \"eventType\": \"put_sm_a\", \"suspicious\": \"0\", \"timeEnd\": 1488975261.5067079, \"dataset\": \"user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195\", \"catStart\": 1488975255.9329081, \"guid\": \"69654fadf2e34c82b15e54de27c97567\", \"duid\": null, \"hostname\": \"kiso0027.slac.stanford.edu\", \"remoteSite\": \"SLACXRD_USERDISK\", \"filename\": \"user.saparede.10916444.EXT0._000003.myEfffile.root\", \"version\": null, \"filesize\": null, \"taskid\": \"10916444\", \"ip\": \"134.79.240.72\", \"stateReason\": \"\", \"scope\": \"user.saparede\", \"usr\": \"3ff8122d8b489e23e823070fac2cfab1\", \"eventVersion\": \"pilot3\", \"localSite\": \"SLACXRD_USERDISK\", \"usrdn\": \"/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=santiago paredes/CN=proxy\", \"validateStart\": null, \"url\": \"srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root\", \"uuid\": \"e8fbd6c232bb60dc85aa2f10ede74adc\", \"timeStart\": 1488975249.2404301, \"relativeStart\": null, \"appid\": \"3267651254\", \"clientState\": \"DONE\"}" https://rucio-lb-prod.cern.ch/traces/
+2017-03-08 12:14:22|5614|SiteMover.py| Tracing report sent
+2017-03-08 12:14:22|5614|SiteMover.py| Adding GUID (69654fad-f2e3-4c82-b15e-54de27c97567) and SURL (srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/saparede/32/5c/user.saparede.10916444.EXT0._000003.myEfffile.root) to dictionary
+2017-03-08 12:14:22|5614|SiteMover.py| Deserialized surl dictionary with 1 keys: filename=/scratch/Panda_Pilot_5210_1488975182/surlDictionary-3267651254.json
+2017-03-08 12:14:22|5614|SiteMover.py| Successfully updated SURL dictionary (which currectly has 2 key(s))
+2017-03-08 12:14:22|5614|Mover.py    | Skipped chirp transfer
+2017-03-08 12:14:22|5614|Mover.py    | Return code: 0
+2017-03-08 12:14:22|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:22|5614|FileState.py| updateState: filename=user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:22|5614|FileState.py| updateState: mode=file_state
+2017-03-08 12:14:22|5614|FileState.py| updateState: state=transferred
+2017-03-08 12:14:22|5614|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_5210_1488975182/fileState-output-3267651254.pickle
+2017-03-08 12:14:22|5614|FileState.py| File name  /  File state  /  Registration state
+2017-03-08 12:14:22|5614|FileState.py| ----------------------------------------------------------------------------------------------------
+2017-03-08 12:14:22|5614|FileState.py| 1. user.saparede.10916444.EXT0._000003.myEfffile.root	transferred	not_registered
+2017-03-08 12:14:22|5614|FileState.py| 2. user.saparede.10916444.MYSTREAM._000003.root	transferred	not_registered
+2017-03-08 12:14:22|5614|FileState.py| 3. user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz	not_created	not_registered
+2017-03-08 12:14:22|5614|Mover.py    | No file catalog registration by the pilot
+2017-03-08 12:14:22|5614|Mover.py    | Put successful
+2017-03-08 12:14:22|5614|RunJob.py   | Put function returned code: 0
+2017-03-08 12:14:22|5614|pUtil.py    | Lock file created: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/ALLFILESTRANSFERRED
+2017-03-08 12:14:22|5614|pUtil.py    | Lock file created: /scratch/Panda_Pilot_5210_1488975182/ALLFILESTRANSFERRED
+2017-03-08 12:14:22|5614|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc49-opt (from job definition)
+2017-03-08 12:14:22|5614|RunJobUtilit| filesAltStageOut not set
+2017-03-08 12:14:22|5210|UpdateHandle| Connected from ('127.0.0.1', 41482)
+2017-03-08 12:14:22|5614|RunJobUtilit| filesNormalStageOut=2
+2017-03-08 12:14:22|5614|RunJobUtilit| Final payload state set to: finished
+2017-03-08 12:14:22|5614|RunJobUtilit| About to send TCP message to main pilot thread of length = 440
+2017-03-08 12:14:22|5614|RunJobUtilit| (Sent)
+2017-03-08 12:14:22|5210|UpdateHandle| --- TCPServer: Message received from child is : ["jobState=stageout", "coreCount=1", "pid=5614", "bytesWithoutFAX=8454366", "timeStageIn=4", "output_latereg=False", "dbTime=", "filesWithoutFAX=2", "timeExe=52", "cpuConversionFactor=1.0", "vmPeakMax=0", "cpuUnit=s", "finalstate=finished", "vmPeakMean=0", "pilotErrorDiag=", "filesNormalStageOut=2", "status=finished", "timeStageOut=13", "RSSMean=0", "nEvents=114", "timeSetup=1", "JEM=NO", "nEventsW=0", "cmtconfig=x86_64-slc6-gcc49-opt", "pilotecode=0", "cpuTime=20", "jobid=3267651254", "pgrp=5614", "dbData=", "transecode=0", ""]
+2017-03-08 12:14:22|5210|UpdateHandle| Debug: jobdict keys: ['prod']
+2017-03-08 12:14:22|5210|UpdateHandle| Debug: jobinfo: {'jobState': 'stageout', 'coreCount': '1', 'pid': '5614', 'jobid': '3267651254', 'timeStageIn': '4', 'output_latereg': 'False', 'dbTime': '', 'filesWithoutFAX': '2', 'timeExe': '52', 'cpuConversionFactor': '1.0', 'vmPeakMax': '0', 'cpuUnit': 's', 'finalstate': 'finished', 'vmPeakMean': '0', 'pilotErrorDiag': '', 'filesNormalStageOut': '2', 'status': 'finished', 'timeStageOut': '13', 'RSSMean': '0', 'nEvents': '114', 'timeSetup': '1', 'JEM': 'NO', 'nEventsW': '0', 'cmtconfig': 'x86_64-slc6-gcc49-opt', 'pilotecode': '0', 'cpuTime': '20', 'bytesWithoutFAX': '8454366', 'pgrp': '5614', 'dbData': '', 'transecode': '0'}
+2017-03-08 12:14:22|5210|UpdateHandle| Process groups: 5075 (pilot), 5614 (sub process)
+2017-03-08 12:14:22|5210|pUtil.py    | Decoding: 
+2017-03-08 12:14:22|5210|pUtil.py    | Empty URL encoded string (Nothing to decode)
+2017-03-08 12:14:22|5210|UpdateHandle| Got output_latereg=False
+2017-03-08 12:14:22|5614|RunJobUtilit| (Received)
+2017-03-08 12:14:22|5614|RunJobUtilit| Successfully sent and received TCP message
+2017-03-08 12:14:22|5614|RunJobUtilit| Successfully updated local pilot TCP server at 2017-03-08T04:14:22-0800 (Trial 1/10)
+2017-03-08 12:14:22|5614|RunJob.py   | ********************************************************
+2017-03-08 12:14:22|5614|RunJob.py   |  This job ended with (trf,pilot) exit code of (0,0)
+2017-03-08 12:14:22|5614|RunJob.py   | ********************************************************
+2017-03-08 12:14:22|5614|pUtil.py    | Copying: ['Monitor.py', 'ExperimentFactory.py', 'processes.py', 'pilot.py', 'ErrorDiagnosis.py', 'UpdateHandler.py', 'TimerCommand.py', 'xrootdObjectstoreSiteMover.py', 'GetJob.py', 'Diagnosis.py', 'Logger.py', 'dCacheSiteMover.py', 'RunJobNormal.py', 'AMSTaiwanExperiment.py', 'Job.py', 'xrdcpSiteMover.py', 'timed_command.py', 'RunJobHpcarcEvent.py', 'futil.py', 'castorSvcClassSiteMover.py', 'aria2cSiteMover.py', 'FAXSiteMover.py', 'WatchDog.py', 'EventServiceFactory.py', 'CastorSiteMover.py', 'stormSiteMover.py', 'Node.py', 'RunJobTitan.py', 'ATLASSiteInformation.py', 'mvSiteMover.py', 'configSiteMover.py', 'DeferredStageout.py', 'BalsamJob.py', 'glexec_aux.py', 'NordugridATLASSiteInformation.py', 'PilotErrors.py', 'JEMstub.py', 'RunJobArgo.py', 'S3ObjectstoreSiteMover.py', 'RunJobEdison.py', 'glexec_utils.py', 'ATLASExperiment.py', 'SiteMoverFarm.py', 'S3SiteMover.py', 'environment.py', 'FileHandling.py', 'xrootdSiteMover.py', 'newJobDef.py', 'wrapperexceptions.py', 'CustomEncoder.py', 'wrapper.py', 'RunJobHpcEvent.py', 'DBReleaseHandler.py', 'JobState.py', 'PilotYamplServer.py', 'SiteInformation.py', 'EventService.py', 'AMSTaiwanSiteInformation.py', 'ArgoJob.py', 'ChirpSiteMover.py', 'dataPilot.py', 'SiteInformationFactory.py', 'ThreadPool.py', 'RunJobUtilities.py', 'StoppableThread.py', 'PandaServerClient.py', 'JobLog.py', 'OtherExperiment.py', 'RunJobFactory.py', 'SysLog.py', 'MessageInterface.py', 'S3ObjectstoreHttpSiteMover.py', 'ATLASEventService.py', 'build.py', 'rfcpLFCSiteMover.py', '__init__.py', 'JobInfoXML.py', 'dCacheLFCSiteMover.py', 'RunJobHPC.py', 'lcgcpSiteMover.py', 'GSIftpSiteMover.py', 'CMSSiteInformation.py', 'curlSiteMover.py', 'VmPeak.py', 'RunJobHopper.py', 'LocalSiteMover.py', 'Configuration.py', 'myproxyUtils.py', 'JobRecovery.py', 'ProxyGuard.py', 'RunJobAnselm.py', 'NordugridATLASExperiment.py', 'CMSExperiment.py', 'Site.py', 'globusPilot.py', 'OtherSiteMover.py', 'FileStateClient.py', 'BNLdCacheSiteMover.py', 'FileState.py', 'RunJob.py', 'EventRanges.py', 'RunJobMira.py', 'OtherSiteInformation.py', 'PilotUtils.py', 'Cleaner.py', 'FAXTools.py', 'GFAL2SiteMover.py', 'SiteMover.py', 'lcgcp2SiteMover.py', 'pUtil.py', 'RunJobEvent.py', 'wrapperutils.py', 'Experiment.py', 'Mover.py', 'PilotTCPServer.py', 'objectstoreSiteMover.py', 'PILOTVERSION', 'saga', 'radical', 'HPC', 'movers']
+2017-03-08 12:14:23|5614|RunJob.py   | job.workdir is /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188 pworkdir is /scratch/Panda_Pilot_5210_1488975182 
+2017-03-08 12:14:23|5614|RunJob.py   | Lingering output file removed: user.saparede.10916444.MYSTREAM._000003.root
+2017-03-08 12:14:23|5614|RunJob.py   | Lingering output file removed: user.saparede.10916444.EXT0._000003.myEfffile.root
+2017-03-08 12:14:23|5614|RunJob.py   | Payload cleanup has finished
+2017-03-08 12:14:23|5614|RunJob.py   | RunJob (payload wrapper) has finished
+2017-03-08 12:15:16|5210|Monitor.py  | --- Main pilot monitoring loop (job id 3267651254, state:finished (finished), iteration 3)
+2017-03-08 12:15:16|5210|ATLASExperim| Using path: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/memory_monitor_summary.json
+2017-03-08 12:15:16|5210|Monitor.py  | Max memory (maxPSS) used by the payload is within the allowed limit: 10940 B (2*maxRSS=8253440 B)
+2017-03-08 12:15:16|5210|pUtil.py    | Returning tail stdout dictionary with 1 entries
+2017-03-08 12:15:16|5210|Monitor.py  | onlyUpdateStateChangedJobs: True, lastState: stageout, currentState: finished
+2017-03-08 12:15:16|5210|WatchDog.py | Production job is done
+2017-03-08 12:15:16|5210|Monitor.py  | Debug: job prod state: finished
+2017-03-08 12:15:16|5210|Monitor.py  | Refreshing tail stdout dictinary prior to finishing the job(s)
+2017-03-08 12:15:16|5210|pUtil.py    | Returning tail stdout dictionary with 1 entries
+2017-03-08 12:15:16|5210|Monitor.py  | Clean up the ended job: [5614, Job.jobId=3267651254
+Job.inData = [{'eventRangeId': None, 'status_code': None, 'lfn': 'DAOD_JETM11.10014747._000007.pool.root.1', 'ddmendpoint': 'SLACXRD_USERDISK', 'dispatchDBlockTokenForOut': None, 'dataset': 'data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889/', 'destinationDBlockToken': None, 'mtime': None, 'guid': 'CCB0DCA6-3793-CF4F-BEBE-C46E7D187BF0', 'replicas': [], 'fileDestinationSE': None, 'filesize': 2294757, 'scope': 'data15_13TeV', 'type': 'input', 'status': None, 'ddmendpoint_alt': None, 'prodDBlockToken': 'NULL', 'destinationDblock': None, 'dispatchDBlockToken': 'NULL', 'surl': None, 'pfn': None, 'objectstoreId': None, 'prodDBlockTokenForOutput': None, 'dispatchDblock': 'NULL', 'checksum': 'ad:85bc4972', 'turl': None, 'prodDBlock': 'data15_13TeV:data15_13TeV.00267639.physics_Main.merge.DAOD_JETM11.r7600_p2521_p2889_tid10014747_00'}, {'eventRangeId': None, 'status_code': None, 'lfn': 'panda.0308105652.430739.lib._10916444.8727237564.lib.tgz', 'ddmendpoint': 'SLACXRD_USERDISK', 'dispatchDBlockTokenForOut': None, 'dataset': 'panda.0308105652.430739.lib._10916444', 'destinationDBlockToken': None, 'mtime': None, 'guid': 'b2bb2ce7-ebb5-44fd-8baa-c009cf348059', 'replicas': [], 'fileDestinationSE': None, 'filesize': 6159609, 'scope': 'panda', 'type': 'input', 'status': None, 'ddmendpoint_alt': None, 'prodDBlockToken': 'NULL', 'destinationDblock': None, 'dispatchDBlockToken': 'NULL', 'surl': None, 'pfn': None, 'objectstoreId': None, 'prodDBlockTokenForOutput': None, 'dispatchDblock': 'panda.0308105652.430739.lib._10916444', 'checksum': 'ad:0e8d0236', 'turl': None, 'prodDBlock': 'NULL'}]
+Job.outData = [{'eventRangeId': None, 'status_code': None, 'lfn': 'user.saparede.10916444.MYSTREAM._000003.root', 'ddmendpoint': 'SLACXRD_USERDISK', 'dispatchDBlockTokenForOut': 'NULL', 'dataset': 'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM/', 'destinationDBlockToken': 'NULL', 'mtime': None, 'guid': None, 'replicas': [], 'fileDestinationSE': 'ANALY_SLAC', 'filesize': 0, 'scope': 'user.saparede', 'type': 'output', 'status': None, 'ddmendpoint_alt': None, 'prodDBlockToken': None, 'destinationDblock': 'user.saparede.test.tON.selectWandZevts.0803newDS_MYSTREAM.126562382_sub0381246194', 'dispatchDBlockToken': None, 'surl': None, 'pfn': None, 'objectstoreId': None, 'prodDBlockTokenForOutput': None, 'dispatchDblock': None, 'checksum': None, 'turl': None, 'prodDBlock': None}, {'eventRangeId': None, 'status_code': None, 'lfn': 'user.saparede.10916444.EXT0._000003.myEfffile.root', 'ddmendpoint': 'SLACXRD_USERDISK', 'dispatchDBlockTokenForOut': 'NULL', 'dataset': 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0/', 'destinationDBlockToken': 'NULL', 'mtime': None, 'guid': None, 'replicas': [], 'fileDestinationSE': 'ANALY_SLAC', 'filesize': 0, 'scope': 'user.saparede', 'type': 'output', 'status': None, 'ddmendpoint_alt': None, 'prodDBlockToken': None, 'destinationDblock': 'user.saparede.test.tON.selectWandZevts.0803newDS_EXT0.126562383_sub0381246195', 'dispatchDBlockToken': None, 'surl': None, 'pfn': None, 'objectstoreId': None, 'prodDBlockTokenForOutput': None, 'dispatchDblock': None, 'checksum': None, 'turl': None, 'prodDBlock': None}]
+Job.logData = [{'eventRangeId': None, 'status_code': None, 'lfn': 'user.saparede.test.tON.selectWandZevts.0803newDS.log.10916444.000003.log.tgz', 'ddmendpoint': 'SLACXRD_USERDISK', 'dispatchDBlockTokenForOut': 'NULL', 'dataset': 'user.saparede.test.tON.selectWandZevts.0803newDS.log/', 'destinationDBlockToken': 'NULL', 'mtime': None, 'guid': '674881c2-50c8-43f1-9495-546633c08a22', 'replicas': [], 'fileDestinationSE': 'ANALY_SLAC', 'filesize': 0, 'scope': 'user.saparede', 'type': 'log', 'status': None, 'ddmendpoint_alt': None, 'prodDBlockToken': None, 'destinationDblock': 'user.saparede.test.tON.selectWandZevts.0803newDS.log.126562381_sub0381246196', 'dispatchDBlockToken': None, 'surl': None, 'pfn': None, 'objectstoreId': None, 'prodDBlockTokenForOutput': None, 'dispatchDblock': None, 'checksum': None, 'turl': None, 'prodDBlock': None}], 5075]
+2017-03-08 12:15:16|5210|JobLog.py   | Post job task (normal mode) using dir: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:15:16|5210|pUtil.py    | Trying to read metadata from file: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/metadata-3267651254.xml
+2017-03-08 12:15:16|5210|pUtil.py    | Found metadata
+2017-03-08 12:15:16|5210|JobLog.py   | Building log extracts..
+2017-03-08 12:15:16|5210|JobLog.py   | Panda tracer log does not exist: /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/pandatracerlog.txt (ignoring)
+2017-03-08 12:15:16|5210|ATLASExperim| Removing redundant files prior to log creation
+2017-03-08 12:15:16|5210|ATLASExperim| Found no archive files
+2017-03-08 12:15:16|5210|ATLASExperim| To be removed: ['/scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188/runAthena-00-00-12']
+2017-03-08 12:15:16|5210|ATLASExperim| Found no broken links
+2017-03-08 12:15:16|5210|JobLog.py   | Removed soft link: /scratch/Panda_Pilot_5210_1488975182/athena_stdout.txt
+2017-03-08 12:15:16|5210|pUtil.py    | current dir: /scratch/Panda_Pilot_5210_1488975182
+2017-03-08 12:15:16|5210|pUtil.py    | Could not find trf error file jobInfo.xml in search path /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:15:16|5210|pUtil.py    | ..Job report..................................................................................................
+2017-03-08 12:15:16|5210|pUtil.py    | . Pilot version             : PICARD 67.6
+2017-03-08 12:15:16|5210|pUtil.py    | . Job id                    : 3267651254
+2017-03-08 12:15:16|5210|pUtil.py    | . Current job status        : finished
+2017-03-08 12:15:16|5210|pUtil.py    | . Trf job type              : Single trf job
+2017-03-08 12:15:16|5210|pUtil.py    | . Final job state           : finished
+2017-03-08 12:15:16|5210|pUtil.py    | . All out files transferred : Yes
+2017-03-08 12:15:16|5210|pUtil.py    | . Pilot error code          : 0, (no pilot error)
+2017-03-08 12:15:16|5210|pUtil.py    | . Length pilot error diag   : 0
+2017-03-08 12:15:16|5210|pUtil.py    | . Pilot error diag          : Empty
+2017-03-08 12:15:16|5210|pUtil.py    | . Pilot produced stderr     : No
+2017-03-08 12:15:16|5210|pUtil.py    | . RunJob produced stderr    : No
+2017-03-08 12:15:16|5210|pUtil.py    | . Trf error code            : 0
+2017-03-08 12:15:16|5210|pUtil.py    | . Trf error diagnosis       : 
+2017-03-08 12:15:16|5210|pUtil.py    | . Length log extracts       : 445 (preliminary)
+2017-03-08 12:15:16|5210|pUtil.py    | . Payload produced stderr   : No (empty athena_stderr.txt)
+2017-03-08 12:15:16|5210|pUtil.py    | . Found core dump in workdir: No
+2017-03-08 12:15:16|5210|pUtil.py    | . Job was executed in dir   : /scratch/Panda_Pilot_5210_1488975182/PandaJob_3267651254_1488975188
+2017-03-08 12:15:16|5210|pUtil.py    | . Error report produced at  : 2017-03-08T04:15:16-0800
+2017-03-08 12:15:16|5210|pUtil.py    | ..Time report.................................................................................................
+2017-03-08 12:15:16|5210|pUtil.py    | . CPU consumption time      : 20 s
+2017-03-08 12:15:16|5210|pUtil.py    | . Payload execution time    : 52 s
+2017-03-08 12:15:16|5210|pUtil.py    | . GetJob consumption time   : 0 s
+2017-03-08 12:15:16|5210|pUtil.py    | . Stage-in consumption time : 4 s
+2017-03-08 12:15:16|5210|pUtil.py    | . Stage-out consumption time: 13 s
+2017-03-08 12:15:16|5210|pUtil.py    | ..............................................................................................................
+2017-03-08 12:15:16|5210|pUtil.py    | !!FINISHED!!0!!Job successfully completed
+2017-03-08 12:15:16|5210|JobLog.py   | Removing unwanted files prior to job log creation
+2017-03-08 12:15:16|5210|JobLog.py   | No skipped input files (non DBRelease)
+2017-03-08 12:15:16|5210|JobLog.py   | Preparing to create log file
